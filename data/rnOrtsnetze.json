@@ -1,0 +1,4099 @@
+{
+  "message": "OK",
+  "status": 200,
+  "timestamp": "2020-10-11T14:52:25+02:00",
+  "data": [
+    {
+      "ortsnetzkennzahl": 1,
+      "ortsnetzname": "Wien"
+    },
+    {
+      "ortsnetzkennzahl": 2142,
+      "ortsnetzname": "Gattendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2143,
+      "ortsnetzname": "Kittsee"
+    },
+    {
+      "ortsnetzkennzahl": 2144,
+      "ortsnetzname": "Deutsch Jahrndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2145,
+      "ortsnetzname": "Prellenkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2146,
+      "ortsnetzname": "Nickelsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2147,
+      "ortsnetzname": "Zurndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2160,
+      "ortsnetzname": "Jois"
+    },
+    {
+      "ortsnetzkennzahl": 2162,
+      "ortsnetzname": "Bruck an der Leitha"
+    },
+    {
+      "ortsnetzkennzahl": 2163,
+      "ortsnetzname": "Petronell-Carnuntum"
+    },
+    {
+      "ortsnetzkennzahl": 2164,
+      "ortsnetzname": "Rohrau"
+    },
+    {
+      "ortsnetzkennzahl": 2165,
+      "ortsnetzname": "Hainburg a.d. Donau"
+    },
+    {
+      "ortsnetzkennzahl": 2166,
+      "ortsnetzname": "Parndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2167,
+      "ortsnetzname": "Neusiedl am See"
+    },
+    {
+      "ortsnetzkennzahl": 2168,
+      "ortsnetzname": "Mannersdorf am Leithagebirge"
+    },
+    {
+      "ortsnetzkennzahl": 2169,
+      "ortsnetzname": "Trautmannsdorf an der Leitha"
+    },
+    {
+      "ortsnetzkennzahl": 2172,
+      "ortsnetzname": "Frauenkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2173,
+      "ortsnetzname": "Gols"
+    },
+    {
+      "ortsnetzkennzahl": 2174,
+      "ortsnetzname": "Wallern im Burgenland"
+    },
+    {
+      "ortsnetzkennzahl": 2175,
+      "ortsnetzname": "Apetlon"
+    },
+    {
+      "ortsnetzkennzahl": 2176,
+      "ortsnetzname": "Tadten"
+    },
+    {
+      "ortsnetzkennzahl": 2177,
+      "ortsnetzname": "Podersdorf am See"
+    },
+    {
+      "ortsnetzkennzahl": 2212,
+      "ortsnetzname": "Orth an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 2213,
+      "ortsnetzname": "Lassee"
+    },
+    {
+      "ortsnetzkennzahl": 2214,
+      "ortsnetzname": "Kopfstetten"
+    },
+    {
+      "ortsnetzkennzahl": 2215,
+      "ortsnetzname": "Probstdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2216,
+      "ortsnetzname": "Leopoldsdorf im Marchfelde"
+    },
+    {
+      "ortsnetzkennzahl": 2230,
+      "ortsnetzname": "Schwadorf"
+    },
+    {
+      "ortsnetzkennzahl": 2231,
+      "ortsnetzname": "Purkersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2232,
+      "ortsnetzname": "Fischamend"
+    },
+    {
+      "ortsnetzkennzahl": 2233,
+      "ortsnetzname": "Preßbaum"
+    },
+    {
+      "ortsnetzkennzahl": 2234,
+      "ortsnetzname": "Gramatneusiedl"
+    },
+    {
+      "ortsnetzkennzahl": 2235,
+      "ortsnetzname": "Maria-Lanzendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2236,
+      "ortsnetzname": "Mödling"
+    },
+    {
+      "ortsnetzkennzahl": 2237,
+      "ortsnetzname": "Gaaden"
+    },
+    {
+      "ortsnetzkennzahl": 2238,
+      "ortsnetzname": "Kaltenleutgeben"
+    },
+    {
+      "ortsnetzkennzahl": 2239,
+      "ortsnetzname": "Breitenfurt bei Wien"
+    },
+    {
+      "ortsnetzkennzahl": 2242,
+      "ortsnetzname": "Sankt Andrä-Wördern"
+    },
+    {
+      "ortsnetzkennzahl": 2243,
+      "ortsnetzname": "Klosterneuburg"
+    },
+    {
+      "ortsnetzkennzahl": 2244,
+      "ortsnetzname": "Langenzersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2245,
+      "ortsnetzname": "Wolkersdorf im Weinviertel"
+    },
+    {
+      "ortsnetzkennzahl": 2246,
+      "ortsnetzname": "Gerasdorf bei Wien"
+    },
+    {
+      "ortsnetzkennzahl": 2247,
+      "ortsnetzname": "Deutsch-Wagram"
+    },
+    {
+      "ortsnetzkennzahl": 2248,
+      "ortsnetzname": "Markgrafneusiedl"
+    },
+    {
+      "ortsnetzkennzahl": 2249,
+      "ortsnetzname": "Groß-Enzersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2252,
+      "ortsnetzname": "Baden"
+    },
+    {
+      "ortsnetzkennzahl": 2253,
+      "ortsnetzname": "Oberwaltersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2254,
+      "ortsnetzname": "Ebreichsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2255,
+      "ortsnetzname": "Deutsch Brodersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2256,
+      "ortsnetzname": "Leobersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2257,
+      "ortsnetzname": "Klausen-Leopoldsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2258,
+      "ortsnetzname": "Alland"
+    },
+    {
+      "ortsnetzkennzahl": 2259,
+      "ortsnetzname": "Münchendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2262,
+      "ortsnetzname": "Korneuburg"
+    },
+    {
+      "ortsnetzkennzahl": 2263,
+      "ortsnetzname": "Großrußbach"
+    },
+    {
+      "ortsnetzkennzahl": 2264,
+      "ortsnetzname": "Rückersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2265,
+      "ortsnetzname": "Hausleiten"
+    },
+    {
+      "ortsnetzkennzahl": 2266,
+      "ortsnetzname": "Stockerau"
+    },
+    {
+      "ortsnetzkennzahl": 2267,
+      "ortsnetzname": "Sierndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2268,
+      "ortsnetzname": "Großmugl"
+    },
+    {
+      "ortsnetzkennzahl": 2269,
+      "ortsnetzname": "Niederfellabrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2271,
+      "ortsnetzname": "Ried am Riederberg"
+    },
+    {
+      "ortsnetzkennzahl": 2272,
+      "ortsnetzname": "Tulln an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 2273,
+      "ortsnetzname": "Tulbing"
+    },
+    {
+      "ortsnetzkennzahl": 2274,
+      "ortsnetzname": "Sieghartskirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2275,
+      "ortsnetzname": "Atzenbrugg"
+    },
+    {
+      "ortsnetzkennzahl": 2276,
+      "ortsnetzname": "Reidling"
+    },
+    {
+      "ortsnetzkennzahl": 2277,
+      "ortsnetzname": "Zwentendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2278,
+      "ortsnetzname": "Absdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2279,
+      "ortsnetzname": "Kirchberg am Wagram"
+    },
+    {
+      "ortsnetzkennzahl": 2282,
+      "ortsnetzname": "Gänserndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2283,
+      "ortsnetzname": "Angern an der March"
+    },
+    {
+      "ortsnetzkennzahl": 2284,
+      "ortsnetzname": "Oberweiden"
+    },
+    {
+      "ortsnetzkennzahl": 2285,
+      "ortsnetzname": "Marchegg"
+    },
+    {
+      "ortsnetzkennzahl": 2286,
+      "ortsnetzname": "Obersiebenbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2287,
+      "ortsnetzname": "Straßhof an der Nordbahn"
+    },
+    {
+      "ortsnetzkennzahl": 2288,
+      "ortsnetzname": "Auersthal"
+    },
+    {
+      "ortsnetzkennzahl": 2289,
+      "ortsnetzname": "Matzen"
+    },
+    {
+      "ortsnetzkennzahl": 2522,
+      "ortsnetzname": "Laa an der Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2523,
+      "ortsnetzname": "Kirchstetten"
+    },
+    {
+      "ortsnetzkennzahl": 2524,
+      "ortsnetzname": "Kautendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2525,
+      "ortsnetzname": "Gnadendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2526,
+      "ortsnetzname": "Stronsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2527,
+      "ortsnetzname": "Wulzeshofen"
+    },
+    {
+      "ortsnetzkennzahl": 2532,
+      "ortsnetzname": "Zistersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2533,
+      "ortsnetzname": "Neusiedl an der Zaya"
+    },
+    {
+      "ortsnetzkennzahl": 2534,
+      "ortsnetzname": "Niedersulz"
+    },
+    {
+      "ortsnetzkennzahl": 2535,
+      "ortsnetzname": "Hohenau an der March"
+    },
+    {
+      "ortsnetzkennzahl": 2536,
+      "ortsnetzname": "Drösing"
+    },
+    {
+      "ortsnetzkennzahl": 2538,
+      "ortsnetzname": "Velm-Götzendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2552,
+      "ortsnetzname": "Poysdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2554,
+      "ortsnetzname": "Stützenhofen"
+    },
+    {
+      "ortsnetzkennzahl": 2555,
+      "ortsnetzname": "Herrnbaumgarten"
+    },
+    {
+      "ortsnetzkennzahl": 2556,
+      "ortsnetzname": "Großkrut"
+    },
+    {
+      "ortsnetzkennzahl": 2557,
+      "ortsnetzname": "Bernhardsthal"
+    },
+    {
+      "ortsnetzkennzahl": 2572,
+      "ortsnetzname": "Mistelbach"
+    },
+    {
+      "ortsnetzkennzahl": 2573,
+      "ortsnetzname": "Wilfersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2574,
+      "ortsnetzname": "Gaweinstal"
+    },
+    {
+      "ortsnetzkennzahl": 2575,
+      "ortsnetzname": "Ladendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2576,
+      "ortsnetzname": "Ernstbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2577,
+      "ortsnetzname": "Asparn an der Zaya"
+    },
+    {
+      "ortsnetzkennzahl": 2610,
+      "ortsnetzname": "Horitschon"
+    },
+    {
+      "ortsnetzkennzahl": 2611,
+      "ortsnetzname": "Mannersdorf an der Rabnitz"
+    },
+    {
+      "ortsnetzkennzahl": 2612,
+      "ortsnetzname": "Oberpullendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2613,
+      "ortsnetzname": "Deutschkreutz"
+    },
+    {
+      "ortsnetzkennzahl": 2614,
+      "ortsnetzname": "Kleinwarasdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2615,
+      "ortsnetzname": "Lutzmannsburg"
+    },
+    {
+      "ortsnetzkennzahl": 2616,
+      "ortsnetzname": "Lockenhaus"
+    },
+    {
+      "ortsnetzkennzahl": 2617,
+      "ortsnetzname": "Draßmarkt"
+    },
+    {
+      "ortsnetzkennzahl": 2618,
+      "ortsnetzname": "Markt Sankt Martin"
+    },
+    {
+      "ortsnetzkennzahl": 2619,
+      "ortsnetzname": "Lackendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2620,
+      "ortsnetzname": "Willendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2621,
+      "ortsnetzname": "Sieggraben"
+    },
+    {
+      "ortsnetzkennzahl": 2622,
+      "ortsnetzname": "Wiener Neustadt"
+    },
+    {
+      "ortsnetzkennzahl": 2623,
+      "ortsnetzname": "Pottendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2624,
+      "ortsnetzname": "Ebenfurth"
+    },
+    {
+      "ortsnetzkennzahl": 2625,
+      "ortsnetzname": "Bad Sauerbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2626,
+      "ortsnetzname": "Mattersburg"
+    },
+    {
+      "ortsnetzkennzahl": 2627,
+      "ortsnetzname": "Pitten"
+    },
+    {
+      "ortsnetzkennzahl": 2628,
+      "ortsnetzname": "Felixdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2629,
+      "ortsnetzname": "Warth"
+    },
+    {
+      "ortsnetzkennzahl": 2630,
+      "ortsnetzname": "Ternitz"
+    },
+    {
+      "ortsnetzkennzahl": 2631,
+      "ortsnetzname": "Pöttsching"
+    },
+    {
+      "ortsnetzkennzahl": 2632,
+      "ortsnetzname": "Pernitz"
+    },
+    {
+      "ortsnetzkennzahl": 2633,
+      "ortsnetzname": "Markt Piesting"
+    },
+    {
+      "ortsnetzkennzahl": 2634,
+      "ortsnetzname": "Gutenstein"
+    },
+    {
+      "ortsnetzkennzahl": 2635,
+      "ortsnetzname": "Neunkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2636,
+      "ortsnetzname": "Puchberg am Schneeberg"
+    },
+    {
+      "ortsnetzkennzahl": 2637,
+      "ortsnetzname": "Grünbach am Schneeberg"
+    },
+    {
+      "ortsnetzkennzahl": 2638,
+      "ortsnetzname": "Winzendorf-Muthmannsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2639,
+      "ortsnetzname": "Bad Fischau"
+    },
+    {
+      "ortsnetzkennzahl": 2641,
+      "ortsnetzname": "Kirchberg am Wechsel"
+    },
+    {
+      "ortsnetzkennzahl": 2642,
+      "ortsnetzname": "Aspang-Sankt Peter"
+    },
+    {
+      "ortsnetzkennzahl": 2643,
+      "ortsnetzname": "Lichtenegg"
+    },
+    {
+      "ortsnetzkennzahl": 2644,
+      "ortsnetzname": "Grimmenstein"
+    },
+    {
+      "ortsnetzkennzahl": 2645,
+      "ortsnetzname": "Wiesmath"
+    },
+    {
+      "ortsnetzkennzahl": 2646,
+      "ortsnetzname": "Kirchschlag in der Buckligen Welt"
+    },
+    {
+      "ortsnetzkennzahl": 2647,
+      "ortsnetzname": "Krumbach"
+    },
+    {
+      "ortsnetzkennzahl": 2648,
+      "ortsnetzname": "Hochneukirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2649,
+      "ortsnetzname": "Mönichkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2662,
+      "ortsnetzname": "Gloggnitz"
+    },
+    {
+      "ortsnetzkennzahl": 2663,
+      "ortsnetzname": "Schottwien"
+    },
+    {
+      "ortsnetzkennzahl": 2664,
+      "ortsnetzname": "Semmering"
+    },
+    {
+      "ortsnetzkennzahl": 2665,
+      "ortsnetzname": "Prein an der Rax"
+    },
+    {
+      "ortsnetzkennzahl": 2666,
+      "ortsnetzname": "Reichenau"
+    },
+    {
+      "ortsnetzkennzahl": 2667,
+      "ortsnetzname": "Schwarzau im Gebirge"
+    },
+    {
+      "ortsnetzkennzahl": 2672,
+      "ortsnetzname": "Berndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2673,
+      "ortsnetzname": "Altenmarkt an der Triesting"
+    },
+    {
+      "ortsnetzkennzahl": 2674,
+      "ortsnetzname": "Weißenbach an der Triesting"
+    },
+    {
+      "ortsnetzkennzahl": 2680,
+      "ortsnetzname": "Sankt Margarethen im Burgenland"
+    },
+    {
+      "ortsnetzkennzahl": 2682,
+      "ortsnetzname": "Eisenstadt"
+    },
+    {
+      "ortsnetzkennzahl": 2683,
+      "ortsnetzname": "Purbach am Neusiedler See"
+    },
+    {
+      "ortsnetzkennzahl": 2684,
+      "ortsnetzname": "Schützen am Gebirge"
+    },
+    {
+      "ortsnetzkennzahl": 2685,
+      "ortsnetzname": "Rust"
+    },
+    {
+      "ortsnetzkennzahl": 2686,
+      "ortsnetzname": "Draßburg"
+    },
+    {
+      "ortsnetzkennzahl": 2687,
+      "ortsnetzname": "Siegendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2688,
+      "ortsnetzname": "Steinbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2689,
+      "ortsnetzname": "Hornstein"
+    },
+    {
+      "ortsnetzkennzahl": 2711,
+      "ortsnetzname": "Dürnstein"
+    },
+    {
+      "ortsnetzkennzahl": 2712,
+      "ortsnetzname": "Aggsbach"
+    },
+    {
+      "ortsnetzkennzahl": 2713,
+      "ortsnetzname": "Spitz"
+    },
+    {
+      "ortsnetzkennzahl": 2714,
+      "ortsnetzname": "Rossatz"
+    },
+    {
+      "ortsnetzkennzahl": 2715,
+      "ortsnetzname": "Weißenkirchen in der Wachau"
+    },
+    {
+      "ortsnetzkennzahl": 2716,
+      "ortsnetzname": "Gföhl"
+    },
+    {
+      "ortsnetzkennzahl": 2717,
+      "ortsnetzname": "Unter-Meisling"
+    },
+    {
+      "ortsnetzkennzahl": 2718,
+      "ortsnetzname": "Lichtenau im Waldviertel"
+    },
+    {
+      "ortsnetzkennzahl": 2719,
+      "ortsnetzname": "Droß"
+    },
+    {
+      "ortsnetzkennzahl": 2722,
+      "ortsnetzname": "Kirchberg an der Pielach"
+    },
+    {
+      "ortsnetzkennzahl": 2723,
+      "ortsnetzname": "Rabenstein an der Pielach"
+    },
+    {
+      "ortsnetzkennzahl": 2724,
+      "ortsnetzname": "Schwarzenbach an der Pielach"
+    },
+    {
+      "ortsnetzkennzahl": 2725,
+      "ortsnetzname": "Frankenfels"
+    },
+    {
+      "ortsnetzkennzahl": 2726,
+      "ortsnetzname": "Puchenstuben"
+    },
+    {
+      "ortsnetzkennzahl": 2728,
+      "ortsnetzname": "Wienerbruck"
+    },
+    {
+      "ortsnetzkennzahl": 2731,
+      "ortsnetzname": "Idolsberg"
+    },
+    {
+      "ortsnetzkennzahl": 2732,
+      "ortsnetzname": "Krems an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 2733,
+      "ortsnetzname": "Schönberg am Kamp"
+    },
+    {
+      "ortsnetzkennzahl": 2734,
+      "ortsnetzname": "Langenlois"
+    },
+    {
+      "ortsnetzkennzahl": 2735,
+      "ortsnetzname": "Hadersdorf am Kamp"
+    },
+    {
+      "ortsnetzkennzahl": 2736,
+      "ortsnetzname": "Paudorf"
+    },
+    {
+      "ortsnetzkennzahl": 2738,
+      "ortsnetzname": "Fels am Wagram"
+    },
+    {
+      "ortsnetzkennzahl": 2739,
+      "ortsnetzname": "Tiefenfucha"
+    },
+    {
+      "ortsnetzkennzahl": 2741,
+      "ortsnetzname": "Flinsbach"
+    },
+    {
+      "ortsnetzkennzahl": 2742,
+      "ortsnetzname": "Sankt Pölten"
+    },
+    {
+      "ortsnetzkennzahl": 2743,
+      "ortsnetzname": "Böheimkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2744,
+      "ortsnetzname": "Kasten bei Böheimkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 2745,
+      "ortsnetzname": "Pyhra"
+    },
+    {
+      "ortsnetzkennzahl": 2746,
+      "ortsnetzname": "Wilhelmsburg"
+    },
+    {
+      "ortsnetzkennzahl": 2747,
+      "ortsnetzname": "Ober-Grafendorf"
+    },
+    {
+      "ortsnetzkennzahl": 2748,
+      "ortsnetzname": "Kilb"
+    },
+    {
+      "ortsnetzkennzahl": 2749,
+      "ortsnetzname": "Prinzersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2752,
+      "ortsnetzname": "Melk"
+    },
+    {
+      "ortsnetzkennzahl": 2753,
+      "ortsnetzname": "Gansbach"
+    },
+    {
+      "ortsnetzkennzahl": 2754,
+      "ortsnetzname": "Loosdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2755,
+      "ortsnetzname": "Mank"
+    },
+    {
+      "ortsnetzkennzahl": 2756,
+      "ortsnetzname": "Sankt Leonhard a.Forst"
+    },
+    {
+      "ortsnetzkennzahl": 2757,
+      "ortsnetzname": "Pöchlarn"
+    },
+    {
+      "ortsnetzkennzahl": 2758,
+      "ortsnetzname": "Pöggstall"
+    },
+    {
+      "ortsnetzkennzahl": 2762,
+      "ortsnetzname": "Lilienfeld"
+    },
+    {
+      "ortsnetzkennzahl": 2763,
+      "ortsnetzname": "Sankt Veit an der Gölsen"
+    },
+    {
+      "ortsnetzkennzahl": 2764,
+      "ortsnetzname": "Hainfeld"
+    },
+    {
+      "ortsnetzkennzahl": 2765,
+      "ortsnetzname": "Kaumberg"
+    },
+    {
+      "ortsnetzkennzahl": 2766,
+      "ortsnetzname": "Kleinzell"
+    },
+    {
+      "ortsnetzkennzahl": 2767,
+      "ortsnetzname": "Hohenberg"
+    },
+    {
+      "ortsnetzkennzahl": 2768,
+      "ortsnetzname": "Sankt Aegyd am Neuwalde"
+    },
+    {
+      "ortsnetzkennzahl": 2769,
+      "ortsnetzname": "Türnitz"
+    },
+    {
+      "ortsnetzkennzahl": 2772,
+      "ortsnetzname": "Neulengbach"
+    },
+    {
+      "ortsnetzkennzahl": 2773,
+      "ortsnetzname": "Eichgraben"
+    },
+    {
+      "ortsnetzkennzahl": 2774,
+      "ortsnetzname": "Innermanzing"
+    },
+    {
+      "ortsnetzkennzahl": 2782,
+      "ortsnetzname": "Herzogenburg"
+    },
+    {
+      "ortsnetzkennzahl": 2783,
+      "ortsnetzname": "Traismauer"
+    },
+    {
+      "ortsnetzkennzahl": 2784,
+      "ortsnetzname": "Perschling"
+    },
+    {
+      "ortsnetzkennzahl": 2786,
+      "ortsnetzname": "Oberwölbling"
+    },
+    {
+      "ortsnetzkennzahl": 2812,
+      "ortsnetzname": "Groß Gerungs"
+    },
+    {
+      "ortsnetzkennzahl": 2813,
+      "ortsnetzname": "Arbesbach"
+    },
+    {
+      "ortsnetzkennzahl": 2814,
+      "ortsnetzname": "Langschlag"
+    },
+    {
+      "ortsnetzkennzahl": 2815,
+      "ortsnetzname": "Großschönau"
+    },
+    {
+      "ortsnetzkennzahl": 2816,
+      "ortsnetzname": "Karlstift"
+    },
+    {
+      "ortsnetzkennzahl": 2822,
+      "ortsnetzname": "Zwettl-Niederösterreich"
+    },
+    {
+      "ortsnetzkennzahl": 2823,
+      "ortsnetzname": "Großglobnitz"
+    },
+    {
+      "ortsnetzkennzahl": 2824,
+      "ortsnetzname": "Allentsteig"
+    },
+    {
+      "ortsnetzkennzahl": 2825,
+      "ortsnetzname": "Göpfritz an der Wild"
+    },
+    {
+      "ortsnetzkennzahl": 2826,
+      "ortsnetzname": "Rastenfeld"
+    },
+    {
+      "ortsnetzkennzahl": 2827,
+      "ortsnetzname": "Schönbach"
+    },
+    {
+      "ortsnetzkennzahl": 2828,
+      "ortsnetzname": "Rappottenstein"
+    },
+    {
+      "ortsnetzkennzahl": 2829,
+      "ortsnetzname": "Schweiggers"
+    },
+    {
+      "ortsnetzkennzahl": 2841,
+      "ortsnetzname": "Vitis"
+    },
+    {
+      "ortsnetzkennzahl": 2842,
+      "ortsnetzname": "Waidhofen an der Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2843,
+      "ortsnetzname": "Dobersberg"
+    },
+    {
+      "ortsnetzkennzahl": 2844,
+      "ortsnetzname": "Karlstein an der Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2845,
+      "ortsnetzname": "Weikertschlag an der Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2846,
+      "ortsnetzname": "Raabs an der Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2847,
+      "ortsnetzname": "Groß-Siegharts"
+    },
+    {
+      "ortsnetzkennzahl": 2848,
+      "ortsnetzname": "Pfaffenschlag bei Waidhofen a.d.Thaya"
+    },
+    {
+      "ortsnetzkennzahl": 2849,
+      "ortsnetzname": "Schwarzenau"
+    },
+    {
+      "ortsnetzkennzahl": 2852,
+      "ortsnetzname": "Gmünd"
+    },
+    {
+      "ortsnetzkennzahl": 2853,
+      "ortsnetzname": "Schrems"
+    },
+    {
+      "ortsnetzkennzahl": 2854,
+      "ortsnetzname": "Kirchberg am Walde"
+    },
+    {
+      "ortsnetzkennzahl": 2855,
+      "ortsnetzname": "Waldenstein"
+    },
+    {
+      "ortsnetzkennzahl": 2856,
+      "ortsnetzname": "Weitra"
+    },
+    {
+      "ortsnetzkennzahl": 2857,
+      "ortsnetzname": "Bad Großpertholz"
+    },
+    {
+      "ortsnetzkennzahl": 2858,
+      "ortsnetzname": "Moorbad Harbach"
+    },
+    {
+      "ortsnetzkennzahl": 2859,
+      "ortsnetzname": "Brand-Nagelberg"
+    },
+    {
+      "ortsnetzkennzahl": 2862,
+      "ortsnetzname": "Heidenreichstein"
+    },
+    {
+      "ortsnetzkennzahl": 2863,
+      "ortsnetzname": "Eggern"
+    },
+    {
+      "ortsnetzkennzahl": 2864,
+      "ortsnetzname": "Kautzen"
+    },
+    {
+      "ortsnetzkennzahl": 2865,
+      "ortsnetzname": "Litschau"
+    },
+    {
+      "ortsnetzkennzahl": 2872,
+      "ortsnetzname": "Ottenschlag"
+    },
+    {
+      "ortsnetzkennzahl": 2873,
+      "ortsnetzname": "Kottes"
+    },
+    {
+      "ortsnetzkennzahl": 2874,
+      "ortsnetzname": "Martinsberg"
+    },
+    {
+      "ortsnetzkennzahl": 2875,
+      "ortsnetzname": "Grafenschlag"
+    },
+    {
+      "ortsnetzkennzahl": 2876,
+      "ortsnetzname": "Els"
+    },
+    {
+      "ortsnetzkennzahl": 2877,
+      "ortsnetzname": "Grainbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2878,
+      "ortsnetzname": "Traunstein"
+    },
+    {
+      "ortsnetzkennzahl": 2912,
+      "ortsnetzname": "Geras"
+    },
+    {
+      "ortsnetzkennzahl": 2913,
+      "ortsnetzname": "Hötzelsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2914,
+      "ortsnetzname": "Japons"
+    },
+    {
+      "ortsnetzkennzahl": 2915,
+      "ortsnetzname": "Drosendorf-Zissersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2916,
+      "ortsnetzname": "Riegersburg"
+    },
+    {
+      "ortsnetzkennzahl": 2942,
+      "ortsnetzname": "Retz"
+    },
+    {
+      "ortsnetzkennzahl": 2943,
+      "ortsnetzname": "Obritz"
+    },
+    {
+      "ortsnetzkennzahl": 2944,
+      "ortsnetzname": "Haugsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2945,
+      "ortsnetzname": "Zellerndorf"
+    },
+    {
+      "ortsnetzkennzahl": 2946,
+      "ortsnetzname": "Pulkau"
+    },
+    {
+      "ortsnetzkennzahl": 2947,
+      "ortsnetzname": "Theras"
+    },
+    {
+      "ortsnetzkennzahl": 2948,
+      "ortsnetzname": "Weitersfeld"
+    },
+    {
+      "ortsnetzkennzahl": 2949,
+      "ortsnetzname": "Niederfladnitz"
+    },
+    {
+      "ortsnetzkennzahl": 2951,
+      "ortsnetzname": "Guntersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2952,
+      "ortsnetzname": "Hollabrunn"
+    },
+    {
+      "ortsnetzkennzahl": 2953,
+      "ortsnetzname": "Nappersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2954,
+      "ortsnetzname": "Göllersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2955,
+      "ortsnetzname": "Großweikersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2956,
+      "ortsnetzname": "Ziersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 2957,
+      "ortsnetzname": "Hohenwarth"
+    },
+    {
+      "ortsnetzkennzahl": 2958,
+      "ortsnetzname": "Maissau"
+    },
+    {
+      "ortsnetzkennzahl": 2959,
+      "ortsnetzname": "Sitzendorf an der Schmida"
+    },
+    {
+      "ortsnetzkennzahl": 2982,
+      "ortsnetzname": "Horn"
+    },
+    {
+      "ortsnetzkennzahl": 2983,
+      "ortsnetzname": "Sigmundsherberg"
+    },
+    {
+      "ortsnetzkennzahl": 2984,
+      "ortsnetzname": "Eggenburg"
+    },
+    {
+      "ortsnetzkennzahl": 2985,
+      "ortsnetzname": "Gars am Kamp"
+    },
+    {
+      "ortsnetzkennzahl": 2986,
+      "ortsnetzname": "Irnfritz"
+    },
+    {
+      "ortsnetzkennzahl": 2987,
+      "ortsnetzname": "Stankt Leonhard am Hornerwald"
+    },
+    {
+      "ortsnetzkennzahl": 2988,
+      "ortsnetzname": "Neupölla"
+    },
+    {
+      "ortsnetzkennzahl": 2989,
+      "ortsnetzname": "Brunn an der Wild"
+    },
+    {
+      "ortsnetzkennzahl": 3112,
+      "ortsnetzname": "Gleisdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3113,
+      "ortsnetzname": "Pischelsdorf in der Steiermark"
+    },
+    {
+      "ortsnetzkennzahl": 3114,
+      "ortsnetzname": "Markt Hartmannsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3115,
+      "ortsnetzname": "Studenzen"
+    },
+    {
+      "ortsnetzkennzahl": 3116,
+      "ortsnetzname": "Kirchbach in Steiermark"
+    },
+    {
+      "ortsnetzkennzahl": 3117,
+      "ortsnetzname": "Eggersdorf bei Graz"
+    },
+    {
+      "ortsnetzkennzahl": 3118,
+      "ortsnetzname": "Sinabelkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 3119,
+      "ortsnetzname": "Stankt Marein bei Graz"
+    },
+    {
+      "ortsnetzkennzahl": 3123,
+      "ortsnetzname": "Stankt Oswald bei Plankenwarth"
+    },
+    {
+      "ortsnetzkennzahl": 3124,
+      "ortsnetzname": "Gratkorn"
+    },
+    {
+      "ortsnetzkennzahl": 3125,
+      "ortsnetzname": "Übelbach"
+    },
+    {
+      "ortsnetzkennzahl": 3126,
+      "ortsnetzname": "Frohnleiten"
+    },
+    {
+      "ortsnetzkennzahl": 3127,
+      "ortsnetzname": "Peggau"
+    },
+    {
+      "ortsnetzkennzahl": 3132,
+      "ortsnetzname": "Kumberg"
+    },
+    {
+      "ortsnetzkennzahl": 3133,
+      "ortsnetzname": "Nestelbach"
+    },
+    {
+      "ortsnetzkennzahl": 3134,
+      "ortsnetzname": "Heiligenkreuz am Waasen"
+    },
+    {
+      "ortsnetzkennzahl": 3135,
+      "ortsnetzname": "Kalsdorf bei Graz"
+    },
+    {
+      "ortsnetzkennzahl": 3136,
+      "ortsnetzname": "Dobl"
+    },
+    {
+      "ortsnetzkennzahl": 3137,
+      "ortsnetzname": "Söding"
+    },
+    {
+      "ortsnetzkennzahl": 3140,
+      "ortsnetzname": "Stankt Martin am Wöllmißberg"
+    },
+    {
+      "ortsnetzkennzahl": 3141,
+      "ortsnetzname": "Hirschegg"
+    },
+    {
+      "ortsnetzkennzahl": 3142,
+      "ortsnetzname": "Voitsberg"
+    },
+    {
+      "ortsnetzkennzahl": 3143,
+      "ortsnetzname": "Krottendorf"
+    },
+    {
+      "ortsnetzkennzahl": 3144,
+      "ortsnetzname": "Köflach"
+    },
+    {
+      "ortsnetzkennzahl": 3145,
+      "ortsnetzname": "Edelschrott"
+    },
+    {
+      "ortsnetzkennzahl": 3146,
+      "ortsnetzname": "Modriach"
+    },
+    {
+      "ortsnetzkennzahl": 3147,
+      "ortsnetzname": "Salla"
+    },
+    {
+      "ortsnetzkennzahl": 3148,
+      "ortsnetzname": "Kainach bei Voitsberg"
+    },
+    {
+      "ortsnetzkennzahl": 3149,
+      "ortsnetzname": "Geistthal"
+    },
+    {
+      "ortsnetzkennzahl": 3150,
+      "ortsnetzname": "Paldau"
+    },
+    {
+      "ortsnetzkennzahl": 3151,
+      "ortsnetzname": "Gnas"
+    },
+    {
+      "ortsnetzkennzahl": 3152,
+      "ortsnetzname": "Feldbach"
+    },
+    {
+      "ortsnetzkennzahl": 3153,
+      "ortsnetzname": "Riegersburg"
+    },
+    {
+      "ortsnetzkennzahl": 3155,
+      "ortsnetzname": "Fehring"
+    },
+    {
+      "ortsnetzkennzahl": 3157,
+      "ortsnetzname": "Kapfenstein"
+    },
+    {
+      "ortsnetzkennzahl": 3158,
+      "ortsnetzname": "Sankt Anna am Aigen"
+    },
+    {
+      "ortsnetzkennzahl": 3159,
+      "ortsnetzname": "Bad Gleichenberg"
+    },
+    {
+      "ortsnetzkennzahl": 316,
+      "ortsnetzname": "Graz"
+    },
+    {
+      "ortsnetzkennzahl": 3170,
+      "ortsnetzname": "Fischbach"
+    },
+    {
+      "ortsnetzkennzahl": 3171,
+      "ortsnetzname": "Gasen"
+    },
+    {
+      "ortsnetzkennzahl": 3172,
+      "ortsnetzname": "Weiz"
+    },
+    {
+      "ortsnetzkennzahl": 3173,
+      "ortsnetzname": "Ratten"
+    },
+    {
+      "ortsnetzkennzahl": 3174,
+      "ortsnetzname": "Birkfeld"
+    },
+    {
+      "ortsnetzkennzahl": 3175,
+      "ortsnetzname": "Anger"
+    },
+    {
+      "ortsnetzkennzahl": 3176,
+      "ortsnetzname": "Stubenberg"
+    },
+    {
+      "ortsnetzkennzahl": 3177,
+      "ortsnetzname": "Puch bei Weiz"
+    },
+    {
+      "ortsnetzkennzahl": 3178,
+      "ortsnetzname": "Sankt Ruprecht an der Raab"
+    },
+    {
+      "ortsnetzkennzahl": 3179,
+      "ortsnetzname": "Passail"
+    },
+    {
+      "ortsnetzkennzahl": 3182,
+      "ortsnetzname": "Wildon"
+    },
+    {
+      "ortsnetzkennzahl": 3183,
+      "ortsnetzname": "Sankt Georgen an der Stiefing"
+    },
+    {
+      "ortsnetzkennzahl": 3184,
+      "ortsnetzname": "Wolfsberg im Schwarzautal"
+    },
+    {
+      "ortsnetzkennzahl": 3185,
+      "ortsnetzname": "Preding"
+    },
+    {
+      "ortsnetzkennzahl": 3322,
+      "ortsnetzname": "Güssing"
+    },
+    {
+      "ortsnetzkennzahl": 3323,
+      "ortsnetzname": "Eberau"
+    },
+    {
+      "ortsnetzkennzahl": 3324,
+      "ortsnetzname": "Strem"
+    },
+    {
+      "ortsnetzkennzahl": 3325,
+      "ortsnetzname": "Heiligenkreuz im Lafnitztal"
+    },
+    {
+      "ortsnetzkennzahl": 3326,
+      "ortsnetzname": "Stegersbach"
+    },
+    {
+      "ortsnetzkennzahl": 3327,
+      "ortsnetzname": "Sankt Michael im Burgenland"
+    },
+    {
+      "ortsnetzkennzahl": 3328,
+      "ortsnetzname": "Kukmirn"
+    },
+    {
+      "ortsnetzkennzahl": 3329,
+      "ortsnetzname": "Jennersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3331,
+      "ortsnetzname": "Sankt Lorenzen am Wechsel"
+    },
+    {
+      "ortsnetzkennzahl": 3332,
+      "ortsnetzname": "Hartberg"
+    },
+    {
+      "ortsnetzkennzahl": 3333,
+      "ortsnetzname": "Sebersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3334,
+      "ortsnetzname": "Kaindorf"
+    },
+    {
+      "ortsnetzkennzahl": 3335,
+      "ortsnetzname": "Pöllau"
+    },
+    {
+      "ortsnetzkennzahl": 3336,
+      "ortsnetzname": "Waldbach"
+    },
+    {
+      "ortsnetzkennzahl": 3337,
+      "ortsnetzname": "Vorau"
+    },
+    {
+      "ortsnetzkennzahl": 3338,
+      "ortsnetzname": "Lafnitz"
+    },
+    {
+      "ortsnetzkennzahl": 3339,
+      "ortsnetzname": "Friedberg"
+    },
+    {
+      "ortsnetzkennzahl": 3352,
+      "ortsnetzname": "Oberwart"
+    },
+    {
+      "ortsnetzkennzahl": 3353,
+      "ortsnetzname": "Oberschützen"
+    },
+    {
+      "ortsnetzkennzahl": 3354,
+      "ortsnetzname": "Bernstein"
+    },
+    {
+      "ortsnetzkennzahl": 3355,
+      "ortsnetzname": "Stadtschlaining"
+    },
+    {
+      "ortsnetzkennzahl": 3356,
+      "ortsnetzname": "Markt Allhau"
+    },
+    {
+      "ortsnetzkennzahl": 3357,
+      "ortsnetzname": "Pinkafeld"
+    },
+    {
+      "ortsnetzkennzahl": 3358,
+      "ortsnetzname": "Litzelsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3359,
+      "ortsnetzname": "Loipersdorf-Kitzladen"
+    },
+    {
+      "ortsnetzkennzahl": 3362,
+      "ortsnetzname": "Großpetersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3363,
+      "ortsnetzname": "Rechnitz"
+    },
+    {
+      "ortsnetzkennzahl": 3364,
+      "ortsnetzname": "Hannersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3365,
+      "ortsnetzname": "Deutsch Schützen-Eisenberg"
+    },
+    {
+      "ortsnetzkennzahl": 3366,
+      "ortsnetzname": "Kohfidisch"
+    },
+    {
+      "ortsnetzkennzahl": 3382,
+      "ortsnetzname": "Fürstenfeld"
+    },
+    {
+      "ortsnetzkennzahl": 3383,
+      "ortsnetzname": "Burgau"
+    },
+    {
+      "ortsnetzkennzahl": 3385,
+      "ortsnetzname": "Ilz"
+    },
+    {
+      "ortsnetzkennzahl": 3386,
+      "ortsnetzname": "Großsteinbach"
+    },
+    {
+      "ortsnetzkennzahl": 3387,
+      "ortsnetzname": "Söchau"
+    },
+    {
+      "ortsnetzkennzahl": 3452,
+      "ortsnetzname": "Leibnitz"
+    },
+    {
+      "ortsnetzkennzahl": 3453,
+      "ortsnetzname": "Ehrenhausen"
+    },
+    {
+      "ortsnetzkennzahl": 3454,
+      "ortsnetzname": "Leutschach"
+    },
+    {
+      "ortsnetzkennzahl": 3455,
+      "ortsnetzname": "Arnfels"
+    },
+    {
+      "ortsnetzkennzahl": 3456,
+      "ortsnetzname": "Fresing"
+    },
+    {
+      "ortsnetzkennzahl": 3457,
+      "ortsnetzname": "Gleinstätten"
+    },
+    {
+      "ortsnetzkennzahl": 3460,
+      "ortsnetzname": "Soboth"
+    },
+    {
+      "ortsnetzkennzahl": 3461,
+      "ortsnetzname": "Trahütten"
+    },
+    {
+      "ortsnetzkennzahl": 3462,
+      "ortsnetzname": "Deutschlandsberg"
+    },
+    {
+      "ortsnetzkennzahl": 3463,
+      "ortsnetzname": "Stainz"
+    },
+    {
+      "ortsnetzkennzahl": 3464,
+      "ortsnetzname": "Groß Sankt Florian"
+    },
+    {
+      "ortsnetzkennzahl": 3465,
+      "ortsnetzname": "Pölfing-Brunn"
+    },
+    {
+      "ortsnetzkennzahl": 3466,
+      "ortsnetzname": "Eibiswald"
+    },
+    {
+      "ortsnetzkennzahl": 3467,
+      "ortsnetzname": "Schwanberg"
+    },
+    {
+      "ortsnetzkennzahl": 3468,
+      "ortsnetzname": "Sankt Oswald ob Eibiswald"
+    },
+    {
+      "ortsnetzkennzahl": 3469,
+      "ortsnetzname": "Sankt Oswald im Freiland."
+    },
+    {
+      "ortsnetzkennzahl": 3472,
+      "ortsnetzname": "Mureck"
+    },
+    {
+      "ortsnetzkennzahl": 3473,
+      "ortsnetzname": "Straden"
+    },
+    {
+      "ortsnetzkennzahl": 3474,
+      "ortsnetzname": "Deutsch Goritz"
+    },
+    {
+      "ortsnetzkennzahl": 3475,
+      "ortsnetzname": "Hürth"
+    },
+    {
+      "ortsnetzkennzahl": 3476,
+      "ortsnetzname": "Bad Radkersburg"
+    },
+    {
+      "ortsnetzkennzahl": 3477,
+      "ortsnetzname": "Sankt Peter am Ottersbach"
+    },
+    {
+      "ortsnetzkennzahl": 3512,
+      "ortsnetzname": "Knittelfeld"
+    },
+    {
+      "ortsnetzkennzahl": 3513,
+      "ortsnetzname": "Bischoffeld"
+    },
+    {
+      "ortsnetzkennzahl": 3514,
+      "ortsnetzname": "Seckau"
+    },
+    {
+      "ortsnetzkennzahl": 3515,
+      "ortsnetzname": "Sankt Lorenzen bei Knittelfd"
+    },
+    {
+      "ortsnetzkennzahl": 3516,
+      "ortsnetzname": "Kleinlobming"
+    },
+    {
+      "ortsnetzkennzahl": 3532,
+      "ortsnetzname": "Murau"
+    },
+    {
+      "ortsnetzkennzahl": 3533,
+      "ortsnetzname": "Turrach"
+    },
+    {
+      "ortsnetzkennzahl": 3534,
+      "ortsnetzname": "Stadl an der Mur"
+    },
+    {
+      "ortsnetzkennzahl": 3535,
+      "ortsnetzname": "Krakaudorf"
+    },
+    {
+      "ortsnetzkennzahl": 3536,
+      "ortsnetzname": "Sankt Peter am Kammersberg"
+    },
+    {
+      "ortsnetzkennzahl": 3537,
+      "ortsnetzname": "Sankt Georgen ob Murau"
+    },
+    {
+      "ortsnetzkennzahl": 3571,
+      "ortsnetzname": "Möderbrugg"
+    },
+    {
+      "ortsnetzkennzahl": 3572,
+      "ortsnetzname": "Judenburg"
+    },
+    {
+      "ortsnetzkennzahl": 3573,
+      "ortsnetzname": "Fohnsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 3574,
+      "ortsnetzname": "Pusterwald"
+    },
+    {
+      "ortsnetzkennzahl": 3575,
+      "ortsnetzname": "Sankt Johann am Tauern"
+    },
+    {
+      "ortsnetzkennzahl": 3576,
+      "ortsnetzname": "Bretstein"
+    },
+    {
+      "ortsnetzkennzahl": 3577,
+      "ortsnetzname": "Zeltweg"
+    },
+    {
+      "ortsnetzkennzahl": 3578,
+      "ortsnetzname": "Obdach"
+    },
+    {
+      "ortsnetzkennzahl": 3579,
+      "ortsnetzname": "Pöls"
+    },
+    {
+      "ortsnetzkennzahl": 3581,
+      "ortsnetzname": "Oberwölz"
+    },
+    {
+      "ortsnetzkennzahl": 3582,
+      "ortsnetzname": "Scheifling"
+    },
+    {
+      "ortsnetzkennzahl": 3583,
+      "ortsnetzname": "Unzmarkt"
+    },
+    {
+      "ortsnetzkennzahl": 3584,
+      "ortsnetzname": "Neumarkt in Steiermark"
+    },
+    {
+      "ortsnetzkennzahl": 3585,
+      "ortsnetzname": "Sankt Lambrecht"
+    },
+    {
+      "ortsnetzkennzahl": 3586,
+      "ortsnetzname": "Mühlen"
+    },
+    {
+      "ortsnetzkennzahl": 3587,
+      "ortsnetzname": "Schönberg-Lachtal"
+    },
+    {
+      "ortsnetzkennzahl": 3588,
+      "ortsnetzname": "Katsch an der Mur"
+    },
+    {
+      "ortsnetzkennzahl": 3611,
+      "ortsnetzname": "Johnsbach"
+    },
+    {
+      "ortsnetzkennzahl": 3612,
+      "ortsnetzname": "Liezen"
+    },
+    {
+      "ortsnetzkennzahl": 3613,
+      "ortsnetzname": "Admont"
+    },
+    {
+      "ortsnetzkennzahl": 3614,
+      "ortsnetzname": "Rottenmann"
+    },
+    {
+      "ortsnetzkennzahl": 3615,
+      "ortsnetzname": "Trieben"
+    },
+    {
+      "ortsnetzkennzahl": 3616,
+      "ortsnetzname": "Selzthal"
+    },
+    {
+      "ortsnetzkennzahl": 3617,
+      "ortsnetzname": "Gaishorn am See"
+    },
+    {
+      "ortsnetzkennzahl": 3618,
+      "ortsnetzname": "Hohentauern"
+    },
+    {
+      "ortsnetzkennzahl": 3619,
+      "ortsnetzname": "Oppenberg"
+    },
+    {
+      "ortsnetzkennzahl": 3622,
+      "ortsnetzname": "Bad Aussee"
+    },
+    {
+      "ortsnetzkennzahl": 3623,
+      "ortsnetzname": "Bad Mitterndorf"
+    },
+    {
+      "ortsnetzkennzahl": 3624,
+      "ortsnetzname": "Pichl-Kainisch"
+    },
+    {
+      "ortsnetzkennzahl": 3631,
+      "ortsnetzname": "Unterlaussa"
+    },
+    {
+      "ortsnetzkennzahl": 3632,
+      "ortsnetzname": "Sankt Gallen"
+    },
+    {
+      "ortsnetzkennzahl": 3633,
+      "ortsnetzname": "Landl"
+    },
+    {
+      "ortsnetzkennzahl": 3634,
+      "ortsnetzname": "Hieflau"
+    },
+    {
+      "ortsnetzkennzahl": 3635,
+      "ortsnetzname": "Radmer"
+    },
+    {
+      "ortsnetzkennzahl": 3636,
+      "ortsnetzname": "Wildalpen"
+    },
+    {
+      "ortsnetzkennzahl": 3637,
+      "ortsnetzname": "Gams bei Hieflau"
+    },
+    {
+      "ortsnetzkennzahl": 3638,
+      "ortsnetzname": "Palfau"
+    },
+    {
+      "ortsnetzkennzahl": 3680,
+      "ortsnetzname": "Donnersbachwald"
+    },
+    {
+      "ortsnetzkennzahl": 3682,
+      "ortsnetzname": "Stainach"
+    },
+    {
+      "ortsnetzkennzahl": 3683,
+      "ortsnetzname": "Donnersbach"
+    },
+    {
+      "ortsnetzkennzahl": 3684,
+      "ortsnetzname": "Sankt Martin am Grimming"
+    },
+    {
+      "ortsnetzkennzahl": 3685,
+      "ortsnetzname": "Gröbming"
+    },
+    {
+      "ortsnetzkennzahl": 3686,
+      "ortsnetzname": "Haus"
+    },
+    {
+      "ortsnetzkennzahl": 3687,
+      "ortsnetzname": "Schladming"
+    },
+    {
+      "ortsnetzkennzahl": 3688,
+      "ortsnetzname": "Tauplitz"
+    },
+    {
+      "ortsnetzkennzahl": 3689,
+      "ortsnetzname": "Sankt Nikolai im Sölktal"
+    },
+    {
+      "ortsnetzkennzahl": 3832,
+      "ortsnetzname": "Kraubath an der Mur"
+    },
+    {
+      "ortsnetzkennzahl": 3833,
+      "ortsnetzname": "Traboch"
+    },
+    {
+      "ortsnetzkennzahl": 3834,
+      "ortsnetzname": "Wald am Schoberpaß"
+    },
+    {
+      "ortsnetzkennzahl": 3842,
+      "ortsnetzname": "Leoben"
+    },
+    {
+      "ortsnetzkennzahl": 3843,
+      "ortsnetzname": "Sankt Michael in Obersteiermark"
+    },
+    {
+      "ortsnetzkennzahl": 3844,
+      "ortsnetzname": "Kammern im Liesingtal"
+    },
+    {
+      "ortsnetzkennzahl": 3845,
+      "ortsnetzname": "Mautern in Steiermark"
+    },
+    {
+      "ortsnetzkennzahl": 3846,
+      "ortsnetzname": "Kalwang"
+    },
+    {
+      "ortsnetzkennzahl": 3847,
+      "ortsnetzname": "Trofaiach"
+    },
+    {
+      "ortsnetzkennzahl": 3848,
+      "ortsnetzname": "Eisenerz"
+    },
+    {
+      "ortsnetzkennzahl": 3849,
+      "ortsnetzname": "Vordernberg"
+    },
+    {
+      "ortsnetzkennzahl": 3852,
+      "ortsnetzname": "Mürzzuschlag"
+    },
+    {
+      "ortsnetzkennzahl": 3853,
+      "ortsnetzname": "Spital am Semmering"
+    },
+    {
+      "ortsnetzkennzahl": 3854,
+      "ortsnetzname": "Langenwang"
+    },
+    {
+      "ortsnetzkennzahl": 3855,
+      "ortsnetzname": "Krieglach"
+    },
+    {
+      "ortsnetzkennzahl": 3856,
+      "ortsnetzname": "Veitsch"
+    },
+    {
+      "ortsnetzkennzahl": 3857,
+      "ortsnetzname": "Neuberg an der Mürz"
+    },
+    {
+      "ortsnetzkennzahl": 3858,
+      "ortsnetzname": "Mitterdorf im Mürztal"
+    },
+    {
+      "ortsnetzkennzahl": 3859,
+      "ortsnetzname": "Mürzsteg"
+    },
+    {
+      "ortsnetzkennzahl": 3861,
+      "ortsnetzname": "Aflenz"
+    },
+    {
+      "ortsnetzkennzahl": 3862,
+      "ortsnetzname": "Bruck an der Mur"
+    },
+    {
+      "ortsnetzkennzahl": 3863,
+      "ortsnetzname": "Turnau"
+    },
+    {
+      "ortsnetzkennzahl": 3864,
+      "ortsnetzname": "Sankt Marein im Mürztal"
+    },
+    {
+      "ortsnetzkennzahl": 3865,
+      "ortsnetzname": "Kindberg"
+    },
+    {
+      "ortsnetzkennzahl": 3866,
+      "ortsnetzname": "Breitenau am Hochlantsch"
+    },
+    {
+      "ortsnetzkennzahl": 3867,
+      "ortsnetzname": "Pernegg an der Mur"
+    },
+    {
+      "ortsnetzkennzahl": 3868,
+      "ortsnetzname": "Tragöß"
+    },
+    {
+      "ortsnetzkennzahl": 3869,
+      "ortsnetzname": "Sankt Katharein an der Laming"
+    },
+    {
+      "ortsnetzkennzahl": 3882,
+      "ortsnetzname": "Mariazell"
+    },
+    {
+      "ortsnetzkennzahl": 3883,
+      "ortsnetzname": "Terz"
+    },
+    {
+      "ortsnetzkennzahl": 3884,
+      "ortsnetzname": "Wegscheid"
+    },
+    {
+      "ortsnetzkennzahl": 3885,
+      "ortsnetzname": "Greith"
+    },
+    {
+      "ortsnetzkennzahl": 3886,
+      "ortsnetzname": "Weichselboden"
+    },
+    {
+      "ortsnetzkennzahl": 4212,
+      "ortsnetzname": "Sankt Veit an der Glan"
+    },
+    {
+      "ortsnetzkennzahl": 4213,
+      "ortsnetzname": "Launsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4214,
+      "ortsnetzname": "Brückl"
+    },
+    {
+      "ortsnetzkennzahl": 4215,
+      "ortsnetzname": "Liebenfels"
+    },
+    {
+      "ortsnetzkennzahl": 4220,
+      "ortsnetzname": "Köttmannsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4221,
+      "ortsnetzname": "Gallizien"
+    },
+    {
+      "ortsnetzkennzahl": 4223,
+      "ortsnetzname": "Maria Saal"
+    },
+    {
+      "ortsnetzkennzahl": 4224,
+      "ortsnetzname": "Pischeldorf"
+    },
+    {
+      "ortsnetzkennzahl": 4225,
+      "ortsnetzname": "Grafenstein"
+    },
+    {
+      "ortsnetzkennzahl": 4226,
+      "ortsnetzname": "Sankt Margareten im Rosental"
+    },
+    {
+      "ortsnetzkennzahl": 4227,
+      "ortsnetzname": "Ferlach"
+    },
+    {
+      "ortsnetzkennzahl": 4228,
+      "ortsnetzname": "Feistritz im Rosental"
+    },
+    {
+      "ortsnetzkennzahl": 4229,
+      "ortsnetzname": "Krumpendorf am Wörther See"
+    },
+    {
+      "ortsnetzkennzahl": 4230,
+      "ortsnetzname": "Globasnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4231,
+      "ortsnetzname": "Mittertrixen"
+    },
+    {
+      "ortsnetzkennzahl": 4232,
+      "ortsnetzname": "Völkermarkt"
+    },
+    {
+      "ortsnetzkennzahl": 4233,
+      "ortsnetzname": "Griffen"
+    },
+    {
+      "ortsnetzkennzahl": 4234,
+      "ortsnetzname": "Ruden"
+    },
+    {
+      "ortsnetzkennzahl": 4235,
+      "ortsnetzname": "Bleiburg"
+    },
+    {
+      "ortsnetzkennzahl": 4236,
+      "ortsnetzname": "Eberndorf"
+    },
+    {
+      "ortsnetzkennzahl": 4237,
+      "ortsnetzname": "Miklauzhof"
+    },
+    {
+      "ortsnetzkennzahl": 4238,
+      "ortsnetzname": "Eisenkappel-Vellach"
+    },
+    {
+      "ortsnetzkennzahl": 4239,
+      "ortsnetzname": "Sankt Kanzian am Klopeiner See"
+    },
+    {
+      "ortsnetzkennzahl": 4240,
+      "ortsnetzname": "Bad Kleinkirchheim"
+    },
+    {
+      "ortsnetzkennzahl": 4242,
+      "ortsnetzname": "Villach"
+    },
+    {
+      "ortsnetzkennzahl": 4243,
+      "ortsnetzname": "Bodensdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4244,
+      "ortsnetzname": "Bad Bleiberg"
+    },
+    {
+      "ortsnetzkennzahl": 4245,
+      "ortsnetzname": "Feistritz an der Drau"
+    },
+    {
+      "ortsnetzkennzahl": 4246,
+      "ortsnetzname": "Radenthein"
+    },
+    {
+      "ortsnetzkennzahl": 4247,
+      "ortsnetzname": "Afritz"
+    },
+    {
+      "ortsnetzkennzahl": 4248,
+      "ortsnetzname": "Treffen"
+    },
+    {
+      "ortsnetzkennzahl": 4252,
+      "ortsnetzname": "Wernberg"
+    },
+    {
+      "ortsnetzkennzahl": 4253,
+      "ortsnetzname": "Sankt Jakob im Rosental"
+    },
+    {
+      "ortsnetzkennzahl": 4254,
+      "ortsnetzname": "Faak am See"
+    },
+    {
+      "ortsnetzkennzahl": 4255,
+      "ortsnetzname": "Arnoldstein"
+    },
+    {
+      "ortsnetzkennzahl": 4256,
+      "ortsnetzname": "Nötsch im Gailtal"
+    },
+    {
+      "ortsnetzkennzahl": 4257,
+      "ortsnetzname": "Fürnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4258,
+      "ortsnetzname": "Gummern"
+    },
+    {
+      "ortsnetzkennzahl": 4262,
+      "ortsnetzname": "Treibach"
+    },
+    {
+      "ortsnetzkennzahl": 4263,
+      "ortsnetzname": "Hüttenberg"
+    },
+    {
+      "ortsnetzkennzahl": 4264,
+      "ortsnetzname": "Klein Sankt Paul"
+    },
+    {
+      "ortsnetzkennzahl": 4265,
+      "ortsnetzname": "Weitensfeld im Gurktal"
+    },
+    {
+      "ortsnetzkennzahl": 4266,
+      "ortsnetzname": "Straßburg"
+    },
+    {
+      "ortsnetzkennzahl": 4267,
+      "ortsnetzname": "Metnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4268,
+      "ortsnetzname": "Friesach"
+    },
+    {
+      "ortsnetzkennzahl": 4269,
+      "ortsnetzname": "Flattnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4271,
+      "ortsnetzname": "Steuerberg"
+    },
+    {
+      "ortsnetzkennzahl": 4272,
+      "ortsnetzname": "Pörtschach am Wörther See"
+    },
+    {
+      "ortsnetzkennzahl": 4273,
+      "ortsnetzname": "Reifnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4274,
+      "ortsnetzname": "Velden am Wörther See"
+    },
+    {
+      "ortsnetzkennzahl": 4275,
+      "ortsnetzname": "Ebene Reichenau"
+    },
+    {
+      "ortsnetzkennzahl": 4276,
+      "ortsnetzname": "Feldkirchen in Kärnten"
+    },
+    {
+      "ortsnetzkennzahl": 4277,
+      "ortsnetzname": "Glanegg"
+    },
+    {
+      "ortsnetzkennzahl": 4278,
+      "ortsnetzname": "Gnesau"
+    },
+    {
+      "ortsnetzkennzahl": 4279,
+      "ortsnetzname": "Sirnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4282,
+      "ortsnetzname": "Hermagor"
+    },
+    {
+      "ortsnetzkennzahl": 4283,
+      "ortsnetzname": "Sankt Stefan im Gailtal"
+    },
+    {
+      "ortsnetzkennzahl": 4284,
+      "ortsnetzname": "Kirchbach"
+    },
+    {
+      "ortsnetzkennzahl": 4285,
+      "ortsnetzname": "Tröpolach"
+    },
+    {
+      "ortsnetzkennzahl": 4286,
+      "ortsnetzname": "Weißbriach"
+    },
+    {
+      "ortsnetzkennzahl": 4350,
+      "ortsnetzname": "Bad Sankt Leonhard im Lavanttal"
+    },
+    {
+      "ortsnetzkennzahl": 4352,
+      "ortsnetzname": "Wolfsberg"
+    },
+    {
+      "ortsnetzkennzahl": 4353,
+      "ortsnetzname": "Prebl"
+    },
+    {
+      "ortsnetzkennzahl": 4354,
+      "ortsnetzname": "Preitenegg"
+    },
+    {
+      "ortsnetzkennzahl": 4355,
+      "ortsnetzname": "Gemmersdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4356,
+      "ortsnetzname": "Lavamünd"
+    },
+    {
+      "ortsnetzkennzahl": 4357,
+      "ortsnetzname": "Sankt Paul im Lavanttal"
+    },
+    {
+      "ortsnetzkennzahl": 4358,
+      "ortsnetzname": "Sankt Andrä"
+    },
+    {
+      "ortsnetzkennzahl": 4359,
+      "ortsnetzname": "Reichenfels"
+    },
+    {
+      "ortsnetzkennzahl": 463,
+      "ortsnetzname": "Klagenfurt"
+    },
+    {
+      "ortsnetzkennzahl": 4710,
+      "ortsnetzname": "Oberdrauburg"
+    },
+    {
+      "ortsnetzkennzahl": 4712,
+      "ortsnetzname": "Greifenburg"
+    },
+    {
+      "ortsnetzkennzahl": 4713,
+      "ortsnetzname": "Techendorf"
+    },
+    {
+      "ortsnetzkennzahl": 4714,
+      "ortsnetzname": "Dellach im Drautal"
+    },
+    {
+      "ortsnetzkennzahl": 4715,
+      "ortsnetzname": "Kötschach-Mauthen"
+    },
+    {
+      "ortsnetzkennzahl": 4716,
+      "ortsnetzname": "Lesachtal"
+    },
+    {
+      "ortsnetzkennzahl": 4717,
+      "ortsnetzname": "Steinfeld"
+    },
+    {
+      "ortsnetzkennzahl": 4718,
+      "ortsnetzname": "Dellach"
+    },
+    {
+      "ortsnetzkennzahl": 4732,
+      "ortsnetzname": "Gmünd in Kärnten"
+    },
+    {
+      "ortsnetzkennzahl": 4733,
+      "ortsnetzname": "Malta"
+    },
+    {
+      "ortsnetzkennzahl": 4734,
+      "ortsnetzname": "Rennweg"
+    },
+    {
+      "ortsnetzkennzahl": 4735,
+      "ortsnetzname": "Kremsbrücke"
+    },
+    {
+      "ortsnetzkennzahl": 4736,
+      "ortsnetzname": "Innerkrems"
+    },
+    {
+      "ortsnetzkennzahl": 4761,
+      "ortsnetzname": "Stockenboi"
+    },
+    {
+      "ortsnetzkennzahl": 4762,
+      "ortsnetzname": "Spittal an der Drau"
+    },
+    {
+      "ortsnetzkennzahl": 4766,
+      "ortsnetzname": "Millstatt"
+    },
+    {
+      "ortsnetzkennzahl": 4767,
+      "ortsnetzname": "Rothenthurn"
+    },
+    {
+      "ortsnetzkennzahl": 4768,
+      "ortsnetzname": "Kleblach-Lind"
+    },
+    {
+      "ortsnetzkennzahl": 4769,
+      "ortsnetzname": "Möllbrücke"
+    },
+    {
+      "ortsnetzkennzahl": 4782,
+      "ortsnetzname": "Obervellach"
+    },
+    {
+      "ortsnetzkennzahl": 4783,
+      "ortsnetzname": "Reißeck"
+    },
+    {
+      "ortsnetzkennzahl": 4784,
+      "ortsnetzname": "Mallnitz"
+    },
+    {
+      "ortsnetzkennzahl": 4785,
+      "ortsnetzname": "Außerfragant"
+    },
+    {
+      "ortsnetzkennzahl": 4822,
+      "ortsnetzname": "Winklern"
+    },
+    {
+      "ortsnetzkennzahl": 4823,
+      "ortsnetzname": "Tresdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4824,
+      "ortsnetzname": "Heiligenblut"
+    },
+    {
+      "ortsnetzkennzahl": 4825,
+      "ortsnetzname": "Großkirchheim"
+    },
+    {
+      "ortsnetzkennzahl": 4826,
+      "ortsnetzname": "Mörtschach"
+    },
+    {
+      "ortsnetzkennzahl": 4842,
+      "ortsnetzname": "Sillian"
+    },
+    {
+      "ortsnetzkennzahl": 4843,
+      "ortsnetzname": "Außervillgraten"
+    },
+    {
+      "ortsnetzkennzahl": 4846,
+      "ortsnetzname": "Abfaltersbach"
+    },
+    {
+      "ortsnetzkennzahl": 4847,
+      "ortsnetzname": "Obertilliach"
+    },
+    {
+      "ortsnetzkennzahl": 4848,
+      "ortsnetzname": "Kartitsch"
+    },
+    {
+      "ortsnetzkennzahl": 4852,
+      "ortsnetzname": "Lienz"
+    },
+    {
+      "ortsnetzkennzahl": 4853,
+      "ortsnetzname": "Ainet"
+    },
+    {
+      "ortsnetzkennzahl": 4855,
+      "ortsnetzname": "Assling"
+    },
+    {
+      "ortsnetzkennzahl": 4858,
+      "ortsnetzname": "Nikolsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 4872,
+      "ortsnetzname": "Huben"
+    },
+    {
+      "ortsnetzkennzahl": 4873,
+      "ortsnetzname": "Sankt Jakob in Defereggen"
+    },
+    {
+      "ortsnetzkennzahl": 4874,
+      "ortsnetzname": "Virgen"
+    },
+    {
+      "ortsnetzkennzahl": 4875,
+      "ortsnetzname": "Matrei in Osttirol"
+    },
+    {
+      "ortsnetzkennzahl": 4876,
+      "ortsnetzname": "Kals am Großglockner"
+    },
+    {
+      "ortsnetzkennzahl": 4877,
+      "ortsnetzname": "Prägraten am Großvenediger"
+    },
+    {
+      "ortsnetzkennzahl": 4879,
+      "ortsnetzname": "Sankt Veit in Defereggen"
+    },
+    {
+      "ortsnetzkennzahl": 512,
+      "ortsnetzname": "Innsbruck"
+    },
+    {
+      "ortsnetzkennzahl": 5212,
+      "ortsnetzname": "Seefeld in Tirol"
+    },
+    {
+      "ortsnetzkennzahl": 5213,
+      "ortsnetzname": "Scharnitz"
+    },
+    {
+      "ortsnetzkennzahl": 5214,
+      "ortsnetzname": "Leutasch"
+    },
+    {
+      "ortsnetzkennzahl": 5223,
+      "ortsnetzname": "Hall i.Tirol"
+    },
+    {
+      "ortsnetzkennzahl": 5224,
+      "ortsnetzname": "Wattens"
+    },
+    {
+      "ortsnetzkennzahl": 5225,
+      "ortsnetzname": "Fulpmes"
+    },
+    {
+      "ortsnetzkennzahl": 5226,
+      "ortsnetzname": "Neustift im Stubaital"
+    },
+    {
+      "ortsnetzkennzahl": 5230,
+      "ortsnetzname": "Sellrain"
+    },
+    {
+      "ortsnetzkennzahl": 5232,
+      "ortsnetzname": "Kematen in Tirol"
+    },
+    {
+      "ortsnetzkennzahl": 5234,
+      "ortsnetzname": "Axams"
+    },
+    {
+      "ortsnetzkennzahl": 5236,
+      "ortsnetzname": "Gries im Sellrain"
+    },
+    {
+      "ortsnetzkennzahl": 5238,
+      "ortsnetzname": "Zirl"
+    },
+    {
+      "ortsnetzkennzahl": 5239,
+      "ortsnetzname": "Kühtai"
+    },
+    {
+      "ortsnetzkennzahl": 5242,
+      "ortsnetzname": "Schwaz"
+    },
+    {
+      "ortsnetzkennzahl": 5243,
+      "ortsnetzname": "Maurach"
+    },
+    {
+      "ortsnetzkennzahl": 5244,
+      "ortsnetzname": "Jenbach"
+    },
+    {
+      "ortsnetzkennzahl": 5245,
+      "ortsnetzname": "Hinterriß"
+    },
+    {
+      "ortsnetzkennzahl": 5246,
+      "ortsnetzname": "Achenkirch"
+    },
+    {
+      "ortsnetzkennzahl": 5248,
+      "ortsnetzname": "Steinberg am Rofan"
+    },
+    {
+      "ortsnetzkennzahl": 5252,
+      "ortsnetzname": "Oetz"
+    },
+    {
+      "ortsnetzkennzahl": 5253,
+      "ortsnetzname": "Längenfeld"
+    },
+    {
+      "ortsnetzkennzahl": 5254,
+      "ortsnetzname": "Sölden"
+    },
+    {
+      "ortsnetzkennzahl": 5255,
+      "ortsnetzname": "Umhausen"
+    },
+    {
+      "ortsnetzkennzahl": 5256,
+      "ortsnetzname": "Untergurgl"
+    },
+    {
+      "ortsnetzkennzahl": 5262,
+      "ortsnetzname": "Telfs"
+    },
+    {
+      "ortsnetzkennzahl": 5263,
+      "ortsnetzname": "Silz"
+    },
+    {
+      "ortsnetzkennzahl": 5264,
+      "ortsnetzname": "Mieming"
+    },
+    {
+      "ortsnetzkennzahl": 5265,
+      "ortsnetzname": "Nassereith"
+    },
+    {
+      "ortsnetzkennzahl": 5266,
+      "ortsnetzname": "Ötztal-Bahnhof"
+    },
+    {
+      "ortsnetzkennzahl": 5272,
+      "ortsnetzname": "Steinach am Brenner"
+    },
+    {
+      "ortsnetzkennzahl": 5273,
+      "ortsnetzname": "Matrei am Brenner"
+    },
+    {
+      "ortsnetzkennzahl": 5274,
+      "ortsnetzname": "Gries am Brenner"
+    },
+    {
+      "ortsnetzkennzahl": 5275,
+      "ortsnetzname": "Trins"
+    },
+    {
+      "ortsnetzkennzahl": 5276,
+      "ortsnetzname": "Gschnitz"
+    },
+    {
+      "ortsnetzkennzahl": 5278,
+      "ortsnetzname": "Navis"
+    },
+    {
+      "ortsnetzkennzahl": 5279,
+      "ortsnetzname": "Sankt Jodok am Brenner"
+    },
+    {
+      "ortsnetzkennzahl": 5280,
+      "ortsnetzname": "Hochfügen"
+    },
+    {
+      "ortsnetzkennzahl": 5282,
+      "ortsnetzname": "Zell am Ziller"
+    },
+    {
+      "ortsnetzkennzahl": 5283,
+      "ortsnetzname": "Kaltenbach"
+    },
+    {
+      "ortsnetzkennzahl": 5284,
+      "ortsnetzname": "Gerlos"
+    },
+    {
+      "ortsnetzkennzahl": 5285,
+      "ortsnetzname": "Mayrhofen"
+    },
+    {
+      "ortsnetzkennzahl": 5286,
+      "ortsnetzname": "Ginzling"
+    },
+    {
+      "ortsnetzkennzahl": 5287,
+      "ortsnetzname": "Tux"
+    },
+    {
+      "ortsnetzkennzahl": 5288,
+      "ortsnetzname": "Fügen"
+    },
+    {
+      "ortsnetzkennzahl": 5289,
+      "ortsnetzname": "Häusling"
+    },
+    {
+      "ortsnetzkennzahl": 5331,
+      "ortsnetzname": "Brandenberg"
+    },
+    {
+      "ortsnetzkennzahl": 5332,
+      "ortsnetzname": "Wörgl"
+    },
+    {
+      "ortsnetzkennzahl": 5333,
+      "ortsnetzname": "Söll"
+    },
+    {
+      "ortsnetzkennzahl": 5334,
+      "ortsnetzname": "Westendorf"
+    },
+    {
+      "ortsnetzkennzahl": 5335,
+      "ortsnetzname": "Hopfgarten im Brixental"
+    },
+    {
+      "ortsnetzkennzahl": 5336,
+      "ortsnetzname": "Alpbach"
+    },
+    {
+      "ortsnetzkennzahl": 5337,
+      "ortsnetzname": "Brixlegg"
+    },
+    {
+      "ortsnetzkennzahl": 5338,
+      "ortsnetzname": "Kundl"
+    },
+    {
+      "ortsnetzkennzahl": 5339,
+      "ortsnetzname": "Wildschönau"
+    },
+    {
+      "ortsnetzkennzahl": 5352,
+      "ortsnetzname": "Sankt Johann in Tirol"
+    },
+    {
+      "ortsnetzkennzahl": 5353,
+      "ortsnetzname": "Waidring"
+    },
+    {
+      "ortsnetzkennzahl": 5354,
+      "ortsnetzname": "Fieberbrunn"
+    },
+    {
+      "ortsnetzkennzahl": 5355,
+      "ortsnetzname": "Jochberg"
+    },
+    {
+      "ortsnetzkennzahl": 5356,
+      "ortsnetzname": "Kitzbühel"
+    },
+    {
+      "ortsnetzkennzahl": 5357,
+      "ortsnetzname": "Kirchberg in Tirol"
+    },
+    {
+      "ortsnetzkennzahl": 5358,
+      "ortsnetzname": "Ellmau"
+    },
+    {
+      "ortsnetzkennzahl": 5359,
+      "ortsnetzname": "Hochfilzen"
+    },
+    {
+      "ortsnetzkennzahl": 5372,
+      "ortsnetzname": "Kufstein"
+    },
+    {
+      "ortsnetzkennzahl": 5373,
+      "ortsnetzname": "Ebbs"
+    },
+    {
+      "ortsnetzkennzahl": 5374,
+      "ortsnetzname": "Walchsee"
+    },
+    {
+      "ortsnetzkennzahl": 5375,
+      "ortsnetzname": "Kössen"
+    },
+    {
+      "ortsnetzkennzahl": 5376,
+      "ortsnetzname": "Thiersee"
+    },
+    {
+      "ortsnetzkennzahl": 5412,
+      "ortsnetzname": "Imst"
+    },
+    {
+      "ortsnetzkennzahl": 5413,
+      "ortsnetzname": "Sankt Leonhard im Pitztal."
+    },
+    {
+      "ortsnetzkennzahl": 5414,
+      "ortsnetzname": "Wenns"
+    },
+    {
+      "ortsnetzkennzahl": 5417,
+      "ortsnetzname": "Roppen"
+    },
+    {
+      "ortsnetzkennzahl": 5418,
+      "ortsnetzname": "Schönwies"
+    },
+    {
+      "ortsnetzkennzahl": 5441,
+      "ortsnetzname": "See"
+    },
+    {
+      "ortsnetzkennzahl": 5442,
+      "ortsnetzname": "Landeck"
+    },
+    {
+      "ortsnetzkennzahl": 5443,
+      "ortsnetzname": "Galtür"
+    },
+    {
+      "ortsnetzkennzahl": 5444,
+      "ortsnetzname": "Ischgl"
+    },
+    {
+      "ortsnetzkennzahl": 5445,
+      "ortsnetzname": "Kappl"
+    },
+    {
+      "ortsnetzkennzahl": 5446,
+      "ortsnetzname": "Sankt Anton am Arlberg"
+    },
+    {
+      "ortsnetzkennzahl": 5447,
+      "ortsnetzname": "Flirsch"
+    },
+    {
+      "ortsnetzkennzahl": 5448,
+      "ortsnetzname": "Pettneu am Arlberg"
+    },
+    {
+      "ortsnetzkennzahl": 5449,
+      "ortsnetzname": "Fließ"
+    },
+    {
+      "ortsnetzkennzahl": 5472,
+      "ortsnetzname": "Prutz"
+    },
+    {
+      "ortsnetzkennzahl": 5473,
+      "ortsnetzname": "Nauders"
+    },
+    {
+      "ortsnetzkennzahl": 5474,
+      "ortsnetzname": "Pfunds"
+    },
+    {
+      "ortsnetzkennzahl": 5475,
+      "ortsnetzname": "Feichten"
+    },
+    {
+      "ortsnetzkennzahl": 5476,
+      "ortsnetzname": "Serfaus"
+    },
+    {
+      "ortsnetzkennzahl": 5477,
+      "ortsnetzname": "Tösens"
+    },
+    {
+      "ortsnetzkennzahl": 5510,
+      "ortsnetzname": "Damüls"
+    },
+    {
+      "ortsnetzkennzahl": 5512,
+      "ortsnetzname": "Egg"
+    },
+    {
+      "ortsnetzkennzahl": 5513,
+      "ortsnetzname": "Hittisau"
+    },
+    {
+      "ortsnetzkennzahl": 5514,
+      "ortsnetzname": "Bezau"
+    },
+    {
+      "ortsnetzkennzahl": 5515,
+      "ortsnetzname": "Au"
+    },
+    {
+      "ortsnetzkennzahl": 5516,
+      "ortsnetzname": "Doren"
+    },
+    {
+      "ortsnetzkennzahl": 5517,
+      "ortsnetzname": "Riezlern"
+    },
+    {
+      "ortsnetzkennzahl": 5518,
+      "ortsnetzname": "Mellau"
+    },
+    {
+      "ortsnetzkennzahl": 5519,
+      "ortsnetzname": "Schröcken"
+    },
+    {
+      "ortsnetzkennzahl": 5522,
+      "ortsnetzname": "Feldkirch"
+    },
+    {
+      "ortsnetzkennzahl": 5523,
+      "ortsnetzname": "Götzis"
+    },
+    {
+      "ortsnetzkennzahl": 5524,
+      "ortsnetzname": "Satteins"
+    },
+    {
+      "ortsnetzkennzahl": 5525,
+      "ortsnetzname": "Nenzing"
+    },
+    {
+      "ortsnetzkennzahl": 5526,
+      "ortsnetzname": "Laterns"
+    },
+    {
+      "ortsnetzkennzahl": 5550,
+      "ortsnetzname": "Thüringen"
+    },
+    {
+      "ortsnetzkennzahl": 5552,
+      "ortsnetzname": "Bludenz"
+    },
+    {
+      "ortsnetzkennzahl": 5553,
+      "ortsnetzname": "Raggal"
+    },
+    {
+      "ortsnetzkennzahl": 5554,
+      "ortsnetzname": "Sonntag"
+    },
+    {
+      "ortsnetzkennzahl": 5556,
+      "ortsnetzname": "Schruns"
+    },
+    {
+      "ortsnetzkennzahl": 5557,
+      "ortsnetzname": "Sankt Gallenkirch"
+    },
+    {
+      "ortsnetzkennzahl": 5558,
+      "ortsnetzname": "Gaschurn"
+    },
+    {
+      "ortsnetzkennzahl": 5559,
+      "ortsnetzname": "Brand"
+    },
+    {
+      "ortsnetzkennzahl": 5572,
+      "ortsnetzname": "Dornbirn"
+    },
+    {
+      "ortsnetzkennzahl": 5573,
+      "ortsnetzname": "Hörbranz"
+    },
+    {
+      "ortsnetzkennzahl": 5574,
+      "ortsnetzname": "Bregenz"
+    },
+    {
+      "ortsnetzkennzahl": 5575,
+      "ortsnetzname": "Langen bei Bregenz"
+    },
+    {
+      "ortsnetzkennzahl": 5576,
+      "ortsnetzname": "Hohenems"
+    },
+    {
+      "ortsnetzkennzahl": 5577,
+      "ortsnetzname": "Lustenau"
+    },
+    {
+      "ortsnetzkennzahl": 5578,
+      "ortsnetzname": "Höchst"
+    },
+    {
+      "ortsnetzkennzahl": 5579,
+      "ortsnetzname": "Alberschwende"
+    },
+    {
+      "ortsnetzkennzahl": 5582,
+      "ortsnetzname": "Klösterle"
+    },
+    {
+      "ortsnetzkennzahl": 5583,
+      "ortsnetzname": "Lech"
+    },
+    {
+      "ortsnetzkennzahl": 5585,
+      "ortsnetzname": "Dalaas"
+    },
+    {
+      "ortsnetzkennzahl": 5632,
+      "ortsnetzname": "Stanzach"
+    },
+    {
+      "ortsnetzkennzahl": 5633,
+      "ortsnetzname": "Hägerau"
+    },
+    {
+      "ortsnetzkennzahl": 5634,
+      "ortsnetzname": "Elbigenalp"
+    },
+    {
+      "ortsnetzkennzahl": 5635,
+      "ortsnetzname": "Elmen"
+    },
+    {
+      "ortsnetzkennzahl": 5672,
+      "ortsnetzname": "Reutte"
+    },
+    {
+      "ortsnetzkennzahl": 5673,
+      "ortsnetzname": "Ehrwald"
+    },
+    {
+      "ortsnetzkennzahl": 5674,
+      "ortsnetzname": "Bichlbach"
+    },
+    {
+      "ortsnetzkennzahl": 5675,
+      "ortsnetzname": "Tannheim"
+    },
+    {
+      "ortsnetzkennzahl": 5676,
+      "ortsnetzname": "Jungholz"
+    },
+    {
+      "ortsnetzkennzahl": 5677,
+      "ortsnetzname": "Vils"
+    },
+    {
+      "ortsnetzkennzahl": 5678,
+      "ortsnetzname": "Weißenbach am Lech"
+    },
+    {
+      "ortsnetzkennzahl": 6131,
+      "ortsnetzname": "Obertraun"
+    },
+    {
+      "ortsnetzkennzahl": 6132,
+      "ortsnetzname": "Bad Ischl"
+    },
+    {
+      "ortsnetzkennzahl": 6133,
+      "ortsnetzname": "Ebensee"
+    },
+    {
+      "ortsnetzkennzahl": 6134,
+      "ortsnetzname": "Hallstatt"
+    },
+    {
+      "ortsnetzkennzahl": 6135,
+      "ortsnetzname": "Bad Goisern"
+    },
+    {
+      "ortsnetzkennzahl": 6136,
+      "ortsnetzname": "Gosau"
+    },
+    {
+      "ortsnetzkennzahl": 6137,
+      "ortsnetzname": "Strobl"
+    },
+    {
+      "ortsnetzkennzahl": 6138,
+      "ortsnetzname": "Sankt Wolfgang im Salzkammergut"
+    },
+    {
+      "ortsnetzkennzahl": 6212,
+      "ortsnetzname": "Seekirchen am Wallersee"
+    },
+    {
+      "ortsnetzkennzahl": 6213,
+      "ortsnetzname": "Oberhofen am Irrsee"
+    },
+    {
+      "ortsnetzkennzahl": 6214,
+      "ortsnetzname": "Henndorf am Wallersee"
+    },
+    {
+      "ortsnetzkennzahl": 6215,
+      "ortsnetzname": "Straßwalchen"
+    },
+    {
+      "ortsnetzkennzahl": 6216,
+      "ortsnetzname": "Neumarkt am Wallersee"
+    },
+    {
+      "ortsnetzkennzahl": 6217,
+      "ortsnetzname": "Mattsee"
+    },
+    {
+      "ortsnetzkennzahl": 6219,
+      "ortsnetzname": "Obertrum am See"
+    },
+    {
+      "ortsnetzkennzahl": 6221,
+      "ortsnetzname": "Koppl"
+    },
+    {
+      "ortsnetzkennzahl": 6223,
+      "ortsnetzname": "Anthering"
+    },
+    {
+      "ortsnetzkennzahl": 6224,
+      "ortsnetzname": "Hintersee"
+    },
+    {
+      "ortsnetzkennzahl": 6225,
+      "ortsnetzname": "Eugendorf"
+    },
+    {
+      "ortsnetzkennzahl": 6226,
+      "ortsnetzname": "Fuschl am See"
+    },
+    {
+      "ortsnetzkennzahl": 6227,
+      "ortsnetzname": "Sankt Gilgen"
+    },
+    {
+      "ortsnetzkennzahl": 6228,
+      "ortsnetzname": "Faistenau"
+    },
+    {
+      "ortsnetzkennzahl": 6229,
+      "ortsnetzname": "Hof bei Salzburg"
+    },
+    {
+      "ortsnetzkennzahl": 6232,
+      "ortsnetzname": "Mondsee"
+    },
+    {
+      "ortsnetzkennzahl": 6233,
+      "ortsnetzname": "Oberwang"
+    },
+    {
+      "ortsnetzkennzahl": 6234,
+      "ortsnetzname": "Zell am Moos"
+    },
+    {
+      "ortsnetzkennzahl": 6235,
+      "ortsnetzname": "Thalgau"
+    },
+    {
+      "ortsnetzkennzahl": 6240,
+      "ortsnetzname": "Krispl"
+    },
+    {
+      "ortsnetzkennzahl": 6241,
+      "ortsnetzname": "Sankt Koloman"
+    },
+    {
+      "ortsnetzkennzahl": 6242,
+      "ortsnetzname": "Rußbach am Paß Gschütt"
+    },
+    {
+      "ortsnetzkennzahl": 6243,
+      "ortsnetzname": "Abtenau"
+    },
+    {
+      "ortsnetzkennzahl": 6244,
+      "ortsnetzname": "Golling an der Salzach"
+    },
+    {
+      "ortsnetzkennzahl": 6245,
+      "ortsnetzname": "Hallein"
+    },
+    {
+      "ortsnetzkennzahl": 6246,
+      "ortsnetzname": "Grödig"
+    },
+    {
+      "ortsnetzkennzahl": 6247,
+      "ortsnetzname": "Großgmain"
+    },
+    {
+      "ortsnetzkennzahl": 6272,
+      "ortsnetzname": "Oberndorf bei Salzburg"
+    },
+    {
+      "ortsnetzkennzahl": 6274,
+      "ortsnetzname": "Lamprechtshausen"
+    },
+    {
+      "ortsnetzkennzahl": 6276,
+      "ortsnetzname": "Nußdorf am Haunsberg"
+    },
+    {
+      "ortsnetzkennzahl": 6277,
+      "ortsnetzname": "Sankt Pantaleon"
+    },
+    {
+      "ortsnetzkennzahl": 6278,
+      "ortsnetzname": "Ostermiething"
+    },
+    {
+      "ortsnetzkennzahl": 6412,
+      "ortsnetzname": "Sankt Johann im Pongau"
+    },
+    {
+      "ortsnetzkennzahl": 6413,
+      "ortsnetzname": "Wagrain"
+    },
+    {
+      "ortsnetzkennzahl": 6414,
+      "ortsnetzname": "Großarl"
+    },
+    {
+      "ortsnetzkennzahl": 6415,
+      "ortsnetzname": "Schwarzach im Pongau"
+    },
+    {
+      "ortsnetzkennzahl": 6416,
+      "ortsnetzname": "Lend"
+    },
+    {
+      "ortsnetzkennzahl": 6417,
+      "ortsnetzname": "Hüttschlag"
+    },
+    {
+      "ortsnetzkennzahl": 6418,
+      "ortsnetzname": "Kleinarl"
+    },
+    {
+      "ortsnetzkennzahl": 6432,
+      "ortsnetzname": "Bad Hofgastein"
+    },
+    {
+      "ortsnetzkennzahl": 6433,
+      "ortsnetzname": "Dorfgastein"
+    },
+    {
+      "ortsnetzkennzahl": 6434,
+      "ortsnetzname": "Bad Gastein"
+    },
+    {
+      "ortsnetzkennzahl": 6452,
+      "ortsnetzname": "Radstadt"
+    },
+    {
+      "ortsnetzkennzahl": 6453,
+      "ortsnetzname": "Filzmoos"
+    },
+    {
+      "ortsnetzkennzahl": 6454,
+      "ortsnetzname": "Mandling"
+    },
+    {
+      "ortsnetzkennzahl": 6455,
+      "ortsnetzname": "Untertauern"
+    },
+    {
+      "ortsnetzkennzahl": 6456,
+      "ortsnetzname": "Obertauern"
+    },
+    {
+      "ortsnetzkennzahl": 6457,
+      "ortsnetzname": "Flachau"
+    },
+    {
+      "ortsnetzkennzahl": 6458,
+      "ortsnetzname": "Hüttau"
+    },
+    {
+      "ortsnetzkennzahl": 6461,
+      "ortsnetzname": "Dienten am Hochkönig"
+    },
+    {
+      "ortsnetzkennzahl": 6462,
+      "ortsnetzname": "Bischofshofen"
+    },
+    {
+      "ortsnetzkennzahl": 6463,
+      "ortsnetzname": "Annaberg-Lungötz"
+    },
+    {
+      "ortsnetzkennzahl": 6466,
+      "ortsnetzname": "Werfenweng"
+    },
+    {
+      "ortsnetzkennzahl": 6467,
+      "ortsnetzname": "Mühlbach am Hochkönig"
+    },
+    {
+      "ortsnetzkennzahl": 6468,
+      "ortsnetzname": "Werfen"
+    },
+    {
+      "ortsnetzkennzahl": 6470,
+      "ortsnetzname": "Atzmannsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 6471,
+      "ortsnetzname": "Tweng"
+    },
+    {
+      "ortsnetzkennzahl": 6472,
+      "ortsnetzname": "Mauterndorf"
+    },
+    {
+      "ortsnetzkennzahl": 6473,
+      "ortsnetzname": "Mariapfarr"
+    },
+    {
+      "ortsnetzkennzahl": 6474,
+      "ortsnetzname": "Tamsweg"
+    },
+    {
+      "ortsnetzkennzahl": 6475,
+      "ortsnetzname": "Ramingstein"
+    },
+    {
+      "ortsnetzkennzahl": 6476,
+      "ortsnetzname": "Sankt Margarethen im Lungau"
+    },
+    {
+      "ortsnetzkennzahl": 6477,
+      "ortsnetzname": "Sankt Michael im Lungau"
+    },
+    {
+      "ortsnetzkennzahl": 6478,
+      "ortsnetzname": "Zederhaus"
+    },
+    {
+      "ortsnetzkennzahl": 6479,
+      "ortsnetzname": "Muhr"
+    },
+    {
+      "ortsnetzkennzahl": 6483,
+      "ortsnetzname": "Göriach"
+    },
+    {
+      "ortsnetzkennzahl": 6484,
+      "ortsnetzname": "Lessach"
+    },
+    {
+      "ortsnetzkennzahl": 6541,
+      "ortsnetzname": "Saalbach"
+    },
+    {
+      "ortsnetzkennzahl": 6542,
+      "ortsnetzname": "Zell am See"
+    },
+    {
+      "ortsnetzkennzahl": 6543,
+      "ortsnetzname": "Taxenbach"
+    },
+    {
+      "ortsnetzkennzahl": 6544,
+      "ortsnetzname": "Rauris"
+    },
+    {
+      "ortsnetzkennzahl": 6545,
+      "ortsnetzname": "Bruck an der Glocknerstraße"
+    },
+    {
+      "ortsnetzkennzahl": 6546,
+      "ortsnetzname": "Fusch an der Glocknerstraße"
+    },
+    {
+      "ortsnetzkennzahl": 6547,
+      "ortsnetzname": "Kaprun"
+    },
+    {
+      "ortsnetzkennzahl": 6548,
+      "ortsnetzname": "Niedernsill"
+    },
+    {
+      "ortsnetzkennzahl": 6549,
+      "ortsnetzname": "Piesendorf"
+    },
+    {
+      "ortsnetzkennzahl": 6562,
+      "ortsnetzname": "Mittersill"
+    },
+    {
+      "ortsnetzkennzahl": 6563,
+      "ortsnetzname": "Uttendorf"
+    },
+    {
+      "ortsnetzkennzahl": 6564,
+      "ortsnetzname": "Krimml"
+    },
+    {
+      "ortsnetzkennzahl": 6565,
+      "ortsnetzname": "Neukirchen am Großvenediger"
+    },
+    {
+      "ortsnetzkennzahl": 6566,
+      "ortsnetzname": "Bramberg am Wildkogel"
+    },
+    {
+      "ortsnetzkennzahl": 6582,
+      "ortsnetzname": "Saalfelden am Steinernen Meer"
+    },
+    {
+      "ortsnetzkennzahl": 6583,
+      "ortsnetzname": "Leogang"
+    },
+    {
+      "ortsnetzkennzahl": 6584,
+      "ortsnetzname": "Maria Alm am Steinernen Meer"
+    },
+    {
+      "ortsnetzkennzahl": 6588,
+      "ortsnetzname": "Lofer"
+    },
+    {
+      "ortsnetzkennzahl": 6589,
+      "ortsnetzname": "Unken"
+    },
+    {
+      "ortsnetzkennzahl": 662,
+      "ortsnetzname": "Salzburg"
+    },
+    {
+      "ortsnetzkennzahl": 7211,
+      "ortsnetzname": "Reichenau im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7212,
+      "ortsnetzname": "Zwettl an der Rodl"
+    },
+    {
+      "ortsnetzkennzahl": 7213,
+      "ortsnetzname": "Bad Leonfelden"
+    },
+    {
+      "ortsnetzkennzahl": 7214,
+      "ortsnetzname": "Reichenthal"
+    },
+    {
+      "ortsnetzkennzahl": 7215,
+      "ortsnetzname": "Hellmonsödt"
+    },
+    {
+      "ortsnetzkennzahl": 7216,
+      "ortsnetzname": "Helfenberg"
+    },
+    {
+      "ortsnetzkennzahl": 7217,
+      "ortsnetzname": "Sankt Veit im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7218,
+      "ortsnetzname": "Großtraberg"
+    },
+    {
+      "ortsnetzkennzahl": 7219,
+      "ortsnetzname": "Vorderweißenbach"
+    },
+    {
+      "ortsnetzkennzahl": 7221,
+      "ortsnetzname": "Hörsching"
+    },
+    {
+      "ortsnetzkennzahl": 7223,
+      "ortsnetzname": "Enns"
+    },
+    {
+      "ortsnetzkennzahl": 7224,
+      "ortsnetzname": "Sankt Florian"
+    },
+    {
+      "ortsnetzkennzahl": 7225,
+      "ortsnetzname": "Hargelsberg"
+    },
+    {
+      "ortsnetzkennzahl": 7226,
+      "ortsnetzname": "Wilhering"
+    },
+    {
+      "ortsnetzkennzahl": 7227,
+      "ortsnetzname": "Neuhofen an der Krems"
+    },
+    {
+      "ortsnetzkennzahl": 7228,
+      "ortsnetzname": "Kematen an der Krems"
+    },
+    {
+      "ortsnetzkennzahl": 7229,
+      "ortsnetzname": "Traun"
+    },
+    {
+      "ortsnetzkennzahl": 7230,
+      "ortsnetzname": "Altenberg bei Linz"
+    },
+    {
+      "ortsnetzkennzahl": 7231,
+      "ortsnetzname": "Herzogsdorf"
+    },
+    {
+      "ortsnetzkennzahl": 7232,
+      "ortsnetzname": "Sankt Martin im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7233,
+      "ortsnetzname": "Feldkirchen an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7234,
+      "ortsnetzname": "Ottensheim"
+    },
+    {
+      "ortsnetzkennzahl": 7235,
+      "ortsnetzname": "Gallneukirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7236,
+      "ortsnetzname": "Pregarten"
+    },
+    {
+      "ortsnetzkennzahl": 7237,
+      "ortsnetzname": "Sankt Georgen an der Gusen"
+    },
+    {
+      "ortsnetzkennzahl": 7238,
+      "ortsnetzname": "Mauthausen"
+    },
+    {
+      "ortsnetzkennzahl": 7239,
+      "ortsnetzname": "Lichtenberg"
+    },
+    {
+      "ortsnetzkennzahl": 7240,
+      "ortsnetzname": "Sipbachzell"
+    },
+    {
+      "ortsnetzkennzahl": 7241,
+      "ortsnetzname": "Steinerkirchen an der Traun"
+    },
+    {
+      "ortsnetzkennzahl": 7242,
+      "ortsnetzname": "Wels"
+    },
+    {
+      "ortsnetzkennzahl": 7243,
+      "ortsnetzname": "Marchtrenk"
+    },
+    {
+      "ortsnetzkennzahl": 7244,
+      "ortsnetzname": "Sattledt"
+    },
+    {
+      "ortsnetzkennzahl": 7245,
+      "ortsnetzname": "Lambach"
+    },
+    {
+      "ortsnetzkennzahl": 7246,
+      "ortsnetzname": "Gunskirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7247,
+      "ortsnetzname": "Kematen am Innbach"
+    },
+    {
+      "ortsnetzkennzahl": 7248,
+      "ortsnetzname": "Grieskirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7249,
+      "ortsnetzname": "Bad Schallerbach"
+    },
+    {
+      "ortsnetzkennzahl": 7250,
+      "ortsnetzname": "Maria Neustift"
+    },
+    {
+      "ortsnetzkennzahl": 7251,
+      "ortsnetzname": "Schiedlberg"
+    },
+    {
+      "ortsnetzkennzahl": 7252,
+      "ortsnetzname": "Steyr"
+    },
+    {
+      "ortsnetzkennzahl": 7253,
+      "ortsnetzname": "Wolfern"
+    },
+    {
+      "ortsnetzkennzahl": 7254,
+      "ortsnetzname": "Großraming"
+    },
+    {
+      "ortsnetzkennzahl": 7255,
+      "ortsnetzname": "Losenstein"
+    },
+    {
+      "ortsnetzkennzahl": 7256,
+      "ortsnetzname": "Ternberg"
+    },
+    {
+      "ortsnetzkennzahl": 7257,
+      "ortsnetzname": "Grünburg"
+    },
+    {
+      "ortsnetzkennzahl": 7258,
+      "ortsnetzname": "Bad Hall"
+    },
+    {
+      "ortsnetzkennzahl": 7259,
+      "ortsnetzname": "Sierning"
+    },
+    {
+      "ortsnetzkennzahl": 7260,
+      "ortsnetzname": "Waldhausen"
+    },
+    {
+      "ortsnetzkennzahl": 7261,
+      "ortsnetzname": "Schönau im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7262,
+      "ortsnetzname": "Perg"
+    },
+    {
+      "ortsnetzkennzahl": 7263,
+      "ortsnetzname": "Bad Zell"
+    },
+    {
+      "ortsnetzkennzahl": 7264,
+      "ortsnetzname": "Windhaag bei Perg"
+    },
+    {
+      "ortsnetzkennzahl": 7265,
+      "ortsnetzname": "Pabneukirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7266,
+      "ortsnetzname": "Bad Kreuzen"
+    },
+    {
+      "ortsnetzkennzahl": 7267,
+      "ortsnetzname": "Mönchdorf"
+    },
+    {
+      "ortsnetzkennzahl": 7268,
+      "ortsnetzname": "Grein"
+    },
+    {
+      "ortsnetzkennzahl": 7269,
+      "ortsnetzname": "Baumgartenberg"
+    },
+    {
+      "ortsnetzkennzahl": 7272,
+      "ortsnetzname": "Eferding"
+    },
+    {
+      "ortsnetzkennzahl": 7273,
+      "ortsnetzname": "Aschach an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7274,
+      "ortsnetzname": "Alkoven"
+    },
+    {
+      "ortsnetzkennzahl": 7276,
+      "ortsnetzname": "Peuerbach"
+    },
+    {
+      "ortsnetzkennzahl": 7277,
+      "ortsnetzname": "Waizenkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7278,
+      "ortsnetzname": "Neukirchen am Walde"
+    },
+    {
+      "ortsnetzkennzahl": 7279,
+      "ortsnetzname": "Haibach ob der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7280,
+      "ortsnetzname": "Schwarzenberg am Böhmerwald"
+    },
+    {
+      "ortsnetzkennzahl": 7281,
+      "ortsnetzname": "Aigen im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7282,
+      "ortsnetzname": "Neufelden"
+    },
+    {
+      "ortsnetzkennzahl": 7283,
+      "ortsnetzname": "Sarleinsbach"
+    },
+    {
+      "ortsnetzkennzahl": 7284,
+      "ortsnetzname": "Oberkappel"
+    },
+    {
+      "ortsnetzkennzahl": 7285,
+      "ortsnetzname": "Hofkirchen im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7286,
+      "ortsnetzname": "Lembach im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7287,
+      "ortsnetzname": "Peilstein im Mühlviertel"
+    },
+    {
+      "ortsnetzkennzahl": 7288,
+      "ortsnetzname": "Ulrichsberg"
+    },
+    {
+      "ortsnetzkennzahl": 7289,
+      "ortsnetzname": "Rohrbach in Oberösterreich"
+    },
+    {
+      "ortsnetzkennzahl": 732,
+      "ortsnetzname": "Linz"
+    },
+    {
+      "ortsnetzkennzahl": 7353,
+      "ortsnetzname": "Gaflenz"
+    },
+    {
+      "ortsnetzkennzahl": 7355,
+      "ortsnetzname": "Weyer"
+    },
+    {
+      "ortsnetzkennzahl": 7357,
+      "ortsnetzname": "Kleinreifling"
+    },
+    {
+      "ortsnetzkennzahl": 7412,
+      "ortsnetzname": "Ybbs an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7413,
+      "ortsnetzname": "Marbach an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7414,
+      "ortsnetzname": "Weins-Isperdorf"
+    },
+    {
+      "ortsnetzkennzahl": 7415,
+      "ortsnetzname": "Altenmarkt"
+    },
+    {
+      "ortsnetzkennzahl": 7416,
+      "ortsnetzname": "Wieselburg"
+    },
+    {
+      "ortsnetzkennzahl": 7432,
+      "ortsnetzname": "Strengberg"
+    },
+    {
+      "ortsnetzkennzahl": 7433,
+      "ortsnetzname": "Wallsee"
+    },
+    {
+      "ortsnetzkennzahl": 7434,
+      "ortsnetzname": "Haag"
+    },
+    {
+      "ortsnetzkennzahl": 7435,
+      "ortsnetzname": "Sankt Valentin"
+    },
+    {
+      "ortsnetzkennzahl": 7442,
+      "ortsnetzname": "Waidhofen an der Ybbs"
+    },
+    {
+      "ortsnetzkennzahl": 7443,
+      "ortsnetzname": "Ybbsitz"
+    },
+    {
+      "ortsnetzkennzahl": 7444,
+      "ortsnetzname": "Opponitz"
+    },
+    {
+      "ortsnetzkennzahl": 7445,
+      "ortsnetzname": "Hollenstein an der Ybbs"
+    },
+    {
+      "ortsnetzkennzahl": 7448,
+      "ortsnetzname": "Kematen an der Ybbs"
+    },
+    {
+      "ortsnetzkennzahl": 7471,
+      "ortsnetzname": "Neustadl an der Donau"
+    },
+    {
+      "ortsnetzkennzahl": 7472,
+      "ortsnetzname": "Amstetten"
+    },
+    {
+      "ortsnetzkennzahl": 7473,
+      "ortsnetzname": "Blindenmarkt"
+    },
+    {
+      "ortsnetzkennzahl": 7474,
+      "ortsnetzname": "Euratsfeld"
+    },
+    {
+      "ortsnetzkennzahl": 7475,
+      "ortsnetzname": "Hausmening"
+    },
+    {
+      "ortsnetzkennzahl": 7476,
+      "ortsnetzname": "Aschbach-Markt"
+    },
+    {
+      "ortsnetzkennzahl": 7477,
+      "ortsnetzname": "Sankt Peter in der Au"
+    },
+    {
+      "ortsnetzkennzahl": 7478,
+      "ortsnetzname": "Oed-Oehling"
+    },
+    {
+      "ortsnetzkennzahl": 7479,
+      "ortsnetzname": "Ardagger"
+    },
+    {
+      "ortsnetzkennzahl": 7480,
+      "ortsnetzname": "Langau"
+    },
+    {
+      "ortsnetzkennzahl": 7482,
+      "ortsnetzname": "Scheibbs"
+    },
+    {
+      "ortsnetzkennzahl": 7483,
+      "ortsnetzname": "Oberndorf an der Melk"
+    },
+    {
+      "ortsnetzkennzahl": 7484,
+      "ortsnetzname": "Göstling an der Ybbs"
+    },
+    {
+      "ortsnetzkennzahl": 7485,
+      "ortsnetzname": "Gaming"
+    },
+    {
+      "ortsnetzkennzahl": 7486,
+      "ortsnetzname": "Lunz am See"
+    },
+    {
+      "ortsnetzkennzahl": 7487,
+      "ortsnetzname": "Gresten"
+    },
+    {
+      "ortsnetzkennzahl": 7488,
+      "ortsnetzname": "Steinakirchen am Forst"
+    },
+    {
+      "ortsnetzkennzahl": 7489,
+      "ortsnetzname": "Purgstall an der Erlauf"
+    },
+    {
+      "ortsnetzkennzahl": 7562,
+      "ortsnetzname": "Windischgarsten"
+    },
+    {
+      "ortsnetzkennzahl": 7563,
+      "ortsnetzname": "Spital am Pyhrn"
+    },
+    {
+      "ortsnetzkennzahl": 7564,
+      "ortsnetzname": "Hinterstoder"
+    },
+    {
+      "ortsnetzkennzahl": 7565,
+      "ortsnetzname": "Sankt Pankraz"
+    },
+    {
+      "ortsnetzkennzahl": 7566,
+      "ortsnetzname": "Rosenau am Hengstpaß"
+    },
+    {
+      "ortsnetzkennzahl": 7582,
+      "ortsnetzname": "Kirchdorf an der Krems"
+    },
+    {
+      "ortsnetzkennzahl": 7583,
+      "ortsnetzname": "Kremsmünster"
+    },
+    {
+      "ortsnetzkennzahl": 7584,
+      "ortsnetzname": "Molln"
+    },
+    {
+      "ortsnetzkennzahl": 7585,
+      "ortsnetzname": "Klaus an der Pyhrnbahn"
+    },
+    {
+      "ortsnetzkennzahl": 7586,
+      "ortsnetzname": "Pettenbach"
+    },
+    {
+      "ortsnetzkennzahl": 7587,
+      "ortsnetzname": "Wartberg an der Krems"
+    },
+    {
+      "ortsnetzkennzahl": 7588,
+      "ortsnetzname": "Ried im Traunkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7612,
+      "ortsnetzname": "Gmunden"
+    },
+    {
+      "ortsnetzkennzahl": 7613,
+      "ortsnetzname": "Laakirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7614,
+      "ortsnetzname": "Vorchdorf"
+    },
+    {
+      "ortsnetzkennzahl": 7615,
+      "ortsnetzname": "Scharnstein"
+    },
+    {
+      "ortsnetzkennzahl": 7616,
+      "ortsnetzname": "Grünau im Almtal"
+    },
+    {
+      "ortsnetzkennzahl": 7617,
+      "ortsnetzname": "Traunkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7618,
+      "ortsnetzname": "Neukirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7619,
+      "ortsnetzname": "Kirchham"
+    },
+    {
+      "ortsnetzkennzahl": 7662,
+      "ortsnetzname": "Seewalchen am Attersee"
+    },
+    {
+      "ortsnetzkennzahl": 7663,
+      "ortsnetzname": "Steinbach am Attersee"
+    },
+    {
+      "ortsnetzkennzahl": 7664,
+      "ortsnetzname": "Weyregg am Attersee"
+    },
+    {
+      "ortsnetzkennzahl": 7665,
+      "ortsnetzname": "Unterach am Attersee"
+    },
+    {
+      "ortsnetzkennzahl": 7666,
+      "ortsnetzname": "Attersee"
+    },
+    {
+      "ortsnetzkennzahl": 7667,
+      "ortsnetzname": "Sankt Georgen im Attergau"
+    },
+    {
+      "ortsnetzkennzahl": 7672,
+      "ortsnetzname": "Vöcklabruck"
+    },
+    {
+      "ortsnetzkennzahl": 7673,
+      "ortsnetzname": "Schwanenstadt"
+    },
+    {
+      "ortsnetzkennzahl": 7674,
+      "ortsnetzname": "Attnang-Puchheim"
+    },
+    {
+      "ortsnetzkennzahl": 7675,
+      "ortsnetzname": "Ampflwang im Hausruckwald"
+    },
+    {
+      "ortsnetzkennzahl": 7676,
+      "ortsnetzname": "Ottnang am Hausruck"
+    },
+    {
+      "ortsnetzkennzahl": 7682,
+      "ortsnetzname": "Vöcklamarkt"
+    },
+    {
+      "ortsnetzkennzahl": 7683,
+      "ortsnetzname": "Frankenburg am Hausruck"
+    },
+    {
+      "ortsnetzkennzahl": 7684,
+      "ortsnetzname": "Frankenmarkt"
+    },
+    {
+      "ortsnetzkennzahl": 7711,
+      "ortsnetzname": "Suben"
+    },
+    {
+      "ortsnetzkennzahl": 7712,
+      "ortsnetzname": "Schärding"
+    },
+    {
+      "ortsnetzkennzahl": 7713,
+      "ortsnetzname": "Schardenberg"
+    },
+    {
+      "ortsnetzkennzahl": 7714,
+      "ortsnetzname": "Esternberg"
+    },
+    {
+      "ortsnetzkennzahl": 7716,
+      "ortsnetzname": "Münzkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7717,
+      "ortsnetzname": "Sankt Aegidi"
+    },
+    {
+      "ortsnetzkennzahl": 7718,
+      "ortsnetzname": "Waldkirchen am Wesen"
+    },
+    {
+      "ortsnetzkennzahl": 7719,
+      "ortsnetzname": "Taufkirchen an der Pram"
+    },
+    {
+      "ortsnetzkennzahl": 7722,
+      "ortsnetzname": "Braunau am Inn"
+    },
+    {
+      "ortsnetzkennzahl": 7723,
+      "ortsnetzname": "Altheim"
+    },
+    {
+      "ortsnetzkennzahl": 7724,
+      "ortsnetzname": "Mauerkirchen"
+    },
+    {
+      "ortsnetzkennzahl": 7727,
+      "ortsnetzname": "Ach"
+    },
+    {
+      "ortsnetzkennzahl": 7728,
+      "ortsnetzname": "Schwand im Innkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7729,
+      "ortsnetzname": "Neukirchen an der Enknach"
+    },
+    {
+      "ortsnetzkennzahl": 7732,
+      "ortsnetzname": "Haag am Hausruck"
+    },
+    {
+      "ortsnetzkennzahl": 7733,
+      "ortsnetzname": "Neumarkt im Hausruckkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7734,
+      "ortsnetzname": "Hofkirchen an der Trattnach"
+    },
+    {
+      "ortsnetzkennzahl": 7735,
+      "ortsnetzname": "Gaspoltshofen"
+    },
+    {
+      "ortsnetzkennzahl": 7736,
+      "ortsnetzname": "Pram"
+    },
+    {
+      "ortsnetzkennzahl": 7742,
+      "ortsnetzname": "Mattighofen"
+    },
+    {
+      "ortsnetzkennzahl": 7743,
+      "ortsnetzname": "Maria Schmolln"
+    },
+    {
+      "ortsnetzkennzahl": 7744,
+      "ortsnetzname": "Munderfing"
+    },
+    {
+      "ortsnetzkennzahl": 7745,
+      "ortsnetzname": "Lochen"
+    },
+    {
+      "ortsnetzkennzahl": 7746,
+      "ortsnetzname": "Friedburg"
+    },
+    {
+      "ortsnetzkennzahl": 7747,
+      "ortsnetzname": "Kirchberg bei Mattighofen"
+    },
+    {
+      "ortsnetzkennzahl": 7748,
+      "ortsnetzname": "Eggelsberg"
+    },
+    {
+      "ortsnetzkennzahl": 7750,
+      "ortsnetzname": "Andrichsfurt"
+    },
+    {
+      "ortsnetzkennzahl": 7751,
+      "ortsnetzname": "Sankt Martin im Innkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7752,
+      "ortsnetzname": "Ried im Innkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7753,
+      "ortsnetzname": "Eberschwang"
+    },
+    {
+      "ortsnetzkennzahl": 7754,
+      "ortsnetzname": "Waldzell"
+    },
+    {
+      "ortsnetzkennzahl": 7755,
+      "ortsnetzname": "Mettmach"
+    },
+    {
+      "ortsnetzkennzahl": 7757,
+      "ortsnetzname": "Gurten"
+    },
+    {
+      "ortsnetzkennzahl": 7758,
+      "ortsnetzname": "Obernberg am Inn"
+    },
+    {
+      "ortsnetzkennzahl": 7759,
+      "ortsnetzname": "Antiesenhofen"
+    },
+    {
+      "ortsnetzkennzahl": 7762,
+      "ortsnetzname": "Raab"
+    },
+    {
+      "ortsnetzkennzahl": 7763,
+      "ortsnetzname": "Kopfing im Innkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7764,
+      "ortsnetzname": "Riedau"
+    },
+    {
+      "ortsnetzkennzahl": 7765,
+      "ortsnetzname": "Lambrechten"
+    },
+    {
+      "ortsnetzkennzahl": 7766,
+      "ortsnetzname": "Andorf"
+    },
+    {
+      "ortsnetzkennzahl": 7767,
+      "ortsnetzname": "Eggerding"
+    },
+    {
+      "ortsnetzkennzahl": 7941,
+      "ortsnetzname": "Neumarkt im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7942,
+      "ortsnetzname": "Freistadt"
+    },
+    {
+      "ortsnetzkennzahl": 7943,
+      "ortsnetzname": "Windhaag bei Freistadt"
+    },
+    {
+      "ortsnetzkennzahl": 7944,
+      "ortsnetzname": "Sandl"
+    },
+    {
+      "ortsnetzkennzahl": 7945,
+      "ortsnetzname": "Sankt Oswald bei Freistadt"
+    },
+    {
+      "ortsnetzkennzahl": 7946,
+      "ortsnetzname": "Gutau"
+    },
+    {
+      "ortsnetzkennzahl": 7947,
+      "ortsnetzname": "Kefermarkt"
+    },
+    {
+      "ortsnetzkennzahl": 7948,
+      "ortsnetzname": "Hirschbach im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7949,
+      "ortsnetzname": "Rainbach im Mühlkreis"
+    },
+    {
+      "ortsnetzkennzahl": 7952,
+      "ortsnetzname": "Weitersfelden"
+    },
+    {
+      "ortsnetzkennzahl": 7953,
+      "ortsnetzname": "Liebenau"
+    },
+    {
+      "ortsnetzkennzahl": 7954,
+      "ortsnetzname": "Sankt Georgen am Walde"
+    },
+    {
+      "ortsnetzkennzahl": 7955,
+      "ortsnetzname": "Königswiesen"
+    },
+    {
+      "ortsnetzkennzahl": 7956,
+      "ortsnetzname": "Unterweißenbach"
+    }
+  ],
+  "version": {
+    "id": 21611,
+    "published": "2020-10-11T03:12:58+02:00"
+  }
+}
