@@ -94,7 +94,7 @@ $mapping[3149] = "Geistthal-Södingberg";
 $mapping[3158] = "St. Anna";
 $mapping[3159] = "Gleichenberg";
 $mapping[3177] = "Puch";
-$mapping[3178] = "St. Ruprech";
+$mapping[3178] = "St. Ruprech"; // BUG: St. Ruprecht
 $mapping[3183] = "St. Georgen";
 $mapping[3184] = "Schwarzautal";
 $mapping[3331] = "St. Lorenzen";
@@ -146,7 +146,7 @@ $mapping[3834] = "Wald";
 $mapping[3843] = "St. Michael";
 $mapping[3844] = "Kammern";
 $mapping[3845] = "Mautern";
-$mapping[3853] = "Spita";
+$mapping[3853] = "Spita"; // BUG: Spital am Semmering
 $mapping[3856] = "St. Barbara";
 $mapping[3857] = "Neuberg";
 $mapping[3858] = "St. Barbara";
@@ -211,7 +211,7 @@ $mapping[5289] = "Brandberg";
 $mapping[5413] = "St. Leonhard im Pitztal";
 $mapping[5475] = "Kaunertal";
 $mapping[5517] = "Mittelberg";
-$mapping[5557] = "St. Gallenkirc";
+$mapping[5557] = "St. Gallenkirc"; // BUG: St. Gallenkirch
 $mapping[5575] = "Langen";
 $mapping[5633] = "Steeg";
 
@@ -669,7 +669,7 @@ $plzmapping[6762] = "Klösterle";
 $plzmapping[6763] = "Lech";
 $plzmapping[6771] = "St. Anton";
 $plzmapping[6787] = "St. Gallenkirc";
-$plzmapping[6791] = "St. Gallenkirc"; /*BUG*/
+$plzmapping[6791] = "St. Gallenkirc"; // BUG: St. Gallenkirch
 $plzmapping[6794] = "Gaschurn";
 $plzmapping[6801] = "Feldkirch";
 $plzmapping[6805] = "Feldkirch";
@@ -1123,6 +1123,7 @@ foreach ($telefonDaten['data'] as $ort) {
         $ortsnetzname = str_replace('Sankt ', 'St. ', $ortsnetzname);
     }
     if (array_key_exists($ort['ortsnetzkennzahl'], $mapping)) {
+        checkMapping($ort['ortsnetzkennzahl'], $ortsnetzname, $mapping[$ort['ortsnetzkennzahl']]);
         $ortsnetzname = $mapping[$ort['ortsnetzkennzahl']];
     }
 
@@ -1143,6 +1144,7 @@ foreach ($plzDaten['data'] as $ort) {
         $ortsname = str_replace('Sankt ', 'St. ', $ortsname);
     }
     if (array_key_exists($ort['plz'], $plzmapping)) {
+        checkMapping($ort['plz'], $ortsname, $plzmapping[$ort['plz']]);
         $ortsname = $plzmapping[$ort['plz']];
     }
 
@@ -1155,6 +1157,12 @@ $gemKey = array();
 foreach ($gemeinden['features'] as $key => $gemeinde) {
     $gemName = trim($gemeinde['properties']['name']);
     $gemKZ = trim($gemeinde['properties']['iso']); 
+    if ($gemKZ != $gemeinde['properties']['iso']) {
+        print "$gemKZ - $gemName: Kennzahl not truncated!\n";
+    }
+    if ($gemName != $gemeinde['properties']['name']) {
+        print "$gemKZ - $gemName: Name not truncated!\n";
+    }
 
     if (!array_key_exists($gemName, $gemKey)) {
         $gemKey[$gemName] = array();
@@ -1329,4 +1337,13 @@ JSON;
 
 file_put_contents('vorwahlen+plz.json', $out);
 print_r($found);
+
+
+function checkMapping($gkz, $new, $orig) {
+    if (false) {
+        print "$gkz - orig: $orig\n";
+        print "$gkz - new:  $new\n";
+        print "-----\n";
+    }
+}
 
