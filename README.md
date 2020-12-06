@@ -1,5 +1,5 @@
 # austria-post-and-aera-code
-A map with all postal and aera codes to search within
+A map with all postal and aera codes to search within visible at https://www.kolmann.at/austria-post-and-aera-code/
 
 
 Based on:
@@ -7,12 +7,12 @@ Based on:
 * https://data.rtr.at/api/v1/tables/
 
 * Ortsnetze:
-** https://www.rtr.at/de/inf/odRNOrtsnetze
-** https://data.rtr.at/api/v1/tables/rnOrtsnetze.json?size=0
+  * https://www.rtr.at/de/inf/odRNOrtsnetze
+  * https://data.rtr.at/api/v1/tables/rnOrtsnetze.json?size=0
 
 * PLZ:
-** https://www.rtr.at/de/inf/odplz
-** https://data.rtr.at/api/v1/tables/plz.json?size=0
+  * https://www.rtr.at/de/inf/odplz
+  * https://data.rtr.at/api/v1/tables/plz.json?size=0
 
 
 Die RTR-GmbH ersucht Dienstleister, die OGD der RTR-GmbH für ihre Anwendungen und Services verwenden, aktiv darüber zu informieren, wo diese Services und Anwendungen aufzufinden sind. Bitte erfassen Sie die Anwendung bzw. das Service unter data.gv.at/anwendung-einreichen/.
