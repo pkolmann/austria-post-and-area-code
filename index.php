@@ -86,7 +86,9 @@
                     if (key === 'color1') continue;
                     if (key === 'plzcolor') continue;
                     if (key === 'plzcolor1') continue;
-                    if (feature.properties.hasOwnProperty(key) && typeof feature.properties[key] == 'object') {
+                    if (feature.properties.hasOwnProperty(key) && typeof feature.properties[key] == 'object' &&
+                        feature.properties[key] !== null
+                    ) {
                         let valStr = '';
                         if (Object.keys(feature.properties[key]).length > 1) {
                             valStr += '<ul>';
@@ -206,12 +208,14 @@
 
     const gemeindenLayer = new L.GeoJSON.AJAX("data/gemeinden_95_geo.json", {onEachFeature: popUp});
     const bezirkLayer = new L.GeoJSON.AJAX("data/bezirke_995_geo.json");
+    const wienBezirkLayer = new L.GeoJSON.AJAX("data/BezirksgrenzenWien.json", {onEachFeature: popUp});
 
     const overlayLayers = {
         "Vorwahlen": vorwahlLayer,
         "Postleitzahlen": plzLayer,
         "Gemeinden": gemeindenLayer,
-        "Bezirke": bezirkLayer
+        "Bezirke": bezirkLayer,
+        "Wiener Bezirke": wienBezirkLayer
 
     };
 
@@ -240,6 +244,7 @@
         minY = Infinity;
         maxX = -Infinity;
         maxY = -Infinity;
+        const lowCaseVal = val.toLowerCase();
 
         const promises = [];
         vorwahlLayer.eachLayer(function (layer) {
@@ -248,13 +253,15 @@
                     let show = false;
                     for (const vorwahl in layer.feature.properties['vorwahl']) {
                         if (vorwahl !== undefined && vorwahl.toString().startsWith(val)) {
+                            console.log("Vorwahl " + vorwahl + " found...");
                             show = true;
                             break;
                         }
                         if (
                             layer.feature.properties['vorwahl'].hasOwnProperty(vorwahl) &&
-                            layer.feature.properties['vorwahl'][vorwahl].toString(10).startsWith(val)
+                            layer.feature.properties['vorwahl'][vorwahl].toString(10).toLowerCase().startsWith(lowCaseVal)
                         ) {
+                            console.log("Vorwahl " + vorwahl + " for " + val + " found...");
                             show = true;
                             break;
                         }
@@ -304,13 +311,15 @@
                     let show = false;
                     for (const plz in layer.feature.properties['plz']) {
                         if (plz !== undefined && plz.toString(10).startsWith(val)) {
+                            console.log("PLZ " + plz + " found...");
                             show = true;
                             break;
                         }
                         if (
                             layer.feature.properties['plz'].hasOwnProperty(plz) &&
-                            layer.feature.properties['plz'][plz].toString(10).startsWith(val)
+                            layer.feature.properties['plz'][plz].toString(10).toLowerCase().startsWith(lowCaseVal)
                         ) {
+                            console.log("PLZ " + plz + " for " + val + " found...");
                             show = true;
                             break;
                         }
