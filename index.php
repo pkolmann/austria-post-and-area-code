@@ -251,6 +251,9 @@
             promises.push(new Promise(function(resolve, reject) {
                 if ('vorwahl' in layer.feature.properties) {
                     let show = false;
+                    if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
+                        show = true;
+                    }
                     for (const vorwahl in layer.feature.properties['vorwahl']) {
                         if (vorwahl !== undefined && vorwahl.toString().startsWith(val)) {
                             console.log("Vorwahl " + vorwahl + " found...");
@@ -309,6 +312,9 @@
             promises.push(new Promise(function (resolve, reject) {
                 if ('plz' in layer.feature.properties) {
                     let show = false;
+                    if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
+                        show = true;
+                    }
                     for (const plz in layer.feature.properties['plz']) {
                         if (plz !== undefined && plz.toString(10).startsWith(val)) {
                             console.log("PLZ " + plz + " found...");

@@ -1207,16 +1207,26 @@ $plz2gkz[8972] = 61236;
 $plz2gkz[9065] = 20402;
 $plz2gkz[9423] = 20914;
 $plz2gkz[9531] = 20402;
-
-
-
-
-
-
 $plz2gkz[9632] = 20306;
 $plz2gkz[9633] = 20306;
 $plz2gkz[9814] = 20624;
 $plz2gkz[9853] = 20608;
+
+// Add GemeindeData for not otherwise not recognized ones.
+$gemAdd = array();
+// either add plz and vorwahl as array, then array value will be taken as name, or just as string, then key will be taken
+// $gemAdd['Seebenstein'] = ['vorwahl' => '2627'];
+// $gemAdd['Moosbrunn'] = ['plz' => ['2440' => 'Moosbrunn'], 'vorwahl' => ['2234' => 'Moosbrunn']];
+$gemAdd['Bad Erlach'] = ['vorwahl' => '2627'];
+$gemAdd['Bromberg'] = ['vorwahl' => '2629'];
+$gemAdd['Hochwolkersdorf'] = ['vorwahl' => '2645'];
+$gemAdd['Lanzenkirchen'] = ['vorwahl' => '2627'];
+$gemAdd['Moosbrunn'] = ['plz' => ['2440' => 'Moosbrunn'], 'vorwahl' => ['2234' => 'Moosbrunn']];
+$gemAdd['Natschbach-Loipersbach'] = ['vorwahl' => '2635'];
+$gemAdd['Scheiblingkirchen-Thernberg'] = ['vorwahl' => '2629'];
+$gemAdd['Seebenstein'] = ['vorwahl' => '2627'];
+$gemAdd['Schwarzau am Steinfeld'] = ['vorwahl' => '2627'];
+$gemAdd['Walpersbach'] = ['vorwahl' => '2627'];
 
 $color = array();
 $color[1] = array();
@@ -1247,9 +1257,10 @@ foreach ($telefonDaten['data'] as $ort) {
         print_r($ort);
         print "-----\n";
     }
-    $telefon[$ort['ortsnetzkennzahl']] = array();
-    $telefon[$ort['ortsnetzkennzahl']]['name'] = $ortsnetzname;
-    $telefon[$ort['ortsnetzkennzahl']]['original'] = $ort['ortsnetzname'];
+    $tel = array();
+    $tel['name'] = $ortsnetzname;
+    $tel['original'] = $ort['ortsnetzname'];
+    $telefon[$ort['ortsnetzkennzahl']][] = $tel;
 }
 
 $plzArray = array();
@@ -1263,9 +1274,10 @@ foreach ($plzDaten['data'] as $ort) {
         $ortsname = $plzmapping[$ort['plz']];
     }
 
-    $plzArray[$ort['plz']] = array();
-    $plzArray[$ort['plz']]['name'] = $ortsname;
-    $plzArray[$ort['plz']]['original'] = $ort['ort'];
+    $plzArray1 = array();
+    $plzArray1['name'] = $ortsname;
+    $plzArray1['original'] = $ort['ort'];
+    $plzArray[$ort['plz']][] = $plzArray1;
 }
 
 $gemKey = array();
@@ -1288,105 +1300,164 @@ foreach ($gemeinden['features'] as $key => $gemeinde) {
 
 print "found gemKey: ".count($gemKey)."\n\n";
 
-$found = array('found' => 0, 'notfound' => 0, 'plzfound' => 0, 'plznotfound' => 0);
-foreach ($telefon as $vorwahl => $gemName) {
-    if (array_key_exists($gemName['name'], $gemKey)) {
-        $gemId = $gemKey[$gemName['name']][0];
-        if (count($gemKey[$gemName['name']]) > 1) {
-            if (array_key_exists($vorwahl, $vorwahl2gkz)) {
-                foreach ($gemKey[$gemName['name']] as $id) {
-                    if ($gemeinden['features'][$id]['properties']['iso'] == $vorwahl2gkz[$vorwahl]) {
-                        $gemId = $id;
-                        break;
+// add gemAdd data to PLZ and Vorwahl data to process
+foreach ($gemAdd as $gemName => $gem) {
+    if (array_key_exists($gemName, $gemKey)) {
+        if (array_key_exists('plz', $gem)) {
+            if (is_array($gem['plz'])) {
+                foreach ($gem['plz'] as $xplz => $xName) {
+                    if (array_key_exists($xplz, $plzArray)) {
+                        $newPlz = array();
+                        $newPlz['name'] = $xName;
+                        $newPlz['original'] = $plzArray[$xplz][0]['original'];
+                        $plzArray[$xplz][] = $newPlz;
+                    } else {
+                        print "$gemName - $xplz from gemAdd was not found in PLZ List!!!\n";
                     }
                 }
             } else {
-                print "More then one GemKeys found for $vorwahl - ".$gemName['name'].":\n";
-                foreach ($gemKey[$gemName['name']] as $id) {
-                    print_r($gemeinden['features'][$id]['properties']);
+                if (array_key_exists($gem['plz'], $plzArray)) {
+                    $newPlz = array();
+                    $newPlz['name'] = $gemName;
+                    $newPlz['original'] = $plzArray[$gem['plz']][0]['original'];
+                    $plzArray[$gem['plz']][] = $newPlz;
+                } else {
+                    print "$gemName - $xplz from gemAdd was not found in PLZ List!!!\n";
                 }
             }
         }
-        if (!array_key_exists('vorwahl', $gemeinden['features'][$gemId]['properties'])) {
-            $gemeinden['features'][$gemId]['properties']['vorwahl'] = array();
+        if (array_key_exists('vorwahl', $gem)) {
+            if (is_array($gem['vorwahl'])) {
+                foreach ($gem['vorwahl'] as $xvw => $xName) {
+                    if (array_key_exists($xvw, $telefon)) {
+                        $tel = array();
+                        $tel['name'] = $xName;
+                        $tel['original'] = $telefon[$xvw][0]['original'];
+                        $telefon[$xvw][] = $tel;
+                    } else {
+                        print "$gemName - $xvw from gemAdd was not found in telefon List!!!\n";
+                    }
+                }
+            } else {
+                if (array_key_exists($gem['vorwahl'], $telefon)) {
+                    $tel = array();
+                    $tel['name'] = $gemName;
+                    $tel['original'] = $telefon[$gem['vorwahl']][0]['original'];
+                    $telefon[$gem['vorwahl']][] = $tel;
+                } else {
+                    print "$gemName - $xplz from gemAdd was not found in PLZ List!!!\n";
+                }
+            }
         }
-        $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] = $gemName['original'];
-
-        if (strlen($vorwahl) == 1) {
-            $gemeinden['features'][$gemId]['properties']['color'] = '#'.
-                $vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl;
-            $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
-        } elseif(strlen($vorwahl) == 2) {
-            $gemeinden['features'][$gemId]['properties']['color'] = '#'.
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 1, 1);
-            $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
-         } elseif(strlen($vorwahl) == 3) {
-            $gemeinden['features'][$gemId]['properties']['color'] = '#'.
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 2, 1).
-                substr($vorwahl, 2, 1);
-            $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
-        } else {
-            $gemeinden['features'][$gemId]['properties']['color'] = '#'.
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 0, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 1, 1).
-                substr($vorwahl, 2, 1).
-                substr($vorwahl, 3, 1);
-            $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
-        }
-        $outFeatures[$gemId] = $gemeinden['features'][$gemId];
-        $found['found']++;
     } else {
-        print "\$mapping[$vorwahl] = \"".$gemName['name']."\";\n";
-        $found['notfound']++;
+        print "$gemName from gemAdd was not found in Gemeinde List!!!\n";
     }
 }
 
-foreach ($plzArray as $plz => $gemName) {
-    if (array_key_exists($gemName['name'], $gemKey)) {
-        $gemId = $gemKey[$gemName['name']][0];
-        if (count($gemKey[$gemName['name']]) > 1) {
-            if (array_key_exists($plz, $plz2gkz)) {
-                foreach ($gemKey[$gemName['name']] as $id) {
-                    if ($gemeinden['features'][$id]['properties']['iso'] == $plz2gkz[$plz]) {
-                        $gemId = $id;
-                        break;
+
+$found = array('VWfound' => 0, 'VWnotfound' => 0, 'plzfound' => 0, 'plznotfound' => 0);
+foreach ($telefon as $vorwahl => $gemeinde) {
+    foreach ($gemeinde as $gemName) {
+        if (array_key_exists($gemName['name'], $gemKey)) {
+            $gemId = $gemKey[$gemName['name']][0];
+            if (count($gemKey[$gemName['name']]) > 1) {
+                if (array_key_exists($vorwahl, $vorwahl2gkz)) {
+                    foreach ($gemKey[$gemName['name']] as $id) {
+                        if ($gemeinden['features'][$id]['properties']['iso'] == $vorwahl2gkz[$vorwahl]) {
+                            $gemId = $id;
+                            break;
+                        }
+                    }
+                } else {
+                    print "More then one GemKeys found for $vorwahl - ".$gemName['name'].":\n";
+                    foreach ($gemKey[$gemName['name']] as $id) {
+                        print_r($gemeinden['features'][$id]['properties']);
                     }
                 }
+            }
+            if (!array_key_exists('vorwahl', $gemeinden['features'][$gemId]['properties'])) {
+                $gemeinden['features'][$gemId]['properties']['vorwahl'] = array();
+            }
+            $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] = $gemName['original'];
+
+            if (strlen($vorwahl) == 1) {
+                $gemeinden['features'][$gemId]['properties']['color'] = '#'.
+                    $vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl;
+                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
+            } elseif(strlen($vorwahl) == 2) {
+                $gemeinden['features'][$gemId]['properties']['color'] = '#'.
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 1, 1);
+                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
+            } elseif(strlen($vorwahl) == 3) {
+                $gemeinden['features'][$gemId]['properties']['color'] = '#'.
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 2, 1).
+                    substr($vorwahl, 2, 1);
+                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             } else {
-                print "More then one GemKeys found for $plz ".$gemName['name'].":\n";
-                foreach ($gemKey[$gemName['name']] as $id) {
-                    print_r($gemeinden['features'][$id]['properties']);
+                $gemeinden['features'][$gemId]['properties']['color'] = '#'.
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 0, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 1, 1).
+                    substr($vorwahl, 2, 1).
+                    substr($vorwahl, 3, 1);
+                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
+            }
+            $outFeatures[$gemId] = $gemeinden['features'][$gemId];
+            $found['VWfound']++;
+        } else {
+            print "\$mapping[$vorwahl] = \"".$gemName['name']."\";\n";
+            $found['VWnotfound']++;
+        }
+    }
+}
+
+foreach ($plzArray as $plz => $gemeinde) {
+    foreach ($gemeinde as $gemName) {
+        if (array_key_exists($gemName['name'], $gemKey)) {
+            $gemId = $gemKey[$gemName['name']][0];
+            if (count($gemKey[$gemName['name']]) > 1) {
+                if (array_key_exists($plz, $plz2gkz)) {
+                    foreach ($gemKey[$gemName['name']] as $id) {
+                        if ($gemeinden['features'][$id]['properties']['iso'] == $plz2gkz[$plz]) {
+                            $gemId = $id;
+                            break;
+                        }
+                    }
+                } else {
+                    print "More then one GemKeys found for $plz ".$gemName['name'].":\n";
+                    foreach ($gemKey[$gemName['name']] as $id) {
+                        print_r($gemeinden['features'][$id]['properties']);
+                    }
                 }
             }
+            if (!array_key_exists('plz', $gemeinden['features'][$gemId]['properties'])) {
+                $gemeinden['features'][$gemId]['properties']['plz'] = array();
+            }
+            $gemeinden['features'][$gemId]['properties']['plz'][$plz] = $gemName['original'];
+            $gemeinden['features'][$gemId]['properties']['plzcolor'] = '#'.
+                substr($plz, 0, 1).
+                substr($plz, 0, 1).
+                substr($plz, 1, 1).
+                substr($plz, 1, 1).
+                substr($plz, 2, 1).
+                substr($plz, 3, 1);
+            $gemeinden['features'][$gemId]['properties']['plzcolor1'] = $color[1][substr($plz, 0, 1)];
+            $outFeatures[$gemId] = $gemeinden['features'][$gemId];
+            $found['plzfound']++;
+        } else {
+            print '$plzmapping['.$plz.'] = "'.$gemName['name'].'"; // '.$plz.' '.$gemName['name']."\n";
+            $found['plznotfound']++;
         }
-        if (!array_key_exists('plz', $gemeinden['features'][$gemId]['properties'])) {
-            $gemeinden['features'][$gemId]['properties']['plz'] = array();
-        }
-        $gemeinden['features'][$gemId]['properties']['plz'][$plz] = $gemName['original'];
-        $gemeinden['features'][$gemId]['properties']['plzcolor'] = '#'.
-            substr($plz, 0, 1).
-            substr($plz, 0, 1).
-            substr($plz, 1, 1).
-            substr($plz, 1, 1).
-            substr($plz, 2, 1).
-            substr($plz, 3, 1);
-        $gemeinden['features'][$gemId]['properties']['plzcolor1'] = $color[1][substr($plz, 0, 1)];
-        $outFeatures[$gemId] = $gemeinden['features'][$gemId];
-        $found['plzfound']++;
-    } else {
-        print '$plzmapping['.$plz.'] = "'.$gemName['name'].'"; // '.$plz.' '.$gemName['name']."\n";
-        $found['plznotfound']++;
     }
 }
 
