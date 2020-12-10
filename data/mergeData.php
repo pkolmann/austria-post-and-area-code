@@ -1214,14 +1214,15 @@ $plz2gkz[9853] = 20608;
 
 // Add GemeindeData for not otherwise not recognized ones.
 $gemAdd = array();
-// either add plz and vorwahl as array, then array value will be taken as name, or just as string, then key will be taken
+// either add plz and vorwahl as array, then array value will be taken as valid for description, or just as string, then key will be taken
 // $gemAdd['Seebenstein'] = ['vorwahl' => '2627'];
-// $gemAdd['Moosbrunn'] = ['plz' => ['2440' => 'Moosbrunn'], 'vorwahl' => ['2234' => 'Moosbrunn']];
+// $gemAdd['Hernstein'] = ['plz' => '2560', 'vorwahl' => ['2633' => 'Hernstein, Aigen, Alkersdorf', '2672' => 'Neusiedl, Grillenberg, Kleinfeld, Pöllau']];
 $gemAdd['Bad Erlach'] = ['vorwahl' => '2627'];
 $gemAdd['Bromberg'] = ['vorwahl' => '2629'];
 $gemAdd['Hochwolkersdorf'] = ['vorwahl' => '2645'];
 $gemAdd['Lanzenkirchen'] = ['vorwahl' => '2627'];
-$gemAdd['Moosbrunn'] = ['plz' => ['2440' => 'Moosbrunn'], 'vorwahl' => ['2234' => 'Moosbrunn']];
+$gemAdd['Hernstein'] = ['plz' => '2560', 'vorwahl' => ['2633' => 'Hernstein, Aigen, Alkersdorf', '2672' => 'Neusiedl, Grillenberg, Kleinfeld, Pöllau']];
+$gemAdd['Moosbrunn'] = ['plz' => '2440', 'vorwahl' => '2234'];
 $gemAdd['Natschbach-Loipersbach'] = ['vorwahl' => '2635'];
 $gemAdd['Scheiblingkirchen-Thernberg'] = ['vorwahl' => '2629'];
 $gemAdd['Seebenstein'] = ['vorwahl' => '2627'];
@@ -1308,7 +1309,8 @@ foreach ($gemAdd as $gemName => $gem) {
                 foreach ($gem['plz'] as $xplz => $xName) {
                     if (array_key_exists($xplz, $plzArray)) {
                         $newPlz = array();
-                        $newPlz['name'] = $xName;
+                        $newPlz['name'] = $gemName;
+                        $newPlz['validFor'] = $xName;
                         $newPlz['original'] = $plzArray[$xplz][0]['original'];
                         $plzArray[$xplz][] = $newPlz;
                     } else {
@@ -1331,7 +1333,8 @@ foreach ($gemAdd as $gemName => $gem) {
                 foreach ($gem['vorwahl'] as $xvw => $xName) {
                     if (array_key_exists($xvw, $telefon)) {
                         $tel = array();
-                        $tel['name'] = $xName;
+                        $tel['name'] = $gemName;
+                        $tel['validFor'] = $xName;
                         $tel['original'] = $telefon[$xvw][0]['original'];
                         $telefon[$xvw][] = $tel;
                     } else {
@@ -1379,6 +1382,11 @@ foreach ($telefon as $vorwahl => $gemeinde) {
                 $gemeinden['features'][$gemId]['properties']['vorwahl'] = array();
             }
             $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] = $gemName['original'];
+            if (array_key_exists('validFor', $gemName)) {
+                $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] .= ' (für ';
+                $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] .= $gemName['validFor'];
+                $gemeinden['features'][$gemId]['properties']['vorwahl']['0'.$vorwahl] .= ')';
+            }
 
             if (strlen($vorwahl) == 1) {
                 $gemeinden['features'][$gemId]['properties']['color'] = '#'.
@@ -1444,6 +1452,12 @@ foreach ($plzArray as $plz => $gemeinde) {
                 $gemeinden['features'][$gemId]['properties']['plz'] = array();
             }
             $gemeinden['features'][$gemId]['properties']['plz'][$plz] = $gemName['original'];
+            if (array_key_exists('validFor', $gemName)) {
+                $gemeinden['features'][$gemId]['properties']['plz'][$plz] .= ' (für ';
+                $gemeinden['features'][$gemId]['properties']['plz'][$plz] .= $gemName['validFor'];
+                $gemeinden['features'][$gemId]['properties']['plz'][$plz] .= ')';
+            }
+
             $gemeinden['features'][$gemId]['properties']['plzcolor'] = '#'.
                 substr($plz, 0, 1).
                 substr($plz, 0, 1).
