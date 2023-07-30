@@ -1,4 +1,6 @@
 <?php
+require_once('phayes-geoPHP-1.2-20-g6855624/geoPHP.inc');
+
 /*
  * https://overpass-turbo.eu/
 
@@ -21,6 +23,28 @@ foreach ($wien['features'] as $bez) {
     $bez['properties']['name'] = $name;
     $bez['properties']['iso'] = $iso;
     $gemeinden['features'][] = $bez;
+}
+
+foreach ($gemeinden['features'] as $gk => $gd) {
+    if (
+        array_key_exists('geometry', $gd)
+        && array_key_exists('type', $gd['geometry'])
+        && array_key_exists('coordinates', $gd['geometry'])
+    ) {
+        try {
+            $geometry = geoPHP::load(json_encode($gd['geometry']));
+        } catch (Exception $e) {
+            print "Error loading geoPHP: $gk - {$gd['properties']['name']}:\n";
+            print $e->getMessage();
+            die("\n\n");
+        }
+        $centroid = $geometry->centroid();
+
+        $gemeinden['features'][$gk]['properties']['centroid'] = [
+            $centroid->{'coords'}[0],
+            $centroid->{'coords'}[1]
+        ];
+    }
 }
 
 $telefonDaten = json_decode(file_get_contents('rnOrtsnetze.json'), true);
