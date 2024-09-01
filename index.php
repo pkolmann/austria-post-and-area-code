@@ -244,34 +244,37 @@
         minY = Infinity;
         maxX = -Infinity;
         maxY = -Infinity;
-        const lowCaseVal = val.toLowerCase();
+        console.log("Split: " , val.split(/[\s,;\+]+/));
+        const lowCaseVals = val.toLowerCase().split(/[\s,;\+]+/);
 
         const promises = [];
         vorwahlLayer.eachLayer(function (layer) {
             promises.push(new Promise(function(resolve, reject) {
                 if ('vorwahl' in layer.feature.properties) {
                     let show = false;
-                    if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
-                        show = true;
-                    }
-                    for (const vorwahl in layer.feature.properties['vorwahl']) {
-                        if (vorwahl !== undefined && vorwahl.toString().startsWith(val)) {
-                            console.log("Vorwahl " + vorwahl + " found...");
+                    lowCaseVals.forEach((lowCaseVal) => {
+                        if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
                             show = true;
-                            break;
                         }
-                        if (
-                            layer.feature.properties['vorwahl'].hasOwnProperty(vorwahl) &&
-                            layer.feature.properties['vorwahl'][vorwahl].toString(10).toLowerCase().startsWith(lowCaseVal)
-                        ) {
-                            console.log("Vorwahl " + vorwahl + " for " + val + " found...");
-                            show = true;
-                            break;
+                        for (const vorwahl in layer.feature.properties['vorwahl']) {
+                            if (vorwahl !== undefined && vorwahl.toString().toLowerCase().startsWith(lowCaseVal)) {
+                                console.log("Vorwahl " + vorwahl + " found...");
+                                show = true;
+                                break;
+                            }
+                            if (
+                                layer.feature.properties['vorwahl'].hasOwnProperty(vorwahl) &&
+                                layer.feature.properties['vorwahl'][vorwahl].toString(10).toLowerCase().startsWith(lowCaseVal)
+                            ) {
+                                console.log("Vorwahl " + vorwahl + " for " + lowCaseVal + " found...");
+                                show = true;
+                                break;
+                            }
                         }
-                    }
+                    })
 
                     if (show) {
-                        if (val.length === 1) {
+                        if (lowCaseVal.length === 1) {
                             layer.setStyle({
                                 'fillOpacity': 0.6,
                                 'color': layer.feature.properties['color1']
@@ -312,24 +315,26 @@
             promises.push(new Promise(function (resolve, reject) {
                 if ('plz' in layer.feature.properties) {
                     let show = false;
-                    if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
-                        show = true;
-                    }
-                    for (const plz in layer.feature.properties['plz']) {
-                        if (plz !== undefined && plz.toString(10).startsWith(val)) {
-                            console.log("PLZ " + plz + " found...");
+                    lowCaseVals.forEach((lowCaseVal) => {
+                        if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
                             show = true;
-                            break;
                         }
-                        if (
-                            layer.feature.properties['plz'].hasOwnProperty(plz) &&
-                            layer.feature.properties['plz'][plz].toString(10).toLowerCase().startsWith(lowCaseVal)
-                        ) {
-                            console.log("PLZ " + plz + " for " + val + " found...");
-                            show = true;
-                            break;
+                        for (const plz in layer.feature.properties['plz']) {
+                            if (plz !== undefined && plz.toString(10).toLowerCase().startsWith(lowCaseVal)) {
+                                console.log("PLZ " + plz + " found...");
+                                show = true;
+                                break;
+                            }
+                            if (
+                                layer.feature.properties['plz'].hasOwnProperty(plz) &&
+                                layer.feature.properties['plz'][plz].toString(10).toLowerCase().startsWith(lowCaseVal)
+                            ) {
+                                console.log("PLZ " + plz + " for " + lowCaseVal + " found...");
+                                show = true;
+                                break;
+                            }
                         }
-                    }
+                    });
 
                     if (show) {
                         layer.setStyle({
