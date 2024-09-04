@@ -23,12 +23,30 @@
         #map {
             width: 100vw;
             height: 100%;
+            z-index: 0;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            z-index: 10;
+            position: absolute;
+            top: calc(50% - 60px);
+            left: calc(50% - 60px);
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
     </style>
 </head>
 <body>
-
+<div id="loader" class="loader"></div>
 <div id='map'></div>
 
 <script>
@@ -160,6 +178,10 @@
     vorwahlLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
+    vorwahlLayer.addEventListener('data:loaded', function () {
+        console.log("Data loaded...");
+        document.getElementById('loader').style.display = 'none';
+    });
     vorwahlLayer.addTo(map);
 
     const plzLayer = new L.GeoJSON.AJAX("data/vorwahlen+plz.json",
@@ -244,12 +266,12 @@
         minY = Infinity;
         maxX = -Infinity;
         maxY = -Infinity;
-        console.log("Split: " , val.split(/[\s,;\+]+/));
-        const lowCaseVals = val.toLowerCase().split(/[\s,;\+]+/);
+        console.log("Split: " , val.split(/[\s,;+]+/));
+        const lowCaseVals = val.toLowerCase().split(/[\s,;+]+/);
 
         const promises = [];
         vorwahlLayer.eachLayer(function (layer) {
-            promises.push(new Promise(function(resolve, reject) {
+            promises.push(new Promise(function() {
                 if ('vorwahl' in layer.feature.properties) {
                     let show = false;
                     lowCaseVals.forEach((lowCaseVal) => {
@@ -312,7 +334,7 @@
         });
 
         plzLayer.eachLayer(function (layer) {
-            promises.push(new Promise(function (resolve, reject) {
+            promises.push(new Promise(function () {
                 if ('plz' in layer.feature.properties) {
                     let show = false;
                     lowCaseVals.forEach((lowCaseVal) => {
@@ -391,7 +413,7 @@
     }
 
     L.Control.textbox = L.Control.extend({
-        onAdd: function (map) {
+        onAdd: function () {
             const text = L.DomUtil.create('div');
             text.id = 'searchDiv';
             text.innerHTML = '<input id="searchInput" size=10 onkeyup="searchFunction(this.value)"/>';
