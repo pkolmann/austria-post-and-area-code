@@ -274,6 +274,7 @@
             promises.push(new Promise(function() {
                 if ('vorwahl' in layer.feature.properties) {
                     let show = false;
+                    let minLen = Infinity;
                     lowCaseVals.forEach((lowCaseVal) => {
                         if ('name' in layer.feature.properties && layer.feature.properties['name'].toLowerCase().startsWith(lowCaseVal)) {
                             show = true;
@@ -282,6 +283,9 @@
                             if (vorwahl !== undefined && vorwahl.toString().toLowerCase().startsWith(lowCaseVal)) {
                                 console.log("Vorwahl " + vorwahl + " found...");
                                 show = true;
+                                if (lowCaseVal.length < minLen) {
+                                    minLen = lowCaseVal.length;
+                                }
                                 break;
                             }
                             if (
@@ -290,13 +294,16 @@
                             ) {
                                 console.log("Vorwahl " + vorwahl + " for " + lowCaseVal + " found...");
                                 show = true;
+                                if (lowCaseVal.length < minLen) {
+                                    minLen = lowCaseVal.length;
+                                }
                                 break;
                             }
                         }
                     })
 
                     if (show) {
-                        if (lowCaseVal.length === 1) {
+                        if (minLen === 1) {
                             layer.setStyle({
                                 'fillOpacity': 0.6,
                                 'color': layer.feature.properties['color1']
