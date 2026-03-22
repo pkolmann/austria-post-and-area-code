@@ -75,15 +75,36 @@
     let maxX = -Infinity;
     let maxY = -Infinity;
 
+    // Site operator config: set this once to switch all data requests.
+    const DATA_BASE_URL = 'https://raw.githubusercontent.com/pkolmann/austria-post-and-area-code/refs/heads/main/data/';
+
+    const DATA_FILE_NAMES = {
+        VORWAHL_PLZ: 'vorwahlen+plz.json',
+        GEMEINDEN: 'gemeinden_95_geo.json',
+        BEZIRKE: 'bezirke_995_geo.json',
+        WIEN_BEZIRKE: 'BezirksgrenzenWien.json'
+    };
+
+    function buildDataUrl(fileName) {
+        const base = DATA_BASE_URL.endsWith('/') ? DATA_BASE_URL : DATA_BASE_URL + '/';
+        return base + fileName;
+    }
+
+    const DATA_URLS = {
+        VORWAHL_PLZ: buildDataUrl(DATA_FILE_NAMES.VORWAHL_PLZ),
+        GEMEINDEN: buildDataUrl(DATA_FILE_NAMES.GEMEINDEN),
+        BEZIRKE: buildDataUrl(DATA_FILE_NAMES.BEZIRKE),
+        WIEN_BEZIRKE: buildDataUrl(DATA_FILE_NAMES.WIEN_BEZIRKE)
+    };
+
     const dataFiles = [
-        'data/vorwahlen+plz.json',
-        'data/gemeinden_95_geo.json',
-        'data/bezirke_995_geo.json',
-        'data/BezirksgrenzenWien.json'
+        DATA_FILE_NAMES.VORWAHL_PLZ,
+        DATA_FILE_NAMES.GEMEINDEN,
+        DATA_FILE_NAMES.BEZIRKE,
+        DATA_FILE_NAMES.WIEN_BEZIRKE
     ];
 
     const loadedDataFiles = new Set();
-    const trackedDataFiles = new Set(dataFiles);
     const fileByteProgress = new Map();
     const loadingOverlay = document.getElementById('loadingOverlay');
     const loadingText = document.getElementById('loadingText');
@@ -114,11 +135,8 @@
 
     function getTrackedFileKey(url) {
         const normalizedUrl = normalizeDataUrl(url);
-        if (trackedDataFiles.has(normalizedUrl)) {
-            return normalizedUrl;
-        }
         for (const trackedFile of dataFiles) {
-            if (normalizedUrl.endsWith(trackedFile)) {
+            if (normalizedUrl.endsWith('/' + trackedFile) || normalizedUrl.endsWith(trackedFile)) {
                 return trackedFile;
             }
         }
@@ -330,7 +348,7 @@
         // }))
     }
 
-    const vorwahlLayer = new L.GeoJSON.AJAX("data/vorwahlen+plz.json",
+    const vorwahlLayer = new L.GeoJSON.AJAX(DATA_URLS.VORWAHL_PLZ,
         {
             onEachFeature: popUp,
             style: function (feature) {
@@ -350,7 +368,7 @@
     vorwahlLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
-    registerDataLayerProgress(vorwahlLayer, 'data/vorwahlen+plz.json');
+    registerDataLayerProgress(vorwahlLayer, DATA_FILE_NAMES.VORWAHL_PLZ);
     vorwahlLayer.addTo(map);
 
     const plzLayer = new L.GeoJSON(null,
@@ -405,14 +423,14 @@
         ]);
     }
 
-    const gemeindenLayer = new L.GeoJSON.AJAX("data/gemeinden_95_geo.json", {onEachFeature: popUp});
-    registerDataLayerProgress(gemeindenLayer, 'data/gemeinden_95_geo.json');
+    const gemeindenLayer = new L.GeoJSON.AJAX(DATA_URLS.GEMEINDEN, {onEachFeature: popUp});
+    registerDataLayerProgress(gemeindenLayer, DATA_FILE_NAMES.GEMEINDEN);
 
-    const bezirkLayer = new L.GeoJSON.AJAX("data/bezirke_995_geo.json");
-    registerDataLayerProgress(bezirkLayer, 'data/bezirke_995_geo.json');
+    const bezirkLayer = new L.GeoJSON.AJAX(DATA_URLS.BEZIRKE);
+    registerDataLayerProgress(bezirkLayer, DATA_FILE_NAMES.BEZIRKE);
 
-    const wienBezirkLayer = new L.GeoJSON.AJAX("data/BezirksgrenzenWien.json", {onEachFeature: popUp});
-    registerDataLayerProgress(wienBezirkLayer, 'data/BezirksgrenzenWien.json');
+    const wienBezirkLayer = new L.GeoJSON.AJAX(DATA_URLS.WIEN_BEZIRKE, {onEachFeature: popUp});
+    registerDataLayerProgress(wienBezirkLayer, DATA_FILE_NAMES.WIEN_BEZIRKE);
 
     const overlayLayers = {
         "Vorwahlen": vorwahlLayer,
