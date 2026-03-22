@@ -1365,6 +1365,14 @@ $gemAdd['Jabing'] = ['vorwahl' => '3362'];
 $gemAdd['Badersdorf'] = ['plz' => '7512', 'vorwahl' => '3366'];
 $gemAdd['Schandorf'] = ['plz' => '7472', 'vorwahl' => '3364'];
 $gemAdd[20402] = ['vorwahl' => '463'];
+$gemAdd['Keutschach am See'] = ['vorwahl' => '4273'];
+$gemAdd['Ludmannsdorf'] = ['vorwahl' => '4228'];
+$gemAdd['Maria Rain'] = ['vorwahl' => '4227'];
+$gemAdd['Moosburg'] = ['vorwahl' => '4272'];
+$gemAdd['Schiefling am See'] = ['vorwahl' => '4274'];
+$gemAdd['Techelsberg am Wörthersee'] = ['vorwahl' => '4272'];
+$gemAdd['Zell'] = ['vorwahl' => '4227'];
+$gemAdd['Magdalensberg'] = ['vorwahl' => '4224'];
 
 $color = array();
 $color[1] = array();
