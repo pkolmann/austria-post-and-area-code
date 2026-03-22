@@ -353,7 +353,7 @@
     registerDataLayerProgress(vorwahlLayer, 'data/vorwahlen+plz.json');
     vorwahlLayer.addTo(map);
 
-    const plzLayer = new L.GeoJSON.AJAX("data/vorwahlen+plz.json",
+    const plzLayer = new L.GeoJSON(null,
         {
             onEachFeature: popUp,
             style: function (feature) {
@@ -373,7 +373,14 @@
     plzLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
-    registerDataLayerProgress(plzLayer, 'data/vorwahlen+plz.json');
+    // Reuse the already downloaded vorwahl+plz payload instead of requesting it a second time.
+    vorwahlLayer.addEventListener('data:progress', function (data) {
+        if (!data || data.error) {
+            return;
+        }
+        plzLayer.clearLayers();
+        plzLayer.addData(data);
+    });
     plzLayer.addTo(map);
 
     // Promise.all(popUpPromises)
