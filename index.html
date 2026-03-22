@@ -90,19 +90,21 @@
         return base + fileName;
     }
 
-    const DATA_URLS = {
-        VORWAHL_PLZ: buildDataUrl(DATA_FILE_NAMES.VORWAHL_PLZ),
-        GEMEINDEN: buildDataUrl(DATA_FILE_NAMES.GEMEINDEN),
-        BEZIRKE: buildDataUrl(DATA_FILE_NAMES.BEZIRKE),
-        WIEN_BEZIRKE: buildDataUrl(DATA_FILE_NAMES.WIEN_BEZIRKE)
-    };
-
-    const dataFiles = [
-        DATA_FILE_NAMES.VORWAHL_PLZ,
-        DATA_FILE_NAMES.GEMEINDEN,
-        DATA_FILE_NAMES.BEZIRKE,
-        DATA_FILE_NAMES.WIEN_BEZIRKE
+    const DATASETS = [
+        {key: DATA_FILE_NAMES.VORWAHL_PLZ, jsonFileName: DATA_FILE_NAMES.VORWAHL_PLZ},
+        {key: DATA_FILE_NAMES.GEMEINDEN, jsonFileName: DATA_FILE_NAMES.GEMEINDEN},
+        {key: DATA_FILE_NAMES.BEZIRKE, jsonFileName: DATA_FILE_NAMES.BEZIRKE},
+        {key: DATA_FILE_NAMES.WIEN_BEZIRKE, jsonFileName: DATA_FILE_NAMES.WIEN_BEZIRKE}
     ];
+
+    const DATASET_BY_KEY = {};
+    DATASETS.forEach(function (dataset) {
+        DATASET_BY_KEY[dataset.key] = dataset;
+    });
+
+    const dataFiles = DATASETS.map(function (dataset) {
+        return dataset.key;
+    });
 
     const loadedDataFiles = new Set();
     const fileByteProgress = new Map();
@@ -125,24 +127,6 @@
         return value.toFixed(decimals) + ' ' + units[unitIndex];
     }
 
-    function normalizeDataUrl(url) {
-        try {
-            return new URL(url, window.location.href).pathname.replace(/^\/+/, '');
-        } catch (e) {
-            return String(url || '').replace(/^\/+/, '');
-        }
-    }
-
-    function getTrackedFileKey(url) {
-        const normalizedUrl = normalizeDataUrl(url);
-        for (const trackedFile of dataFiles) {
-            if (normalizedUrl.endsWith('/' + trackedFile) || normalizedUrl.endsWith(trackedFile)) {
-                return trackedFile;
-            }
-        }
-        return null;
-    }
-
     dataFiles.forEach(function (file) {
         fileByteProgress.set(file, {
             loaded: 0,
@@ -151,38 +135,122 @@
         });
     });
 
-    (function wireXHRByteProgress() {
-        if (typeof window.XMLHttpRequest === 'undefined') {
+    function resetFileProgress(fileKey) {
+        const state = fileByteProgress.get(fileKey);
+        if (!state) {
             return;
         }
+        state.loaded = 0;
+        state.total = 0;
+        state.hasTotal = false;
+        updateLoadingProgress();
+    }
 
-        const originalOpen = window.XMLHttpRequest.prototype.open;
-        const originalSend = window.XMLHttpRequest.prototype.send;
+    function updateFileProgress(fileKey, loaded, total) {
+        const state = fileByteProgress.get(fileKey);
+        if (!state) {
+            return;
+        }
+        state.loaded = Math.max(0, Number(loaded) || 0);
+        if (Number.isFinite(total) && total > 0) {
+            state.hasTotal = true;
+            state.total = Math.max(state.total, total);
+        }
+        updateLoadingProgress();
+    }
 
-        window.XMLHttpRequest.prototype.open = function (method, url) {
-            this.__trackedDataFileKey = getTrackedFileKey(url);
-            return originalOpen.apply(this, arguments);
-        };
+    function concatUint8Arrays(chunks, totalLength) {
+        const combined = new Uint8Array(totalLength);
+        let offset = 0;
+        chunks.forEach(function (chunk) {
+            combined.set(chunk, offset);
+            offset += chunk.length;
+        });
+        return combined;
+    }
 
-        window.XMLHttpRequest.prototype.send = function () {
-            const fileKey = this.__trackedDataFileKey;
-            if (fileKey) {
-                this.addEventListener('progress', function (event) {
-                    const fileState = fileByteProgress.get(fileKey);
-                    if (!fileState) {
-                        return;
-                    }
-                    fileState.loaded = Math.max(fileState.loaded, Number(event.loaded) || 0);
-                    if (event.lengthComputable && Number(event.total) > 0) {
-                        fileState.hasTotal = true;
-                        fileState.total = Math.max(fileState.total, Number(event.total));
-                    }
-                    updateLoadingProgress();
-                });
+    async function fetchBinaryWithProgress(url, fileKey) {
+        resetFileProgress(fileKey);
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('HTTP ' + response.status + ' for ' + url);
+        }
+
+        const totalHeader = Number(response.headers.get('content-length'));
+        if (Number.isFinite(totalHeader) && totalHeader > 0) {
+            updateFileProgress(fileKey, 0, totalHeader);
+        }
+
+        if (!response.body || !response.body.getReader) {
+            const arrayBuffer = await response.arrayBuffer();
+            const bytes = new Uint8Array(arrayBuffer);
+            updateFileProgress(fileKey, bytes.length, bytes.length);
+            return bytes;
+        }
+
+        const reader = response.body.getReader();
+        const chunks = [];
+        let receivedLength = 0;
+        while (true) {
+            const readResult = await reader.read();
+            if (readResult.done) {
+                break;
             }
-            return originalSend.apply(this, arguments);
-        };
-    })();
+            chunks.push(readResult.value);
+            receivedLength += readResult.value.length;
+            updateFileProgress(fileKey, receivedLength, totalHeader);
+        }
+        if (!(Number.isFinite(totalHeader) && totalHeader > 0)) {
+            updateFileProgress(fileKey, receivedLength, receivedLength);
+        }
+        return concatUint8Arrays(chunks, receivedLength);
+    }
+
+    async function parseZipJson(zipBytes, expectedJsonFileName) {
+        const zip = await JSZip.loadAsync(zipBytes);
+        let zipEntry = zip.files[expectedJsonFileName] || null;
+        if (!zipEntry) {
+            const entries = Object.keys(zip.files);
+            for (const entryName of entries) {
+                if (entryName.endsWith('/')) {
+                    continue;
+                }
+                if (entryName === expectedJsonFileName || entryName.endsWith('/' + expectedJsonFileName)) {
+                    zipEntry = zip.files[entryName];
+                    break;
+                }
+            }
+        }
+        if (!zipEntry) {
+            const jsonEntries = Object.keys(zip.files).filter(function (entryName) {
+                return !entryName.endsWith('/') && entryName.toLowerCase().endsWith('.json');
+            });
+            if (jsonEntries.length > 0) {
+                zipEntry = zip.files[jsonEntries[0]];
+            }
+        }
+        if (!zipEntry) {
+            throw new Error('No JSON entry found in zip for ' + expectedJsonFileName);
+        }
+
+        const jsonText = await zipEntry.async('string');
+        return JSON.parse(jsonText);
+    }
+
+    async function loadDatasetWithFallback(dataset) {
+        const zipUrl = buildDataUrl(dataset.jsonFileName + '.zip');
+        try {
+            const zipBytes = await fetchBinaryWithProgress(zipUrl, dataset.key);
+            return await parseZipJson(zipBytes, dataset.jsonFileName);
+        } catch (zipError) {
+            console.warn('ZIP load failed for ' + dataset.key + ', fallback to JSON', zipError);
+        }
+
+        const jsonUrl = buildDataUrl(dataset.jsonFileName);
+        const jsonBytes = await fetchBinaryWithProgress(jsonUrl, dataset.key);
+        const decoder = new TextDecoder('utf-8');
+        return JSON.parse(decoder.decode(jsonBytes));
+    }
 
     function updateLoadingProgress() {
         const loaded = loadedDataFiles.size;
@@ -229,18 +297,14 @@
         }
     }
 
-    function registerDataLayerProgress(layer, fileKey) {
-        layer.addEventListener('data:loaded', function () {
+    function markDataFileDone(fileKey, error) {
+        if (error) {
+            console.error('Error loading data file:', fileKey, error);
+        } else {
             console.log('Data loaded:', fileKey);
-            loadedDataFiles.add(fileKey);
-            updateLoadingProgress();
-        });
-
-        layer.addEventListener('data:error', function (e) {
-            console.error('Error loading data file:', fileKey, e);
-            loadedDataFiles.add(fileKey);
-            updateLoadingProgress();
-        });
+        }
+        loadedDataFiles.add(fileKey);
+        updateLoadingProgress();
     }
 
     updateLoadingProgress();
@@ -348,7 +412,7 @@
         // }))
     }
 
-    const vorwahlLayer = new L.GeoJSON.AJAX(DATA_URLS.VORWAHL_PLZ,
+    const vorwahlLayer = new L.GeoJSON(null,
         {
             onEachFeature: popUp,
             style: function (feature) {
@@ -368,7 +432,6 @@
     vorwahlLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
-    registerDataLayerProgress(vorwahlLayer, DATA_FILE_NAMES.VORWAHL_PLZ);
     vorwahlLayer.addTo(map);
 
     const plzLayer = new L.GeoJSON(null,
@@ -391,14 +454,6 @@
     plzLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
-    // Reuse the already downloaded vorwahl+plz payload instead of requesting it a second time.
-    vorwahlLayer.addEventListener('data:progress', function (data) {
-        if (!data || data.error) {
-            return;
-        }
-        plzLayer.clearLayers();
-        plzLayer.addData(data);
-    });
     plzLayer.addTo(map);
 
     // Promise.all(popUpPromises)
@@ -423,14 +478,54 @@
         ]);
     }
 
-    const gemeindenLayer = new L.GeoJSON.AJAX(DATA_URLS.GEMEINDEN, {onEachFeature: popUp});
-    registerDataLayerProgress(gemeindenLayer, DATA_FILE_NAMES.GEMEINDEN);
+    const gemeindenLayer = new L.GeoJSON(null, {onEachFeature: popUp});
 
-    const bezirkLayer = new L.GeoJSON.AJAX(DATA_URLS.BEZIRKE);
-    registerDataLayerProgress(bezirkLayer, DATA_FILE_NAMES.BEZIRKE);
+    const bezirkLayer = new L.GeoJSON(null);
 
-    const wienBezirkLayer = new L.GeoJSON.AJAX(DATA_URLS.WIEN_BEZIRKE, {onEachFeature: popUp});
-    registerDataLayerProgress(wienBezirkLayer, DATA_FILE_NAMES.WIEN_BEZIRKE);
+    const wienBezirkLayer = new L.GeoJSON(null, {onEachFeature: popUp});
+
+    const datasetLoadPlan = [
+        {
+            dataset: DATASET_BY_KEY[DATA_FILE_NAMES.VORWAHL_PLZ],
+            assign: function (geoJsonData) {
+                vorwahlLayer.clearLayers();
+                plzLayer.clearLayers();
+                vorwahlLayer.addData(geoJsonData);
+                plzLayer.addData(geoJsonData);
+            }
+        },
+        {
+            dataset: DATASET_BY_KEY[DATA_FILE_NAMES.GEMEINDEN],
+            assign: function (geoJsonData) {
+                gemeindenLayer.clearLayers();
+                gemeindenLayer.addData(geoJsonData);
+            }
+        },
+        {
+            dataset: DATASET_BY_KEY[DATA_FILE_NAMES.BEZIRKE],
+            assign: function (geoJsonData) {
+                bezirkLayer.clearLayers();
+                bezirkLayer.addData(geoJsonData);
+            }
+        },
+        {
+            dataset: DATASET_BY_KEY[DATA_FILE_NAMES.WIEN_BEZIRKE],
+            assign: function (geoJsonData) {
+                wienBezirkLayer.clearLayers();
+                wienBezirkLayer.addData(geoJsonData);
+            }
+        }
+    ];
+
+    Promise.all(datasetLoadPlan.map(async function (loadItem) {
+        try {
+            const geoJsonData = await loadDatasetWithFallback(loadItem.dataset);
+            loadItem.assign(geoJsonData);
+            markDataFileDone(loadItem.dataset.key);
+        } catch (error) {
+            markDataFileDone(loadItem.dataset.key, error);
+        }
+    }));
 
     const overlayLayers = {
         "Vorwahlen": vorwahlLayer,
