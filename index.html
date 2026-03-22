@@ -26,27 +26,47 @@
             z-index: 0;
         }
 
-        .loader {
-            border: 16px solid #f3f3f3; /* Light grey */
-            border-top: 16px solid #3498db; /* Blue */
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
-            z-index: 10;
+        #loadingOverlay {
             position: absolute;
-            top: calc(50% - 60px);
-            left: calc(50% - 60px);
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            width: min(420px, calc(100vw - 40px));
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            font: 14px/1.2 Arial, sans-serif;
         }
 
+        #loadingText {
+            margin-bottom: 8px;
+        }
+
+        #loadingBarTrack {
+            height: 12px;
+            background: #e6e6e6;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        #loadingBarFill {
+            width: 0;
+            height: 100%;
+            background: #3498db;
+            transition: width 0.2s ease;
+        }
     </style>
 </head>
 <body>
-<div id="loader" class="loader"></div>
+<div id="loadingOverlay">
+    <div id="loadingText">Lade Daten: 0/4 Dateien - 0 B / 0 B (0%)</div>
+    <div id="loadingBarTrack">
+        <div id="loadingBarFill"></div>
+    </div>
+</div>
 <div id='map'></div>
 
 <script>
@@ -54,6 +74,158 @@
     let minY = Infinity;
     let maxX = -Infinity;
     let maxY = -Infinity;
+
+    const dataFiles = [
+        'data/vorwahlen+plz.json',
+        'data/gemeinden_95_geo.json',
+        'data/bezirke_995_geo.json',
+        'data/BezirksgrenzenWien.json'
+    ];
+
+    const loadedDataFiles = new Set();
+    const trackedDataFiles = new Set(dataFiles);
+    const fileByteProgress = new Map();
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const loadingText = document.getElementById('loadingText');
+    const loadingBarFill = document.getElementById('loadingBarFill');
+
+    function formatBytes(bytes) {
+        if (!Number.isFinite(bytes) || bytes <= 0) {
+            return '0 B';
+        }
+        const units = ['B', 'KB', 'MB', 'GB'];
+        let unitIndex = 0;
+        let value = bytes;
+        while (value >= 1024 && unitIndex < units.length - 1) {
+            value /= 1024;
+            unitIndex += 1;
+        }
+        const decimals = value >= 100 || unitIndex === 0 ? 0 : 1;
+        return value.toFixed(decimals) + ' ' + units[unitIndex];
+    }
+
+    function normalizeDataUrl(url) {
+        try {
+            return new URL(url, window.location.href).pathname.replace(/^\/+/, '');
+        } catch (e) {
+            return String(url || '').replace(/^\/+/, '');
+        }
+    }
+
+    function getTrackedFileKey(url) {
+        const normalizedUrl = normalizeDataUrl(url);
+        if (trackedDataFiles.has(normalizedUrl)) {
+            return normalizedUrl;
+        }
+        for (const trackedFile of dataFiles) {
+            if (normalizedUrl.endsWith(trackedFile)) {
+                return trackedFile;
+            }
+        }
+        return null;
+    }
+
+    dataFiles.forEach(function (file) {
+        fileByteProgress.set(file, {
+            loaded: 0,
+            total: 0,
+            hasTotal: false
+        });
+    });
+
+    (function wireXHRByteProgress() {
+        if (typeof window.XMLHttpRequest === 'undefined') {
+            return;
+        }
+
+        const originalOpen = window.XMLHttpRequest.prototype.open;
+        const originalSend = window.XMLHttpRequest.prototype.send;
+
+        window.XMLHttpRequest.prototype.open = function (method, url) {
+            this.__trackedDataFileKey = getTrackedFileKey(url);
+            return originalOpen.apply(this, arguments);
+        };
+
+        window.XMLHttpRequest.prototype.send = function () {
+            const fileKey = this.__trackedDataFileKey;
+            if (fileKey) {
+                this.addEventListener('progress', function (event) {
+                    const fileState = fileByteProgress.get(fileKey);
+                    if (!fileState) {
+                        return;
+                    }
+                    fileState.loaded = Math.max(fileState.loaded, Number(event.loaded) || 0);
+                    if (event.lengthComputable && Number(event.total) > 0) {
+                        fileState.hasTotal = true;
+                        fileState.total = Math.max(fileState.total, Number(event.total));
+                    }
+                    updateLoadingProgress();
+                });
+            }
+            return originalSend.apply(this, arguments);
+        };
+    })();
+
+    function updateLoadingProgress() {
+        const loaded = loadedDataFiles.size;
+        const total = dataFiles.length;
+        let loadedBytes = 0;
+        let totalBytes = 0;
+        let filesWithKnownTotal = 0;
+
+        fileByteProgress.forEach(function (fileState) {
+            loadedBytes += fileState.loaded;
+            if (fileState.hasTotal) {
+                filesWithKnownTotal += 1;
+                totalBytes += fileState.total;
+            }
+        });
+
+        const percent = totalBytes > 0
+            ? Math.round(Math.min((loadedBytes / totalBytes) * 100, 100))
+            : Math.round((loaded / total) * 100);
+
+        if (filesWithKnownTotal === total) {
+            loadingText.textContent = 'Lade Daten: ' + loaded + '/' + total + ' Dateien - ' +
+                formatBytes(loadedBytes) + ' / ' + formatBytes(totalBytes) + ' (' + percent + '%)';
+        } else if (filesWithKnownTotal > 0) {
+            loadingText.textContent = 'Lade Daten: ' + loaded + '/' + total + ' Dateien - ' +
+                formatBytes(loadedBytes) + ' / ' + formatBytes(totalBytes) + ' (' + percent + '%, teils unbekannte Groesse)';
+        } else {
+            loadingText.textContent = 'Lade Daten: ' + loaded + '/' + total + ' Dateien - ' +
+                formatBytes(loadedBytes) + ' geladen';
+        }
+        loadingBarFill.style.width = percent + '%';
+
+        if (loaded >= total) {
+            dataFiles.forEach(function (file) {
+                const fileState = fileByteProgress.get(file);
+                if (fileState && fileState.hasTotal) {
+                    fileState.loaded = Math.max(fileState.loaded, fileState.total);
+                }
+            });
+            loadingBarFill.style.width = '100%';
+            setTimeout(function () {
+                loadingOverlay.style.display = 'none';
+            }, 300);
+        }
+    }
+
+    function registerDataLayerProgress(layer, fileKey) {
+        layer.addEventListener('data:loaded', function () {
+            console.log('Data loaded:', fileKey);
+            loadedDataFiles.add(fileKey);
+            updateLoadingProgress();
+        });
+
+        layer.addEventListener('data:error', function (e) {
+            console.error('Error loading data file:', fileKey, e);
+            loadedDataFiles.add(fileKey);
+            updateLoadingProgress();
+        });
+    }
+
+    updateLoadingProgress();
 
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
         maxZoom: 18,
@@ -178,10 +350,7 @@
     vorwahlLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
-    vorwahlLayer.addEventListener('data:loaded', function () {
-        console.log("Data loaded...");
-        document.getElementById('loader').style.display = 'none';
-    });
+    registerDataLayerProgress(vorwahlLayer, 'data/vorwahlen+plz.json');
     vorwahlLayer.addTo(map);
 
     const plzLayer = new L.GeoJSON.AJAX("data/vorwahlen+plz.json",
@@ -204,6 +373,7 @@
     plzLayer.getAttribution = function () {
         return 'RTR-GmbH – data.rtr.at';
     };
+    registerDataLayerProgress(plzLayer, 'data/vorwahlen+plz.json');
     plzLayer.addTo(map);
 
     // Promise.all(popUpPromises)
@@ -229,8 +399,13 @@
     }
 
     const gemeindenLayer = new L.GeoJSON.AJAX("data/gemeinden_95_geo.json", {onEachFeature: popUp});
+    registerDataLayerProgress(gemeindenLayer, 'data/gemeinden_95_geo.json');
+
     const bezirkLayer = new L.GeoJSON.AJAX("data/bezirke_995_geo.json");
+    registerDataLayerProgress(bezirkLayer, 'data/bezirke_995_geo.json');
+
     const wienBezirkLayer = new L.GeoJSON.AJAX("data/BezirksgrenzenWien.json", {onEachFeature: popUp});
+    registerDataLayerProgress(wienBezirkLayer, 'data/BezirksgrenzenWien.json');
 
     const overlayLayers = {
         "Vorwahlen": vorwahlLayer,
