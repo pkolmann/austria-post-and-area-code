@@ -3,17 +3,36 @@
 jq -n \
   --slurpfile g gemeinden_95_geo.json \
   --slurpfile m vorwahlen+plz.json '
-  def key: ((.properties.iso // .properties.name) | tostring);
+  def key: (.properties.iso | tostring);
 
   ($m[0].features | reduce .[] as $f ({}; .[($f | key)] = $f)) as $mapped
-  | $g[0].features[]
-  | . as $gk
-  | ($mapped[($gk | key)] // null) as $hit
+  | [
+      $g[0].features[]
+      | . as $gk
+      | ($mapped[($gk | key)] // null) as $hit
+      | {
+          iso: ($gk.properties.iso | tostring),
+          name: $gk.properties.name,
+          plz: (if $hit != null and (($hit.properties.plz? // {}) | length > 0)
+                then $hit.properties.plz
+                else null
+                end),
+          vorwahl: (if $hit != null and (($hit.properties.vorwahl? // {}) | length > 0)
+                    then $hit.properties.vorwahl
+                    else null
+                    end),
+          missing_plz: ($hit == null or (($hit.properties.plz? // {}) | length == 0)),
+          missing_vorwahl: ($hit == null or (($hit.properties.vorwahl? // {}) | length == 0))
+        }
+      | select(.missing_plz or .missing_vorwahl)
+    ]
+  | sort_by(.iso)
   | {
-      iso: $gk.properties.iso,
-      name: $gk.properties.name,
-      missing_plz: ($hit == null or (($hit.properties.plz? // {}) | length == 0)),
-      missing_vorwahl: ($hit == null or (($hit.properties.vorwahl? // {}) | length == 0))
+      entries: .,
+      grouped_by_first_digit: (
+        group_by(.iso[0:1])
+        | map({ prefix: .[0].iso[0:1], count: length })
+      ),
+      total: length
     }
-  | select(.missing_plz or .missing_vorwahl)
 '
