@@ -1252,6 +1252,119 @@ $gemAdd['Scheiblingkirchen-Thernberg'] = ['vorwahl' => '2629'];
 $gemAdd['Seebenstein'] = ['vorwahl' => '2627'];
 $gemAdd['Schwarzau am Steinfeld'] = ['vorwahl' => '2627'];
 $gemAdd['Walpersbach'] = ['vorwahl' => '2627'];
+$gemAdd['Breitenbrunn'] = ['vorwahl' => '2683'];
+$gemAdd['Donnerskirchen'] = ['vorwahl' => '2683'];
+$gemAdd['Großhöflein'] = ['vorwahl' => '2682'];
+$gemAdd['Klingenbach'] = ['vorwahl' => '2687'];
+$gemAdd['Mörbisch am See'] = ['vorwahl' => '2685'];
+$gemAdd['Müllendorf'] = ['vorwahl' => '2682'];
+$gemAdd['Neufeld an der Leitha'] = ['vorwahl' => '2624'];
+$gemAdd['Oggau am Neusiedler See'] = ['vorwahl' => '2685'];
+$gemAdd['Oslip'] = ['vorwahl' => '2684'];
+$gemAdd['Trausdorf an der Wulka'] = ['vorwahl' => '2682'];
+$gemAdd['Wimpassing an der Leitha'] = ['plz' => '2485', 'vorwahl' => '2623'];
+$gemAdd['Wulkaprodersdorf'] = ['vorwahl' => '2687'];
+$gemAdd['Loretto'] = ['plz' => '2443', 'vorwahl' => '2255'];
+$gemAdd['Stotzing'] = ['plz' => '2443', 'vorwahl' => '2255'];
+$gemAdd['Zillingtal'] = ['vorwahl' => '2688'];
+$gemAdd['Zagersdorf'] = ['vorwahl' => '2687'];
+$gemAdd['Bocksdorf'] = ['plz' => '7553', 'vorwahl' => '3326'];
+$gemAdd['Burgauberg-Neudauberg'] = ['vorwahl' => '3326'];
+$gemAdd['Gerersdorf-Sulz'] = ['vorwahl' => '3328'];
+$gemAdd['Güttenbach'] = ['vorwahl' => '3327'];
+$gemAdd['Heiligenbrunn'] = ['plz' => '7522', 'vorwahl' => '3324'];
+$gemAdd['Neuberg im Burgenland'] = ['vorwahl' => '3327'];
+$gemAdd['Neustift bei Güssing'] = ['plz' => '7545', 'vorwahl' => '3325'];
+$gemAdd['Olbendorf'] = ['vorwahl' => '3326'];
+$gemAdd['Ollersdorf im Burgenland'] = ['vorwahl' => '3326'];
+$gemAdd['Stinatz'] = ['vorwahl' => '3358'];
+$gemAdd['Tobaj'] = ['vorwahl' => '3322'];
+$gemAdd['Hackerberg'] = ['plz' => '8292', 'vorwahl' => '3358'];
+$gemAdd['Wörterberg'] = ['plz' => '7550', 'vorwahl' => '3358'];
+$gemAdd['Großmürbisch'] = ['plz' => '7540', 'vorwahl' => '3322'];
+$gemAdd['Inzenhof'] = ['plz' => '7540', 'vorwahl' => '3322'];
+$gemAdd['Kleinmürbisch'] = ['plz' => '7540', 'vorwahl' => '3322'];
+$gemAdd['Tschanigraben'] = ['plz' => '7540', 'vorwahl' => '3322'];
+$gemAdd['Heugraben'] = ['plz' => '7551', 'vorwahl' => '3326'];
+$gemAdd['Rohr im Burgenland'] = ['plz' => '7554', 'vorwahl' => '3326'];
+$gemAdd['Bildein'] = ['plz' => '7521', 'vorwahl' => '3323'];
+$gemAdd['Rauchwart'] = ['plz' => ['7534' => 'Olbendorf', '7535' => 'St. Michael im Burgenland'], 'vorwahl' => '3327'];
+$gemAdd['Moschendorf'] = ['plz' => '7546', 'vorwahl' => '3324'];
+$gemAdd['Deutsch Kaltenbrunn'] = ['vorwahl' => '3382'];
+$gemAdd['Eltendorf'] = ['vorwahl' => '3325'];
+$gemAdd['Minihof-Liebau'] = ['vorwahl' => '3329'];
+$gemAdd['Mogersdorf'] = ['vorwahl' => '3325'];
+$gemAdd['Neuhaus am Klausenbach'] = ['vorwahl' => '3329'];
+$gemAdd['Rudersdorf'] = ['vorwahl' => '3382'];
+$gemAdd['St. Martin an der Raab'] = ['vorwahl' => '3329'];
+$gemAdd['Weichselbaum'] = ['plz' => '8382', 'vorwahl' => '3329'];
+$gemAdd['Königsdorf'] = ['vorwahl' => '3325'];
+$gemAdd['Mühlgraben'] = ['plz' => '8385', 'vorwahl' => '3329'];
+$gemAdd['Forchtenstein'] = ['vorwahl' => '2626'];
+$gemAdd['Hirm'] = ['vorwahl' => '2687'];
+$gemAdd['Loipersbach im Burgenland'] = ['vorwahl' => '2686'];
+$gemAdd['Marz'] = ['vorwahl' => '2626'];
+$gemAdd['Neudörfl'] = ['vorwahl' => '2622'];
+$gemAdd['Pöttelsdorf'] = ['plz' => '7025', 'vorwahl' => '2626'];
+$gemAdd['Rohrbach bei Mattersburg'] = ['vorwahl' => '2626'];
+$gemAdd['Schattendorf'] = ['vorwahl' => '2686'];
+$gemAdd['Sigleß'] = ['vorwahl' => '2626'];
+$gemAdd['Wiesen'] = ['vorwahl' => '2626'];
+$gemAdd['Antau'] = ['vorwahl' => '2687'];
+$gemAdd['Baumgarten'] = ['plz' => '7021', 'vorwahl' => '2686'];
+$gemAdd['Zemendorf-Stöttera'] = ['vorwahl' => '2626'];
+$gemAdd['Krensdorf'] = ['vorwahl' => '2626'];
+$gemAdd['Andau'] = ['vorwahl' => '2176'];
+$gemAdd['Bruckneudorf'] = ['plz' => ['2460' => 'Bruck an der Leitha', '2462' => 'Wilfleinsdorf'], 'vorwahl' => '2162'];
+$gemAdd['Halbturn'] = ['vorwahl' => '2172'];
+$gemAdd['Illmitz'] = ['vorwahl' => '2175'];
+$gemAdd['Mönchhof'] = ['vorwahl' => '2173'];
+$gemAdd['Pama'] = ['vorwahl' => '2142'];
+$gemAdd['Pamhagen'] = ['vorwahl' => '2174'];
+$gemAdd['St. Andrä am Zicksee'] = ['vorwahl' => '2176'];
+$gemAdd['Weiden am See'] = ['vorwahl' => '2167'];
+$gemAdd['Winden am See'] = ['vorwahl' => '2160'];
+$gemAdd['Neudorf'] = ['vorwahl' => '2142'];
+$gemAdd['Potzneusiedl'] = ['vorwahl' => '2145'];
+$gemAdd['Edelstal'] = ['plz' => '2413', 'vorwahl' => '2145'];
+$gemAdd['Frankenau-Unterpullendorf'] = ['vorwahl' => ['2615' => 'Lutzmannsburg', '2612' => 'Oberpullendorf']];
+$gemAdd['Kaisersdorf'] = ['vorwahl' => '2617'];
+$gemAdd['Kobersdorf'] = ['vorwahl' => '2618'];
+$gemAdd['Lackenbach'] = ['vorwahl' => '2619'];
+$gemAdd['Neckenmarkt'] = ['vorwahl' => '2610'];
+$gemAdd['Neutal'] = ['vorwahl' => '2618'];
+$gemAdd['Nikitsch'] = ['vorwahl' => '2614'];
+$gemAdd['Pilgersdorf'] = ['vorwahl' => '2616'];
+$gemAdd['Piringsdorf'] = ['vorwahl' => '2616'];
+$gemAdd['Raiding'] = ['plz' => '7321', 'vorwahl' => '2619'];
+$gemAdd['Ritzing'] = ['vorwahl' => '2619'];
+$gemAdd['Steinberg-Dörfl'] = ['vorwahl' => '2612'];
+$gemAdd['Stoob'] = ['vorwahl' => '2612'];
+$gemAdd['Weppersdorf'] = ['vorwahl' => '2618'];
+$gemAdd['Unterfrauenhaid'] = ['plz' => '7321', 'vorwahl' => '2619'];
+$gemAdd['Unterrabnitz-Schwendgraben'] = ['vorwahl' => '2616'];
+$gemAdd['Weingraben'] = ['vorwahl' => '2617'];
+$gemAdd['Oberloisdorf'] = ['vorwahl' => '2619'];
+$gemAdd['Bad Tatzmannsdorf'] = ['vorwahl' => '3353'];
+$gemAdd['Grafenschachen'] = ['vorwahl' => '3359'];
+$gemAdd['Kemeten'] = ['vorwahl' => '3352'];
+$gemAdd['Mariasdorf'] = ['vorwahl' => '3353'];
+$gemAdd['Markt Neuhodis'] = ['vorwahl' => '3363'];
+$gemAdd['Mischendorf'] = ['vorwahl' => ['3366' => 'Kohfidisch', '3362' => 'Großpetersdorf']];
+$gemAdd['Oberdorf im Burgenland'] = ['plz' => '7501', 'vorwahl' => '3352'];
+$gemAdd['Riedlingsdorf'] = ['vorwahl' => '3357'];
+$gemAdd['Rotenturm an der Pinka'] = ['vorwahl' => '3352'];
+$gemAdd['Schachendorf'] = ['vorwahl' => '3364'];
+$gemAdd['Unterkohlstätten'] = ['vorwahl' => '3354'];
+$gemAdd['Unterwart'] = ['vorwahl' => '3352'];
+$gemAdd['Weiden bei Rechnitz'] = ['vorwahl' => '3355'];
+$gemAdd['Wiesfleck'] = ['vorwahl' => '3357'];
+$gemAdd['Wolfau'] = ['vorwahl' => '3356'];
+$gemAdd['Neustift an der Lafnitz'] = ['plz' => '7420', 'vorwahl' => '3338'];
+$gemAdd['Jabing'] = ['vorwahl' => '3362'];
+$gemAdd['Badersdorf'] = ['plz' => '7512', 'vorwahl' => '3366'];
+$gemAdd['Schandorf'] = ['plz' => '7472', 'vorwahl' => '3364'];
+$gemAdd[20402] = ['vorwahl' => '463'];
 
 $color = array();
 $color[1] = array();
@@ -1327,29 +1440,35 @@ print "found gemKey: ".count($gemKey)."\n\n";
 
 // add gemAdd data to PLZ and Vorwahl data to process
 foreach ($gemAdd as $gemName => $gem) {
+    if (is_string($gemName)) {
+        $gemName = trim($gemName);
+    }
     if (array_key_exists($gemName, $gemKey)) {
         if (array_key_exists('plz', $gem)) {
             if (is_array($gem['plz'])) {
                 foreach ($gem['plz'] as $xplz => $xName) {
-                    if (array_key_exists($xplz, $plzArray)) {
-                        $newPlz = array();
-                        $newPlz['name'] = $gemName;
-                        $newPlz['validFor'] = $xName;
-                        $newPlz['original'] = $plzArray[$xplz][0]['original'];
-                        $plzArray[$xplz][] = $newPlz;
-                    } else {
-                        print "$gemName - $xplz from gemAdd was not found in PLZ List!!!\n";
-                    }
-                }
-            } else {
-                if (array_key_exists($gem['plz'], $plzArray)) {
                     $newPlz = array();
                     $newPlz['name'] = $gemName;
-                    $newPlz['original'] = $plzArray[$gem['plz']][0]['original'];
-                    $plzArray[$gem['plz']][] = $newPlz;
-                } else {
-                    print "$gemName - $xplz from gemAdd was not found in PLZ List!!!\n";
+                    $newPlz['validFor'] = $xName;
+                    if (array_key_exists($xplz, $plzArray)) {
+                        $newPlz['original'] = $plzArray[$xplz][0]['original'];
+                    } else {
+                        # Add new PLZ to PLZ list
+                        $newPlz['original'] = $xplz;
+                        print_r($newPlz);
+                    }
+                    $plzArray[$xplz][] = $newPlz;
                 }
+            } else {
+                $newPlz = array();
+                $newPlz['name'] = $gemName;
+                if (array_key_exists($gem['plz'], $plzArray)) {
+                    $newPlz['original'] = $plzArray[$gem['plz']][0]['original'];
+                } else {
+                    # Add new PLZ to PLZ list
+                    $newPlz['original'] = $gem['plz'];
+                }
+                $plzArray[$gem['plz']][] = $newPlz;
             }
         }
         if (array_key_exists('vorwahl', $gem)) {
@@ -1562,6 +1681,11 @@ JSON;
 file_put_contents('vorwahlen+plz.json', $out);
 print_r($found);
 
+# zip vorwahlen+plz.json
+$zip = new ZipArchive();
+$zip->open('vorwahlen+plz.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
+$zip->addFile('vorwahlen+plz.json');
+$zip->close();
 
 function checkMapping($gkz, $new, $orig) {
     if (false) {
