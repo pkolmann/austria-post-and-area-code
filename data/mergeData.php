@@ -1373,6 +1373,54 @@ $gemAdd['Schiefling am See'] = ['vorwahl' => '4274'];
 $gemAdd['Techelsberg am Wörthersee'] = ['vorwahl' => '4272'];
 $gemAdd['Zell'] = ['vorwahl' => '4227'];
 $gemAdd['Magdalensberg'] = ['vorwahl' => '4224'];
+$gemAdd['Deutsch-Griffen'] = ['vorwahl' => '4279'];
+$gemAdd['Eberstein'] = ['vorwahl' => '4264'];
+$gemAdd['Gurk'] = ['vorwahl' => '4266'];
+$gemAdd['Guttaring'] = ['vorwahl' => '4262'];
+$gemAdd['Kappel am Krappfeld'] = ['vorwahl' => '4262'];
+$gemAdd['Micheldorf'] = ['vorwahl' => '4268'];
+$gemAdd['Mölbling'] = ['vorwahl' => '4262'];
+$gemAdd['Frauenstein'] = ['vorwahl' => '4212'];
+$gemAdd['Baldramsdorf'] = ['vorwahl' => '4762'];
+$gemAdd['Berg im Drautal'] = ['vorwahl' => '4712'];
+$gemAdd['Irschen'] = ['vorwahl' => '4710'];
+$gemAdd['Lendorf'] = ['vorwahl' => '4762'];
+$gemAdd[20624] = ['vorwahl' => '4769'];
+$gemAdd['Sachsenburg'] = ['vorwahl' => '4769'];
+$gemAdd['Seeboden'] = ['vorwahl' => '4762'];
+$gemAdd['Stall'] = ['vorwahl' => '4823'];
+$gemAdd['Trebesing'] = ['vorwahl' => '4732'];
+$gemAdd['Arriach'] = ['vorwahl' => '4247'];
+$gemAdd['Feistritz a. d. Gail'] = ['vorwahl' => '4256'];
+$gemAdd['Feld am See'] = ['vorwahl' => '4246'];
+$gemAdd['Ferndorf'] = ['vorwahl' => '4245'];
+$gemAdd['Fresach'] = ['vorwahl' => '4245'];
+$gemAdd['Hohenthurn'] = ['vorwahl' => '4256'];
+$gemAdd['Rosegg'] = ['vorwahl' => ['4253' => 'Rosegg', '4274' => 'Rosegg']];
+$gemAdd['Hohenthurn'] = ['vorwahl' => '4256'];
+$gemAdd['Diex'] = ['vorwahl' => '4231'];
+$gemAdd['Hohenthurn'] = ['vorwahl' => '4256', 'plz' => '9613'];
+$gemAdd['Feistritz ob Bleiburg'] = ['vorwahl' => '4235'];
+$gemAdd['Neuhaus'] = ['vorwahl' => '4356'];
+$gemAdd['Frantschach-St. Gertraud'] = ['vorwahl' => '4352'];
+$gemAdd['St. Georgen im Lavanttal'] = ['vorwahl' => '4357'];
+$gemAdd['Himmelberg'] = ['vorwahl' => '4276'];
+$gemAdd['Ossiach'] = ['vorwahl' => '4243'];
+$gemAdd['St. Urban'] = ['vorwahl' => '4277'];
+$gemAdd['Steuerberg'] = ['vorwahl' => '4271', 'plz' => '9560'];
+$gemAdd['Allhartsberg'] = ['vorwahl' => '7448'];
+$gemAdd['Behamberg'] = ['vorwahl' => '7252'];
+$gemAdd['Biberbach'] = ['vorwahl' => '7476'];
+$gemAdd['Ennsdorf'] = ['vorwahl' => '7223'];
+$gemAdd['Ernsthofen'] = ['vorwahl' => '7435'];
+$gemAdd['Ertl'] = ['vorwahl' => '7477'];
+$gemAdd['Ferschnitz'] = ['vorwahl' => '7473'];
+$gemAdd['Haidershofen'] = ['vorwahl' => ['7434' => '?', '7252' => '?']];
+$gemAdd['Neuhofen an der Ybbs'] = ['vorwahl' => '7475'];
+$gemAdd['St. Georgen am Reith'] = ['vorwahl' => '7484'];
+$gemAdd['St. Georgen am Ybbsfelde'] = ['vorwahl' => '7473'];
+$gemAdd['St. Pantaleon-Erla'] = ['vorwahl' => ['7435' => '?', '7223' => '?']];
+$gemAdd['Seitenstetten'] = ['vorwahl' => '7477'];
 
 $color = array();
 $color[1] = array();
@@ -1535,7 +1583,6 @@ foreach ($gemAdd as $gemAddKey => $gem) {
         }
     }
 }
-
 
 $found = array('VWfound' => 0, 'VWnotfound' => 0, 'plzfound' => 0, 'plznotfound' => 0);
 foreach ($telefon as $vorwahl => $gemeinde) {

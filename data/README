@@ -3,3 +3,4 @@ https://github.com/ginseng666/GeoJSON-TopoJSON-Austria/tree/master/2017/simplifi
 https://www.statistik.at/web_de/klassifikationen/regionale_gliederungen/gemeinden/index.html
 
 
+php mergeData.php && ./missingPlzVorwahl > miss2 ; tail -40 miss2
