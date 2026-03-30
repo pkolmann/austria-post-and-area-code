@@ -12,7 +12,9 @@ Based on:
 
 * PLZ:
   * https://www.rtr.at/de/inf/odplz
+  * https://data.rtr.at/pages/open-data/pt-plz
   * https://data.rtr.at/api/v1/tables/plz.json?size=0
+  * Postfächer etc aus https://www.post.at/g/c/postlexikon
 
 
 Die RTR-GmbH ersucht Dienstleister, die OGD der RTR-GmbH für ihre Anwendungen und Services verwenden, aktiv darüber zu informieren, wo diese Services und Anwendungen aufzufinden sind. Bitte erfassen Sie die Anwendung bzw. das Service unter data.gv.at/anwendung-einreichen/.
