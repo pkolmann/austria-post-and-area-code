@@ -1711,6 +1711,13 @@ $gemAdd['Waldegg'] = ['vorwahl' => '2633'];
 $gemAdd['Weikersdorf am Steinfelde'] = ['vorwahl' => '2638', 'plz' => ['2700' => '?', '2722' => '?']];
 $gemAdd['Wöllersdorf-Steinabrückl'] = ['vorwahl' => ['2633' => 'Wöllersdorf', '2622' => 'Steinabrückl']];
 $gemAdd['Zillingdorf'] = ['vorwahl' => '2622', 'plz' => ['2491' => '?', '2492' => '?']];
+$gemAdd['Bärnkopf'] = ['vorwahl' => '2874', 'plz' => ['3633' => '?', '3665' => '?']];
+$gemAdd['Echsenbach'] = ['vorwahl' => '2849'];
+$gemAdd['Großgöttfritz'] = ['vorwahl' => '2875'];
+$gemAdd['Gutenbrunn'] = ['vorwahl' => '2874'];
+$gemAdd['Kirchschlag'] = ['vorwahl' => '2872', 'plz' => ['3631' => '?', '3664' => '?']];
+$gemAdd['Altmelon'] = ['vorwahl' => '2813', 'polz' => ['3633' => '?', '3925' => '?', '4372' => '?']];
+$gemAdd['Waldhausen'] = ['vorwahl' => '2877'];
 
 $color = array();
 $color[1] = array();
