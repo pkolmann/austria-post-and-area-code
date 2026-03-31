@@ -314,19 +314,17 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
-    const basemap = L.tileLayer('https://maps{s}.wien.gv.at/basemap/geolandbasemap/{type}/google3857/{z}/{y}/{x}.{format}', {
+    const basemap = L.tileLayer('https://mapsneu.wien.gv.at/basemap/geolandbasemap/{type}/google3857/{z}/{y}/{x}.{format}', {
         maxZoom: 18,
         attribution: 'Datenquelle: <a href="https://www.basemap.at">basemap.at</a>',
-        subdomains: ["", "1", "2", "3", "4"],
         type: 'normal',
         format: 'png',
         bounds: [[46.35877, 8.782379], [49.037872, 17.189532]]
     });
 
-    const basemapOrtho = L.tileLayer('https://maps{s}.wien.gv.at/basemap/{type}/normal/google3857/{z}/{y}/{x}.{format}', {
+    const basemapOrtho = L.tileLayer('https://mapsneu.wien.gv.at/basemap/{type}/normal/google3857/{z}/{y}/{x}.{format}', {
         maxZoom: 18,
         attribution: 'Datenquelle: <a href="https://www.basemap.at">basemap.at</a>',
-        subdomains: ["", "1", "2", "3", "4"],
         type: 'bmaporthofoto30cm',
         format: 'jpeg',
         bounds: [[46.35877, 8.782379], [49.037872, 17.189532]]
