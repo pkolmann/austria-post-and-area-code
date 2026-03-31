@@ -2165,6 +2165,13 @@ $gemAdd['Eichkögl'] = ['vorwahl' => '3115', 'plz' => ['8322' => '?', '8311' => 
 $gemAdd['Jagerberg'] = ['vorwahl' => '3184'];
 $gemAdd['Klöch'] = ['vorwahl' => '3475'];
 $gemAdd['Mettersdorf'] = ['vorwahl' => '3477'];
+$gemAdd['Murfeld'] = ['vorwahl' => '3453', 'plz' => '8471'];
+$gemAdd['Tieschen'] = ['vorwahl' => '3475'];
+$gemAdd['Unterlamm'] = ['vorwahl' => '3155'];
+$gemAdd['Pirching'] = ['vorwahl' => '3134', 'plz' => '8081'];
+$gemAdd[62389] = ['vorwahl' => '3116'];
+$gemAdd['Tieschen'] = ['vorwahl' => '3475'];
+$gemAdd['Tieschen'] = ['vorwahl' => '3475'];
 
 
 $color = array();
