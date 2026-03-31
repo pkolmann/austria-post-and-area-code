@@ -1135,6 +1135,7 @@ $plzmapping[9541] = "Treffen";
 $plzmapping[9551] = "Steindorf am Ossiacher See";
 $plzmapping[9564] = "Reichenau";
 $plzmapping[9565] = "Reichenau";
+$plzmapping[9565] = "Feldkirchen in Kärnten";
 $plzmapping[9571] = "Albeck";
 $plzmapping[9572] = "Deutsch-Griffen";
 $plzmapping[9580] = "Villach";
