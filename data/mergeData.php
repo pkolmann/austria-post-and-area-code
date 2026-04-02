@@ -1494,7 +1494,7 @@ $gemAdd['Hohenruppersdorf'] = ['vorwahl' => '2574'];
 $gemAdd['Jedenspeigen'] = ['vorwahl' => '2536'];
 $gemAdd['Mannsdorf an der Donau'] = ['vorwahl' => '2212', 'plz' => '2304'];
 $gemAdd['Palterndorf-Dobermannsdorf'] = ['vorwahl' => '2533'];
-$gemAdd['Parbasdorf'] = ['vorwahl' => '2247', 'plz' => '2232'];;
+$gemAdd['Parbasdorf'] = ['vorwahl' => '2247', 'plz' => '2232'];
 $gemAdd['Prottes'] = ['vorwahl' => '2282'];
 $gemAdd['Raasdorf'] = ['vorwahl' => '2249'];
 $gemAdd['Ringelsdorf-Niederabsdorf'] = ['vorwahl' => '2536'];
@@ -1512,8 +1512,8 @@ $gemAdd['Hoheneich'] = ['vorwahl' => '2852'];
 $gemAdd['Reingers'] = ['vorwahl' => '2863'];
 $gemAdd[30932] = ['vorwahl' => '2857'];
 $gemAdd['Unserfrau-Altweitra'] = ['vorwahl' => '2856'];
-$gemAdd['Alberndorf im Pulkautal'] = ['vorwahl' => '2944', 'plz' => '2054'];;
-$gemAdd['Grabern'] = ['vorwahl' => '2952', 'plz' => '2020'];;
+$gemAdd['Alberndorf im Pulkautal'] = ['vorwahl' => '2944', 'plz' => '2054'];
+$gemAdd['Grabern'] = ['vorwahl' => '2952', 'plz' => '2020'];
 $gemAdd['Heldenberg'] = ['vorwahl' => '2956'];
 $gemAdd['Mailberg'] = ['vorwahl' => '2943'];
 $gemAdd['Pernersdorf'] = ['vorwahl' => '2944'];
@@ -1526,15 +1526,15 @@ $gemAdd['Altenburg'] = ['vorwahl' => '2982'];
 $gemAdd['Burgschleinitz-Kühnring'] = ['vorwahl' => '2984'];
 $gemAdd['Langau'] = ['vorwahl' => '2912'];
 $gemAdd['Meiseldorf'] = ['vorwahl' => '2983'];
-$gemAdd[31117] = ['vorwahl' => '2913', 'plz' => '3753'];;
+$gemAdd[31117] = ['vorwahl' => '2913', 'plz' => '3753'];
 $gemAdd['Röhrenbach'] = ['vorwahl' => '2989'];
 $gemAdd['Röschitz'] = ['vorwahl' => '2984'];
 $gemAdd['Rosenburg-Mold'] = ['vorwahl' => '2982'];
-$gemAdd['St. Bernhard-Frauenhofen'] = ['vorwahl' => '2982', 'plz' => '3580'];;
+$gemAdd['St. Bernhard-Frauenhofen'] = ['vorwahl' => '2982', 'plz' => '3580'];
 $gemAdd['Straning-Grafenberg'] = ['vorwahl' => '2984'];
 $gemAdd['Bisamberg'] = ['vorwahl' => '2262'];
 $gemAdd['Enzersfeld im Weinviertel'] = ['vorwahl' => '2262'];
-$gemAdd['Hagenbrunn'] = ['vorwahl' => ['2262' => '?', '2246' => '?'], 'plz' => '2102'];;
+$gemAdd['Hagenbrunn'] = ['vorwahl' => ['2262' => '?', '2246' => '?'], 'plz' => '2102'];
 $gemAdd['Leitzersdorf'] = ['vorwahl' => '2266'];
 $gemAdd['Leobendorf'] = ['vorwahl' => '2262'];
 $gemAdd['Rußbach'] = ['vorwahl' => '2955'];
@@ -1582,7 +1582,7 @@ $gemAdd['Ruprechtshofen'] = ['vorwahl' => '2756'];
 $gemAdd['St. Martin-Karlsbach'] = ['vorwahl' => '7412'];
 $gemAdd[31541] = ['vorwahl' => '7415'];
 $gemAdd['Schönbühel-Aggsbach'] = ['vorwahl' => '2753'];
-$gemAdd['Schollach'] = ['vorwahl' => '2754', 'plz' => '3382'];;
+$gemAdd['Schollach'] = ['vorwahl' => '2754', 'plz' => '3382'];
 $gemAdd['Weiten'] = ['vorwahl' => '2758'];
 $gemAdd['Zelking-Matzleinsdorf'] = ['vorwahl' => '2752'];
 $gemAdd['Texingtal'] = ['vorwahl' => '2755'];
@@ -1591,7 +1591,7 @@ $gemAdd['Altlichtenwarth'] = ['vorwahl' => '2533'];
 $gemAdd['Bockfließ'] = ['vorwahl' => '2288'];
 $gemAdd['Falkenstein'] = ['vorwahl' => '2554'];
 $gemAdd['Fallbach'] = ['vorwahl' => '2524'];
-$gemAdd['Gaubitsch'] = ['vorwahl' => '2522', 'plz' => '2154'];;
+$gemAdd['Gaubitsch'] = ['vorwahl' => '2522', 'plz' => '2154'];
 $gemAdd['Großebersdorf'] = ['vorwahl' => '2245'];
 $gemAdd['Großengersdorf'] = ['vorwahl' => '2245'];
 $gemAdd['Großharras'] = ['vorwahl' => '2526'];
@@ -1633,10 +1633,10 @@ $gemAdd['Enzenreith'] = ['vorwahl' => '2662', 'plz' => ['2632' => '?', '2640' =>
 $gemAdd['Feistritz am Wechsel'] = ['vorwahl' => ['2641' => '?', '2644' => '?']];
 $gemAdd['Grafenbach-St. Valentin'] = ['vorwahl' => '2630', 'plz' => '2632'];
 $gemAdd['Natschbach-Loipersbach'] = ['vorwahl' => '2635', 'plz' => '2620'];
-$gemAdd['Otterthal'] = ['vorwahl' => '2641', 'plz' => '2880'];;
+$gemAdd['Otterthal'] = ['vorwahl' => '2641', 'plz' => '2880'];
 $gemAdd['Payerbach'] = ['vorwahl' => '2666'];
 $gemAdd['Prigglitz'] = ['vorwahl' => '2662', 'plz' => ['2630' => '?', '2640' => '?']];
-$gemAdd['Raach am Hochgebirge'] = ['vorwahl' => '2662', 'plz' => '2640'];;
+$gemAdd['Raach am Hochgebirge'] = ['vorwahl' => '2662', 'plz' => '2640'];
 $gemAdd['St. Corona am Wechsel'] = ['vorwahl' => '2641', 'plz' => ['2870' => '?', '2880' => '?']];
 $gemAdd['St. Egyden am Steinfeld'] = ['vorwahl' => '2638'];
 $gemAdd['Schrattenbach'] = ['vorwahl' => '2637', 'plz' => '2733'];
@@ -1833,7 +1833,7 @@ $gemAdd['Arbing'] = ['vorwahl' => '7269'];
 $gemAdd['Dimbach'] = ['vorwahl' => '7260'];
 $gemAdd['Katsdorf'] = ['vorwahl' => '7235'];
 $gemAdd['Klam'] = ['vorwahl' => '7269'];
-$gemAdd['Langenstein'] = ['vorwahl' => '7237', 'plz' => ['4222' => '?', '4310' => '?', '4312' => '?']];;
+$gemAdd['Langenstein'] = ['vorwahl' => '7237', 'plz' => ['4222' => '?', '4310' => '?', '4312' => '?']];
 $gemAdd['Luftenberg an der Donau'] = ['vorwahl' => '7237'];
 $gemAdd['Mitterkirchen im Machland'] = ['vorwahl' => '7269'];
 $gemAdd['Münzbach'] = ['vorwahl' => '7264'];
@@ -2435,7 +2435,7 @@ $outFeatures = array();
 $telefon = array();
 foreach ($telefonDaten['data'] as $ort) {
     $ortsnetzname = $ort['ortsnetzname'];
-    if (substr($ortsnetzname, 0, 6) == 'Sankt ') {
+    if (str_starts_with($ortsnetzname, 'Sankt ')) {
         $ortsnetzname = str_replace('Sankt ', 'St. ', $ortsnetzname);
     }
     if (array_key_exists($ort['ortsnetzkennzahl'], $mapping)) {
@@ -2457,7 +2457,7 @@ foreach ($telefonDaten['data'] as $ort) {
 $plzArray = array();
 foreach ($plzDaten['data'] as $ort) {
     $ortsname = $ort['ort'];
-    if (substr($ortsname, 0, 6) == 'Sankt ') {
+    if (str_starts_with($ortsname, 'Sankt ')) {
         $ortsname = str_replace('Sankt ', 'St. ', $ortsname);
     }
     if (array_key_exists($ort['plz'], $plzmapping)) {
@@ -2621,7 +2621,6 @@ foreach ($telefon as $vorwahl => $gemeinde) {
             if (strlen($vorwahl) == 1) {
                 $gemeinden['features'][$gemId]['properties']['color'] = '#'.
                     $vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl.$vorwahl;
-                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             } elseif(strlen($vorwahl) == 2) {
                 $gemeinden['features'][$gemId]['properties']['color'] = '#'.
                     substr($vorwahl, 0, 1).
@@ -2630,7 +2629,6 @@ foreach ($telefon as $vorwahl => $gemeinde) {
                     substr($vorwahl, 1, 1).
                     substr($vorwahl, 1, 1).
                     substr($vorwahl, 1, 1);
-                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             } elseif(strlen($vorwahl) == 3) {
                 $gemeinden['features'][$gemId]['properties']['color'] = '#'.
                     substr($vorwahl, 0, 1).
@@ -2639,7 +2637,6 @@ foreach ($telefon as $vorwahl => $gemeinde) {
                     substr($vorwahl, 1, 1).
                     substr($vorwahl, 2, 1).
                     substr($vorwahl, 2, 1);
-                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             } else {
                 $gemeinden['features'][$gemId]['properties']['color'] = '#'.
                     substr($vorwahl, 0, 1).
@@ -2648,8 +2645,8 @@ foreach ($telefon as $vorwahl => $gemeinde) {
                     substr($vorwahl, 1, 1).
                     substr($vorwahl, 2, 1).
                     substr($vorwahl, 3, 1);
-                $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             }
+            $gemeinden['features'][$gemId]['properties']['color1'] = $color[1][substr($vorwahl, 0, 1)];
             $outFeatures[$gemId] = $gemeinden['features'][$gemId];
             $found['VWfound']++;
         } else {
@@ -2713,7 +2710,7 @@ foreach ($plzArray as $plz => $gemeinde) {
 }
 
 
-$out = <<<JSON
+$out = <<<TXT
 {
   "type":"FeatureCollection",
   "crs":{
@@ -2724,7 +2721,7 @@ $out = <<<JSON
   },
   "features":[
 
-JSON;
+TXT;
 
 foreach ($outFeatures as $outKey => $outFeature) {
     $out .= "    ";
@@ -2767,10 +2764,10 @@ foreach ($outFeatures as $outKey => $outFeature) {
     }
     $out .= "\n";
 }
-$out .= <<<JSON
+$out .= <<<TXT
   ]
 }
-JSON;
+TXT;
 
 file_put_contents('vorwahlen+plz.json', $out);
 print_r($found);
@@ -2781,7 +2778,8 @@ $zip->open('vorwahlen+plz.json.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE)
 $zip->addFile('vorwahlen+plz.json');
 $zip->close();
 
-function checkMapping($gkz, $new, $orig) {
+function checkMapping($gkz, $new, $orig): void
+{
     if (false) {
         print "$gkz - orig: $orig\n";
         print "$gkz - new:  $new\n";
